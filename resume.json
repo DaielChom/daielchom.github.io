@@ -24,6 +24,11 @@
         "network": "Telegram",
         "username": "daielchom",
         "url": ""
+      },
+      {
+        "network": "DeviantART",
+        "username": "daielchom",
+        "url": ""
       }
     ]
   },
@@ -43,8 +48,8 @@
       "organization": "CUSOL",
       "position": "Miembro",
       "website": "http://cusol.uis.edu.co/",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2016-02",
+      "endDate": "2017-02",
       "summary": "Comunidad universitaria de Software Libre",
       "highlights": [
         "Apoyo en la organizacion de las actividades de la comunidad durante el tiempo enunciado"
@@ -53,74 +58,96 @@
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
+      "institution": "Institucion Educativa Colegio de Sugamuxi",
+      "area": "Educacion Media",
+      "studyType": "Bachiller",
+      "startDate": "2010-02",
+      "endDate": "2011-11",
+      "courses": [ ]
+    },
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "institution": "Universidad Industrial de Santander",
+      "area": "Educacion Superior",
+      "studyType": "Ingenieria de Sistemas",
+      "startDate": "2013 - 08",
+      "endDate": "",
+      "courses": [ ]
     }
   ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
+  "awards": [ ],
+  "publications": [ ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Desarrollador Web",
+      "level": "Intermedio",
       "keywords": [
         "HTML",
         "CSS",
-        "Javascript"
+        "Javascript",
+        "React",
+        "Flask",
+        "Haml",
+        "Scss",
+        "Materialize"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Cientifico de Datos",
+      "level": "Básico",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Python",
+        "Numpy",
+        "Sklearn",
+        "Matploplib"
+      ]
+    },
+    {
+      "name": "Usuario Software Libre",
+      "level": "Intermedio",
+      "keywords": [
+        "GNU - Linux",
+        "Git"
+      ]
+    },
+    {
+      "name": "Diseñador",
+      "level": "Intermedio",
+      "keywords": [
+        "Inkscape",
+        "Corel - Draw"
       ]
     }
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Native speaker"
+      "language": "Frances",
+      "fluency": ""
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Software Libre",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Xubuntu",
+        "FRISOL",
+        "Software Freedom Day"
       ]
+    },
+    {
+      "name": "Dibujo",
+      "keywords": [
+        "Diseño de Personajes"
+    ]
     }
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": " Personal - David Fernando Guitierrez",
+      "reference": "s"
+    },
+    {
+      "name": " Laboral - -",
+      "reference": "s"
     }
   ]
 }
