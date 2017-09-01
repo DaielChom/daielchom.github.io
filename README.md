@@ -9,3 +9,7 @@ Mi hoja de vida realizada usando [reasume-cli](https://github.com/jsonresume/res
 
 #### init
 `resume init`
+
+### run
+`resume serve` <br/>
+`resume export resume.pdf --theme elegant`
