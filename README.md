@@ -12,4 +12,9 @@ Mi hoja de vida realizada usando [reasume-cli](https://github.com/jsonresume/res
 
 ### run
 `resume serve` <br/>
-`resume export resume.pdf --theme elegant`
+`resume export resume.pdf`
+
+### favorites themes
+`--theme theme_name`
+* elegant
+* slick
