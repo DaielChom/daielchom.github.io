@@ -5,7 +5,7 @@
     "picture": "",
     "email": "danielcarvajalpatino@gmail.com",
     "phone": "3115315773",
-    "website": "",
+    "website": "https://github.com/DaielChom",
     "summary": "Soy un estudiante universitario y me distingo por ser responsable, honesto, comprometido con mis labores, organizado con el tiempo y las tareas que se me son asignadas",
     "location": {
       "address": "Calle 17 N° 29 49",
@@ -18,17 +18,17 @@
       {
         "network": "Github",
         "username": "daielchom",
-        "url": ""
+        "url": "https://github.com/DaielChom"
       },
       {
         "network": "Telegram",
         "username": "daielchom",
-        "url": ""
+        "url": "http://telegram.me/daielchom"
       },
       {
         "network": "DeviantART",
         "username": "daielchom",
-        "url": ""
+        "url": "https://daielchom.deviantart.com/"
       }
     ]
   },
@@ -40,6 +40,15 @@
       "startDate": "2017-02",
       "endDate": "",
       "summary": "Grupo de desarrollo de aplicaciones y servicios web.",
+      "highlights": []
+    },
+    {
+      "company": "Escuela de Matematicas UIS",
+      "position": "Administrador salas de computo",
+      "website": "",
+      "startDate": "2016 - 08",
+      "endDate": "2017 - 07",
+      "summary": "Adminsitrador de las salas de computo de la escuela de Matematicas de la Universidad Industrial de Santander.",
       "highlights": []
     }
   ],
@@ -53,6 +62,17 @@
       "summary": "Comunidad universitaria de Software Libre",
       "highlights": [
         "Apoyo en la organizacion de las actividades de la comunidad durante el tiempo enunciado"
+      ]
+    },
+    {
+      "organization": "CEIS",
+      "position": "Miembro",
+      "website": "http://cormoran.uis.edu.co/eisi/grupo/ceis/#views/gm1/inicio",
+      "startDate": "2016-03",
+      "endDate": "2017-02",
+      "summary": "Centro de Estudios de Ingenieria de Sistemas",
+      "highlights": [
+        "Apoyo en la adminstracion y buen funcionamiento del centro de estudios de Ing. de Sistemas de la Universidad Industrial de Santander"
       ]
     }
   ],
@@ -116,12 +136,26 @@
         "Inkscape",
         "Corel - Draw"
       ]
+    },
+    {
+      "name": "Desarrollador Movil",
+      "level": "Intermedio",
+      "keywords": [
+        "Android",
+        "CoronaLab"
+      ]
+    },
+    {
+      "name": "Desarrollador POO",
+      "keywords": [
+        "Java"
+    ]
     }
   ],
   "languages": [
     {
       "language": "Frances",
-      "fluency": ""
+      "fluency": "A1"
     }
   ],
   "interests": [
@@ -138,16 +172,17 @@
       "keywords": [
         "Diseño de Personajes"
     ]
-    }
+  }
+
   ],
   "references": [
     {
-      "name": " Personal - David Fernando Guitierrez",
-      "reference": "s"
+      "name": " 3044811962 - Amigo y compañero de la Universidad",
+      "reference": "Personal - David Fernando Guitierrez"
     },
     {
-      "name": " Laboral - -",
-      "reference": "s"
+      "name": "CEO de Sevent, un proyecto de Chasegroup",
+      "reference": "Laboral - Sergio Martinez"
     }
   ]
 }
