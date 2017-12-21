@@ -42,9 +42,21 @@
       "summary": "Grupo de desarrollo de aplicaciones y servicios web.",
       "highlights": []
     },
+
+    {
+      "company": "UIS",
+      "position": "Desarrollador",
+      "website": "https://github.com/DaielChom/mooc-grader",
+      "startDate": "2017-09",
+      "endDate": "2017-12",
+      "summary": "Encargado del desarrollo del proyecto mooc-grader dirigido por el profesor Raul Ramos de la escuela de Ingenieria de Sistemas.",
+      "highlights": []
+    },
+
+
     {
       "company": "Escuela de Matematicas UIS",
-      "position": "Administrador salas de computo",
+      "position": "Administrador de sala de computo",
       "website": "",
       "startDate": "2016 - 08",
       "endDate": "2017 - 07",
@@ -85,6 +97,16 @@
       "endDate": "2011-11",
       "courses": [ ]
     },
+
+    {
+      "institution": "CCNA - Cisco Networking Academy",
+      "area": "Redes",
+      "studyType": "Estudiante",
+      "startDate": "2016-08",
+      "endDate": "2017-02",
+      "courses": [ "Switching & Routing: Introducción a redes", "Switching & Routing: Principios básicos de routing y switching"]
+    },
+
     {
       "institution": "Universidad Industrial de Santander",
       "area": "Educacion Superior",
@@ -155,7 +177,7 @@
   "languages": [
     {
       "language": "Frances",
-      "fluency": "A1"
+      "fluency": "A2"
     }
   ],
   "interests": [
