@@ -39,29 +39,23 @@
       "website": "https://github.com/chasegroup",
       "startDate": "2017-02",
       "endDate": "",
-      "summary": "Trabajo como desarrollador para el servicio web Sevent.",
-      "highlights": []
+      "summary": "Trabajo como desarrollador para el servicio web Sevent."
     },
-
     {
       "company": "UIS",
       "position": "Desarrollador",
       "website": "https://github.com/DaielChom/mooc-grader",
       "startDate": "2017-09",
       "endDate": "2017-12",
-      "summary": "Encargado de la actualizacion del proyecto mooc-grader dirigido por el profesor Raul Ramos de la escuela de Ingenieria de Sistemas.",
-      "highlights": []
+      "summary": "Encargado de la actualizacion del proyecto mooc-grader dirigido por el profesor Raul Ramos de la escuela de Ingenieria de Sistemas."
     },
-
-
     {
       "company": "Escuela de Matematicas UIS",
       "position": "Administrador de sala de computo",
       "website": "",
       "startDate": "2016 - 08",
       "endDate": "2017 - 07",
-      "summary": "Encargado de administrar las salas de computo de la escuela de Matematicas de la Universidad Industrial de Santander.",
-      "highlights": []
+      "summary": "Encargado de administrar las salas de computo de la escuela de Matematicas de la Universidad Industrial de Santander."
     }
   ],
   "volunteer": [
@@ -94,30 +88,28 @@
       "area": "Educacion Media",
       "studyType": "Bachiller",
       "startDate": "2010-02",
-      "endDate": "2011-11",
-      "courses": [ ]
+      "endDate": "2011-11"
     },
-
     {
       "institution": "CCNA - Cisco Networking Academy",
       "area": "Redes",
       "studyType": "Estudiante",
       "startDate": "2016-08",
       "endDate": "2017-02",
-      "courses": [ "Switching & Routing: Introducción a redes", "Switching & Routing: Principios básicos de routing y switching"]
+      "courses": [
+        "Switching & Routing: Introducción a redes",
+        "Switching & Routing: Principios básicos de routing y switching"
+      ]
     },
-
     {
       "institution": "Universidad Industrial de Santander",
       "area": "Educacion Superior",
       "studyType": "Ingenieria de Sistemas",
       "startDate": "2013 - 08",
-      "endDate": "",
-      "courses": [ ]
+      "endDate": ""
     }
   ],
-  "awards": [ ],
-  "publications": [ ],
+  "awards": [],
   "skills": [
     {
       "name": "Desarrollador Web",
@@ -171,7 +163,7 @@
       "name": "Desarrollador POO",
       "keywords": [
         "Java"
-    ]
+      ]
     }
   ],
   "languages": [
@@ -193,9 +185,8 @@
       "name": "Dibujo",
       "keywords": [
         "Diseño de Personajes"
-    ]
-  }
-
+      ]
+    }
   ],
   "references": [
     {
