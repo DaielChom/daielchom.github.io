@@ -1,0 +1,15 @@
+{{#section "extracurricular"}}
+{{{sectionTitle "EXTRACURRICULAR"}}} ----------------------------------------------------------------
+
+{{#each r.extracurricular }}
+{{{ title }}}, {{{ activity }}} ({{dateRange .}})
+{{#if summary}}{{{ summary }}}
+{{/if}}
+{{#if highlights}}
+{{#each highlights}}
+- {{{ this }}}
+{{/each}}
+{{/if}}
+
+{{/each}}
+{{/section}}

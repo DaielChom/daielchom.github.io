@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../mixins";
+
+
+.card-skills {
+    position: relative;
+}
+
+
+.skill-info {
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: @screen-tablet) {
+
+    .skill {
+        border-left: 9px solid @gray;
+        &.beginner {
+            height: 50%;
+            border-color: @skill-beginner-color;
+        }
+
+        &.intermediate {
+            height: 70%;
+            border-color: @skill-intermediate-color;
+        }
+
+        &.advanced {
+            border-color: @skill-master-color;
+        }
+
+        &.master {
+            border-color: black;
+        }
+    }
+}

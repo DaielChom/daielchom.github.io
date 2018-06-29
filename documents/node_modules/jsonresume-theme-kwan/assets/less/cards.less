@@ -1,0 +1,149 @@
+.profile-card {
+    display: table;
+    width: 100%;
+}
+
+.profile-pic {
+    display: table-cell;
+    vertical-align: top;
+    padding: 1rem 4rem 0 0 ;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+}
+
+.contact-details {
+
+    display: table-cell;
+
+    .detail {
+        display: inline-block;
+        line-height: 2;
+        margin-right: 2rem;
+
+        .icon {
+            padding-right: 7px;
+            color: #888;
+        }
+
+        .info {
+            font-size: 0.8em;
+        }
+
+    }
+}
+
+.social-links {
+    line-height: 2.5;
+}
+
+.social-link {
+    display: block;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+    .fa {
+        text-align: center;
+        width: 2em;
+    }
+}
+
+
+.fa-github {.make-social-link(@github-color); }
+.fa-twitter {.make-social-link(@twitter-color); }
+.fa-rss {.make-social-link(@rss-feed-color); }
+.fa-linkedin {.make-social-link(@linkedin-color); }
+.fa-skype {.make-social-link(@skype-color); }
+.fa-stack-overflow {.make-social-link(@stackoverflow-color); }
+.fa-soundcloud {.make-social-link(@soundcloud-color); }
+.fa-pinterest { .make-social-link(@pinterest-color); }
+.fa-vimeo { .make-social-link(@vimeo-color); }
+.fa-behance { .make-social-link(@behance-color); }
+.fa-codepen { .make-social-link(@codepen-color); }
+.fa-foursquare { .make-social-link(@foursquare-color); }
+.fa-reddit { .make-social-link(@reddit-color); }
+.fa-spotify { .make-social-link(@spotify-color); }
+.fa-dribbble { .make-social-link(@dribbble-color); }
+.fa-facebook { .make-social-link(@facebook-color); }
+.fa-angellist { .make-social-link(@angellist-color); }
+.fa-bitbucket { .make-social-link(@bitbucket-color); }
+.fa-google-plus { .make-social-link(@google-plus-color); }
+
+.background-card h4 {
+    font-variant: small-caps;
+    color: @gray-light;
+    border-bottom: 1px solid @gray-lighter;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+
+    &:not(:first-child) {
+        margin-top: 2em;
+    }
+
+}
+
+@iconWidth: 4rem;
+
+h4 > .fa, h4 > .title {
+    display: inline-block;
+    vertical-align: baseline;
+}
+h4 > .fa {
+    width: @iconWidth;
+}
+
+.content {
+    line-height: 1.5;
+}
+
+
+.card {
+    background: @card-bg;
+    border: 1px solid @card-border-color;
+    border-radius: @card-border-radius;
+    padding: 2em 3.5em;
+}
+
+.card-nested {
+    padding: 1.5rem 0 1.5rem @iconWidth + .2rem;
+}
+
+.card-wrapper {
+    padding: 5px;
+}
+
+.enumeration:not(:last-child):after {
+    content: ", ";
+}
+.enumeration:last-child:after {
+    content: ".";
+}
+
+@media only screen and (max-width: @screen-tablet) {
+   
+   .profile-card {
+        display: block;
+   }
+   .contact-details,
+   .profile-pic {
+        display: block;
+        text-align: center;
+   }
+   .card-nested {
+    padding-left: 0;
+   }
+
+}
+
+@media only screen and (max-width: @screen-phone) {
+    .contact-details .detail {
+        display: block;
+    }
+}

@@ -1,0 +1,10 @@
+{{#section "writing"}}
+{{{sectionTitle "WRITING"}}} ------------------------------------------------------------------------
+
+{{#each r.writing}}
+{{{ title }}} ({{#if publisher}}{{stringOrObject publisher "name" }}{{/if}}{{#if date}}, {{date date}}{{/if}})
+{{#if summary}}{{{ summary }}}
+{{/if}}
+
+{{/each}}
+{{/section}}
