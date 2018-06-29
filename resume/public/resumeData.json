@@ -4,18 +4,17 @@
     "occupation":"Estudiante ingeniería de Sistemas en la Universidad Industrial de Santander",
     "description":"Con la ayuda de amigos y maestros estoy enfocando mi carrera en Machine Learning, Python y Software Libre. Oriundo de Aguazul - Casanare, amo el joropo y la tierra llanera. Me considero responsable y la puntualidad es muy importante para mí",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"Soy Aguazuleño, me gusta el joropo y la tierra llanera. Estudio Ingenieria de Sistemas en la Universidad de Santander, apoyo el Software libre y estoy enfocando mi carrera al desarrollo y a machine learning realizando distintos cursos virtuales. Mi distribucion favorita es Xubuntu y en mi proyecto de grado uso redes neuronales para detectar el estreato social de una zona urbana, dicho trabajo se puede encontrar en mi Github, en el cual tengo varios proyectos en los que he trabajado. Me considero una persona responsable y la puntualidad es muy importante para mi. Me gusta asistir a eventos culturales y en mis tiempos de ocio me gusta jugar video juegos o ver Anime.",
     "email": "danielcarvajalpatino@gmail.com",
     "phone": "3115315773",
     "address":{
-      "street":"#########################################################",
-      "city":"Bogota",
-      "state":"Cundinamarca",
+      "street":"Carrera 21 N° 9 - 22",
+      "city":"Aguazul",
+      "state":"Casanare",
       "zip": ""
     },
     "website": "http://www.daielchom.github.io",
-    "resumedownload":"../../documents/",
+    "resumedownload":"https://github.com/DaielChom/daielchom.github.io/raw/master/documents/Daniel_C_Patiño.pdf",
     "social":[
       {
         "name":"github",
