@@ -46,64 +46,125 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Las Habilidades y herramientas que manejo son las siguientes, con un enfoque en Machine Learning",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Colegio Nacional de Sugamuxi",
+        "degree":"Bachiller",
+        "graduated":"Noviembre 2011",
+        "description":"Curse los grados 10° y 11° en el colegio nacional de sugamuxi preparandome para el ingreso a la vida universitaria",
+        "certificate":""
+
+      },
+      {
+        "school":"UIS - Universidad Industrial de Santander",
+        "degree":"Ingenieria de Sistemas",
+        "graduated":"-",
+        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
+        "certificate":"https://www.google.com"
+
       },
       {
         "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "degree":"Diplomado en Computación Movil",
+        "graduated":"Marzo 2018",
+        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
+        "certificate":"https://www.google.com"
+
       }
+    ],
+    "courses":[
+      {
+        "school":"CCNA - Cisco Networking Academy",
+        "degree":"Curso de Redes, Niveles I y II",
+        "graduated":"Febrero 2017",
+        "description":"Curso virtual ofrecido por Cisco donde se estudiaron los principios basicos de routing y swiching, cursos elaborados en la clase de redes de la UIS, dirigidas pro el profesor Pedro Trujillo.",
+        "certificate":"https://www.google.com"
+      },
+
+      {
+        "school":"School #1 Maybe College?",
+        "degree":"Curso Derechos de autor",
+        "graduated":"Junio 2018",
+        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
+        "certificate":"https://www.google.com"
+      },
+      {
+        "school":"Two Scoops Press",
+        "degree":"Curso Creating and Distributing Python Package",
+        "graduated":"Marzo 2018",
+        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
+        "certificate":"https://www.google.com"
+      },
+      {
+        "school":"Platzi",
+        "degree":"Curso React y Redux",
+        "graduated":"Junio 2018",
+        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
+        "certificate":"https://www.google.com"
+      }
+
+
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
+        "company":"Chasegroup",
+        "title":"Desarrollador Backend",
+        "years":"Febrero 2017 - ##",
         "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Universidad Industrial de Santander",
+        "title":"Desarrollador",
+        "years":"Septiembre 2017 - Junio 2018",
+        "description":"Encargado de la actualizacion y mantenimiento del proyecto mooc-grader (https://github.com/DaielChom/mooc-grader) dirigido por el profesor Raul Ramos Pollan. Se trabajo en el mejoramiento de un framework implementado en jupyter notebook para la calificacion y adminsitracon de tareas, evalucaciones y talleres, usando La API de google para hojas de calculo."
+      },
+      {
+        "company": "Escuela de Matematicas - Universidad Industrial de Santander",
+        "title": "Administrador de sala de computo",
+        "years": "Agsto 2016 - Junio 2017",
+        "description": "Encargado de administrar las salas de computo de la escuela de Matematicas de la Universidad Industrial de Santander."
       }
     ],
     "skills":[
       {
-        "name":"Git",
-        "level":"60%"
+        "name":"MACHINE Learning: Python, scikit-learn, numpy, pandas, Jupyter, Matplotlib",
+        "level":"75%"
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
+        "name":"desarrollo: GIT, GNU-LINUX, JAVA, GOOGLE-APIS",
+        "level":"70%"
       },
       {
-        "name":"ReactJs",
+        "name":"DISEÑO: Inkscape, CorelDraw",
+        "level":"70%"
+      },
+      {
+        "name":"BACKEND: FLASK",
         "level":"50%"
       },
       {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%"
-      },
-      {
-        "name":"VueJs",
+        "name":"FRONTEND: HTML, JS, CSS, SASS, REACT, HAML, Materialize, Normalaize",
         "level":"50%"
       },
       {
-        "name":"MongoDB",
-        "level":"80%"
+        "name":"MOVIL: ANDORID, CORONALAB",
+        "level":"30%"
       }
+    ],
+    "volunteer":[
+      {
+        "company": "Comunidad Universitaria de Software Libre - CUSOL-UIS",
+        "title": "Miembro",
+        "years": "Agsto 2016 - Junio 2017",
+        "description": "Apoyo en la organizacion de actividades para la comunidad universitaria como talleres, eventos, cineforos, etc. Se apoyo en la realizacion del Software Freedom Day del año 2016"
+      },
+      {
+        "company": "Centro de Estudios de Ingenieria de Sistemas - CEIS-UIS",
+        "title": "Miembro",
+        "years": "Marzo 2016 - Febrero 2017",
+        "description": "Apoyo en la adminstracion y buen funcionamiento del centro de estudios de Ing. de Sistemas de la Universidad Industrial de Santander"
+}
     ]
   },
   "portfolio":{

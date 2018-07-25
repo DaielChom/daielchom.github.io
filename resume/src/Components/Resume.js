@@ -6,9 +6,11 @@ class Resume extends Component {
     if(this.props.data){
       var skillmessage = this.props.data.skillmessage;
       var education = this.props.data.education.map(function(education){
-        return <div key={education.school}><h3>{education.school}</h3>
+        return <div id={"certificate-a"}key={education.school}><h3>{education.school}</h3>
         <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
-        <p>{education.description}</p></div>
+        <a href={education.certificate}>certificado</a>
+        <p id={"certificate-p"}>{education.description}</p>
+        </div>
       })
       var work = this.props.data.work.map(function(work){
         return <div key={work.company}><h3>{work.company}</h3>
@@ -18,8 +20,24 @@ class Resume extends Component {
       })
       var skills = this.props.data.skills.map(function(skills){
         var className = 'bar-expand '+skills.name.toLowerCase();
-        return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
+        return <li key={skills.name}> <span style={{width:skills.level}}className={className}></span>  <em id={"skill-list"}> {skills.name}</em> </li>
       })
+
+      var volunteer = this.props.data.volunteer.map(function(volunteer){
+        return <div key={volunteer.company}><h3>{volunteer.company}</h3>
+            <p className="info">{volunteer.title}<span>&bull;</span> <em className="date">{volunteer.years}</em></p>
+            <p>{volunteer.description}</p>
+        </div>
+      })
+
+      var courses = this.props.data.courses.map(function(course){
+        return <div id={"certificate-a"}key={course.school}><h3>{course.school}</h3>
+        <p className="info">{course.degree} <span>&bull;</span><em className="date">{course.graduated}</em></p>
+        <a href={course.certificate}>certificado</a>
+        <p id={"certificate-p"}>{course.description}</p>
+        </div>
+      })
+
     }
 
     return (
@@ -27,7 +45,7 @@ class Resume extends Component {
 
       <div className="row education">
          <div className="three columns header-col">
-            <h1><span>Education</span></h1>
+            <h1><span>Educación</span></h1>
          </div>
 
          <div className="nine columns main-col">
@@ -39,11 +57,24 @@ class Resume extends Component {
          </div>
       </div>
 
+      <div className="row education">
+         <div className="three columns header-col">
+            <h1><span>Cursos</span></h1>
+         </div>
+
+         <div className="nine columns main-col">
+            <div className="row item">
+               <div className="twelve columns">
+                 {courses}
+               </div>
+            </div>
+         </div>
+      </div>
+
 
       <div className="row work">
-
          <div className="three columns header-col">
-            <h1><span>Work</span></h1>
+            <h1><span>Experiencia</span></h1>
          </div>
 
          <div className="nine columns main-col">
@@ -51,12 +82,24 @@ class Resume extends Component {
         </div>
     </div>
 
+    <div className="row work">
+
+       <div className="three columns header-col">
+          <h1><span>Voluntariado</span></h1>
+       </div>
+
+       <div className="nine columns main-col">
+        {volunteer}
+      </div>
+  </div>
+
+
 
 
       <div className="row skill">
 
          <div className="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span>Habilidades</span></h1>
          </div>
 
          <div className="nine columns main-col">

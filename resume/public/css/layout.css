@@ -269,7 +269,7 @@ ul#nav li.current a { color: #F06000; }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
-   margin-bottom: 18px;
+   margin-bottom: 0px;
    margin-top: 9px;
 }
 #resume .info span {
@@ -297,7 +297,7 @@ ul#nav li.current a { color: #F06000; }
 }
 .bars li {
    position: relative;
-  	margin-bottom: 60px;
+  	margin-bottom: 80px;
   	background: #ccc;
   	height: 42px;
   	border-radius: 3px;
@@ -324,6 +324,17 @@ ul#nav li.current a { color: #F06000; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
+#skill-list{
+  top: -50px;
+
+}
+#certificate-p{
+  margin: 0px;
+}
+#certificate-a{
+  margin-bottom: 36px;
+}
+
 /*
 .git {
   	-moz-animation: git 2s ease;
