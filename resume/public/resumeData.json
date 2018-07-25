@@ -53,23 +53,23 @@
         "degree":"Bachiller",
         "graduated":"Noviembre 2011",
         "description":"Curse los grados 10° y 11° en el colegio nacional de sugamuxi preparandome para el ingreso a la vida universitaria",
-        "certificate":""
+        "certificate":"https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/high_school_certificate.jpg"
 
       },
       {
         "school":"UIS - Universidad Industrial de Santander",
         "degree":"Ingenieria de Sistemas",
         "graduated":"-",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
-        "certificate":"https://www.google.com"
+        "description":"Trabajando o estuando con compañeros, amigos y maestros mejoré mis habilidades y conocimientos en el campo de la ingeniería de sistemas, el trabajo en equipo y el autoaprendisaje. Logrando de esta manera la realizacion de proyectos, cursos o talleres dentro y fuera de la Universidad",
+        "certificate":"##########"
 
       },
       {
-        "school":"School #1 Maybe College?",
+        "school":"Grupo Geomática - UIS",
         "degree":"Diplomado en Computación Movil",
         "graduated":"Marzo 2018",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
-        "certificate":"https://www.google.com"
+        "description":"Primeramente se estudiaron las ventjas en el uso de tecnologias moviles y la necesidad de tener conocimientos sobre la programación en dicha tecnologia. Se estuiaron lenguajes para programcion movil como los es JAVA y LUA, usando estos lenuajes se realizaron varios proyectos",
+        "certificate":"##########3"
 
       }
     ],
