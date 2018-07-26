@@ -53,7 +53,7 @@
         "degree":"Bachiller",
         "graduated":"Noviembre 2011",
         "description":"Curse los grados 10° y 11° en el colegio nacional de sugamuxi preparandome para el ingreso a la vida universitaria",
-        "certificate":"https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/high_school_certificate.jpg"
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/high_school_certificate.pdf"
 
       },
       {
@@ -79,29 +79,36 @@
         "degree":"Curso de Redes, Niveles I y II",
         "graduated":"Febrero 2017",
         "description":"Curso virtual ofrecido por Cisco donde se estudiaron los principios basicos de routing y swiching, cursos elaborados en la clase de redes de la UIS, dirigidas pro el profesor Pedro Trujillo.",
-        "certificate":"https://www.google.com"
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/cisco_certificates_1%262.pdf"
       },
 
       {
-        "school":"School #1 Maybe College?",
-        "degree":"Curso Derechos de autor",
+        "school":"Dirección Nacional de Derechos de Autor",
+        "degree":"Derechos de autor en la industria del software",
         "graduated":"Junio 2018",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
-        "certificate":"https://www.google.com"
+        "description":"Mediante lecturas y casos de uso se estudiaron los distintos derechos y deberes con los que cuentan los desarrolladores y la industria en el pais, tambien se estudio la importancia de licenciar el sotware.",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/copyrigth_software_colombia_certificate.pdf"
       },
       {
         "school":"Two Scoops Press",
-        "degree":"Curso Creating and Distributing Python Package",
+        "degree":"Creating and Distributing Python Package",
         "graduated":"Marzo 2018",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
-        "certificate":"https://www.google.com"
+        "description":"Se estudiaron las distintas tecnicas y herramientas usadas a las hora de crear y mantener un paquete en Python. Herramientas como coockicutter, Travis, Read the Docs, entre otras",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/python_packages_certificate.pdf"
       },
       {
         "school":"Platzi",
-        "degree":"Curso React y Redux",
+        "degree":"React.js",
         "graduated":"Junio 2018",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc.",
-        "certificate":"https://www.google.com"
+        "description":"Con el elaboracion de un proyecto se estudio el funcionamiento de React, con el fin de aprender sobre esta herramienta y poder usarla en distintos proyectos.",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/react_certificate.pdf"
+      },
+      {
+        "school":"Platzi",
+        "degree":"Redux.js",
+        "graduated":"Junio 2018",
+        "description":"Con el elaboracion de un proyecto se estudio el funcionamiento de Redux, con el fin de aprender sobre esta herramienta y poder usarla en distintos proyectos.",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/redux_certificate.pdf"
       }
 
 
@@ -110,8 +117,8 @@
       {
         "company":"Chasegroup",
         "title":"Desarrollador Backend",
-        "years":"Febrero 2017 - ##",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "years":"Febrero 2017 - Octubre 2017",
+        "description":"Encargado de la creación de una plataforma web que servia como plataforma auxiliar al proyecto Sevent, un ChatBot de información de eventos. Se trabajo con Flask, para la elaboración de dicha plataforma auxiliar, la cual se encargaba de llenar la base de datos de Sevent, tomando eventos de Facebook."
       },
       {
         "company":"Universidad Industrial de Santander",
@@ -167,49 +174,15 @@
 }
     ]
   },
-  "portfolio":{
-    "projects": [
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
-      }
-    ]
-  },
   "testimonials":{
     "testimonials":[
       {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
+        "text":"Sergio Martínez - Miembro de Chasegroup - 3123858680.",
+        "user":"Laboral"
       },
       {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
+        "text":"David Fernando Gutiérrez - Amigo de la Universidad - 3044811962",
+        "user":"Personal"
       }
     ]
   }
