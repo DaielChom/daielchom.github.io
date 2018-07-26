@@ -4,18 +4,17 @@
     "occupation":"Estudiante ingeniería de Sistemas en la Universidad Industrial de Santander",
     "description":"Con la ayuda de amigos y maestros estoy enfocando mi carrera en Machine Learning, Python y Software Libre. Oriundo de Aguazul - Casanare, amo el joropo y la tierra llanera. Me considero responsable y la puntualidad es muy importante para mí",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"Soy Aguazuleño, me gusta el joropo y la tierra llanera. Estudio Ingenieria de Sistemas en la Universidad de Santander, apoyo el Software libre y estoy enfocando mi carrera al desarrollo y a machine learning realizando distintos cursos virtuales. Mi distribucion favorita es Xubuntu y en mi proyecto de grado uso redes neuronales para detectar el estreato social de una zona urbana, dicho trabajo se puede encontrar en mi Github, en el cual tengo varios proyectos en los que he trabajado. Me considero una persona responsable y la puntualidad es muy importante para mi. Me gusta asistir a eventos culturales y en mis tiempos de ocio me gusta jugar video juegos o ver Anime.",
     "email": "danielcarvajalpatino@gmail.com",
     "phone": "3115315773",
     "address":{
-      "street":"#########################################################",
-      "city":"Bogota",
-      "state":"Cundinamarca",
+      "street":"Carrera 21 N° 9 - 22",
+      "city":"Aguazul",
+      "state":"Casanare",
       "zip": ""
     },
     "website": "http://www.daielchom.github.io",
-    "resumedownload":"../../documents/",
+    "resumedownload":"https://github.com/DaielChom/daielchom.github.io/raw/master/documents/Daniel_C_Patiño.pdf",
     "social":[
       {
         "name":"github",
@@ -47,109 +46,143 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Las Habilidades y herramientas que manejo son las siguientes, con un enfoque en Machine Learning",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Colegio Nacional de Sugamuxi",
+        "degree":"Bachiller",
+        "graduated":"Noviembre 2011",
+        "description":"Curse los grados 10° y 11° en el colegio nacional de sugamuxi preparandome para el ingreso a la vida universitaria",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/high_school_certificate.pdf"
+
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"UIS - Universidad Industrial de Santander",
+        "degree":"Ingenieria de Sistemas",
+        "graduated":"-",
+        "description":"Trabajando o estuando con compañeros, amigos y maestros mejoré mis habilidades y conocimientos en el campo de la ingeniería de sistemas, el trabajo en equipo y el autoaprendisaje. Logrando de esta manera la realizacion de proyectos, cursos o talleres dentro y fuera de la Universidad",
+        "certificate":"##########"
+
+      },
+      {
+        "school":"Grupo Geomática - UIS",
+        "degree":"Diplomado en Computación Movil",
+        "graduated":"Marzo 2018",
+        "description":"Primeramente se estudiaron las ventjas en el uso de tecnologias moviles y la necesidad de tener conocimientos sobre la programación en dicha tecnologia. Se estuiaron lenguajes para programcion movil como los es JAVA y LUA, usando estos lenuajes se realizaron varios proyectos",
+        "certificate":"##########3"
+
       }
+    ],
+    "courses":[
+      {
+        "school":"CCNA - Cisco Networking Academy",
+        "degree":"Curso de Redes, Niveles I y II",
+        "graduated":"Febrero 2017",
+        "description":"Curso virtual ofrecido por Cisco donde se estudiaron los principios basicos de routing y swiching, cursos elaborados en la clase de redes de la UIS, dirigidas pro el profesor Pedro Trujillo.",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/cisco_certificates_1%262.pdf"
+      },
+
+      {
+        "school":"Dirección Nacional de Derechos de Autor",
+        "degree":"Derechos de autor en la industria del software",
+        "graduated":"Junio 2018",
+        "description":"Mediante lecturas y casos de uso se estudiaron los distintos derechos y deberes con los que cuentan los desarrolladores y la industria en el pais, tambien se estudio la importancia de licenciar el sotware.",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/copyrigth_software_colombia_certificate.pdf"
+      },
+      {
+        "school":"Two Scoops Press",
+        "degree":"Creating and Distributing Python Package",
+        "graduated":"Marzo 2018",
+        "description":"Se estudiaron las distintas tecnicas y herramientas usadas a las hora de crear y mantener un paquete en Python. Herramientas como coockicutter, Travis, Read the Docs, entre otras",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/python_packages_certificate.pdf"
+      },
+      {
+        "school":"Platzi",
+        "degree":"React.js",
+        "graduated":"Junio 2018",
+        "description":"Con el elaboracion de un proyecto se estudio el funcionamiento de React, con el fin de aprender sobre esta herramienta y poder usarla en distintos proyectos.",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/react_certificate.pdf"
+      },
+      {
+        "school":"Platzi",
+        "degree":"Redux.js",
+        "graduated":"Junio 2018",
+        "description":"Con el elaboracion de un proyecto se estudio el funcionamiento de Redux, con el fin de aprender sobre esta herramienta y poder usarla en distintos proyectos.",
+        "certificate":"https://github.com/DaielChom/daielchom.github.io/blob/master/certificates/redux_certificate.pdf"
+      }
+
+
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Chasegroup",
+        "title":"Desarrollador Backend",
+        "years":"Febrero 2017 - Octubre 2017",
+        "description":"Encargado de la creación de una plataforma web que servia como plataforma auxiliar al proyecto Sevent, un ChatBot de información de eventos. Se trabajo con Flask, para la elaboración de dicha plataforma auxiliar, la cual se encargaba de llenar la base de datos de Sevent, tomando eventos de Facebook."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Universidad Industrial de Santander",
+        "title":"Desarrollador",
+        "years":"Septiembre 2017 - Junio 2018",
+        "description":"Encargado de la actualizacion y mantenimiento del proyecto mooc-grader (https://github.com/DaielChom/mooc-grader) dirigido por el profesor Raul Ramos Pollan. Se trabajo en el mejoramiento de un framework implementado en jupyter notebook para la calificacion y adminsitracon de tareas, evalucaciones y talleres, usando La API de google para hojas de calculo."
+      },
+      {
+        "company": "Escuela de Matematicas - Universidad Industrial de Santander",
+        "title": "Administrador de sala de computo",
+        "years": "Agsto 2016 - Junio 2017",
+        "description": "Encargado de administrar las salas de computo de la escuela de Matematicas de la Universidad Industrial de Santander."
       }
     ],
     "skills":[
       {
-        "name":"Git",
-        "level":"60%"
+        "name":"MACHINE Learning: Python, scikit-learn, numpy, pandas, Jupyter, Matplotlib",
+        "level":"75%"
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
+        "name":"desarrollo: GIT, GNU-LINUX, JAVA, GOOGLE-APIS",
+        "level":"70%"
       },
       {
-        "name":"ReactJs",
+        "name":"DISEÑO: Inkscape, CorelDraw",
+        "level":"70%"
+      },
+      {
+        "name":"BACKEND: FLASK",
         "level":"50%"
       },
       {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%"
-      },
-      {
-        "name":"VueJs",
+        "name":"FRONTEND: HTML, JS, CSS, SASS, REACT, HAML, Materialize, Normalaize",
         "level":"50%"
       },
       {
-        "name":"MongoDB",
-        "level":"80%"
+        "name":"MOVIL: ANDORID, CORONALAB",
+        "level":"30%"
       }
-    ]
-  },
-  "portfolio":{
-    "projects": [
+    ],
+    "volunteer":[
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "company": "Comunidad Universitaria de Software Libre - CUSOL-UIS",
+        "title": "Miembro",
+        "years": "Agsto 2016 - Junio 2017",
+        "description": "Apoyo en la organizacion de actividades para la comunidad universitaria como talleres, eventos, cineforos, etc. Se apoyo en la realizacion del Software Freedom Day del año 2016"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
-      }
+        "company": "Centro de Estudios de Ingenieria de Sistemas - CEIS-UIS",
+        "title": "Miembro",
+        "years": "Marzo 2016 - Febrero 2017",
+        "description": "Apoyo en la adminstracion y buen funcionamiento del centro de estudios de Ing. de Sistemas de la Universidad Industrial de Santander"
+}
     ]
   },
   "testimonials":{
     "testimonials":[
       {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
+        "text":"Sergio Martínez - Miembro de Chasegroup - 3123858680.",
+        "user":"Laboral"
       },
       {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
+        "text":"David Fernando Gutiérrez - Amigo de la Universidad - 3044811962",
+        "user":"Personal"
       }
     ]
   }

@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Daniel Carvajal Patiño",
+    "name": "Daniel C. Patiño",
     "label": "Estudiante",
     "picture": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/images/profilepic.jpg",
     "email": "danielcarvajalpatino@gmail.com",
@@ -8,11 +8,11 @@
     "website": "https://github.com/DaielChom",
     "summary": "Soy un estudiante universitario y me distingo por ser responsable, honesto, comprometido con mis labores, organizado con el tiempo y las tareas que se me son asignadas",
     "location": {
-      "address": "Calle 17 N° 29 49",
+      "address": "",
       "postalCode": "",
-      "city": "Bucaramanga",
+      "city": "",
       "countryCode": "Co",
-      "region": "Santander"
+      "region": ""
     },
     "profiles": [
       {
@@ -24,6 +24,11 @@
         "network": "Telegram",
         "username": "daielchom",
         "url": "http://telegram.me/daielchom"
+      },
+      {
+        "network":"Linkedin",
+        "url":"https://www.linkedin.com/in/daielchom/",
+        "username":"daielchom"
       },
       {
         "network": "DeviantART",
@@ -42,12 +47,12 @@
       "summary": "Trabajo como desarrollador para el servicio web Sevent."
     },
     {
-      "company": "UIS",
+      "company": "Universidad Industrial de Santander",
       "position": "Desarrollador",
       "website": "https://github.com/DaielChom/mooc-grader",
       "startDate": "2017-09",
-      "endDate": "2017-12",
-      "summary": "Encargado de la actualizacion del proyecto mooc-grader dirigido por el profesor Raul Ramos de la escuela de Ingenieria de Sistemas."
+      "endDate": "2018-06",
+      "summary":"Encargado de la actualizacion y mantenimiento del proyecto mooc-grader (https://github.com/DaielChom/mooc-grader) dirigido por el profesor Raul Ramos Pollan. Se trabajo en el mejoramiento de un framework implementado en jupyter notebook para la calificacion y adminsitracon de tareas, evalucaciones y talleres, usando La API de google para hojas de calculo."
     },
     {
       "company": "Escuela de Matematicas UIS",
