@@ -2,7 +2,7 @@
   "basics": {
     "name": "Daniel C. Patiño",
     "label": "Estudiante",
-    "picture": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/images/profilepic.jpg",
+    "picture": "https://daielchom.github.io/images/profilepic.jpg",
     "email": "danielcarvajalpatino@gmail.com",
     "phone": "3115315773",
     "website": "https://github.com/DaielChom",
@@ -56,8 +56,8 @@
       "company": "Chasegroup",
       "position": "Desarrollador Backend",
       "website": "https://github.com/chasegroup",
-      "startDate": "2017-02 - 2017-09",
-      "endDate": "",
+      "startDate": "2017-02",
+      "endDate": "2017-09",
       "summary": "Encargado de la creación de una plataforma web que servía como plataforma auxiliar al proyecto Sevent, un ChatBot de información de eventos. Se trabajo con Flask, para la elaboración de dicha plataforma auxiliar, la cual se encargaba de llenar la base de datos de Sevent, tomando eventos de Facebook."
     },
     {
@@ -185,12 +185,7 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "Frances",
-      "fluency": "A2"
-    }
-  ],
+
   "interests": [
     {
       "name": "Software Libre",

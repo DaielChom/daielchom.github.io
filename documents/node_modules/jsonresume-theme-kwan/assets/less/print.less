@@ -1,0 +1,52 @@
+@media print {
+
+    body {
+        font-size: 10pt;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    .pagebreak {
+        page-break-before: always;
+    }
+
+    .background-card h4:not(:first-child) {
+        margin-top: 0 !important;
+    }
+
+    .card {
+        border: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .contact-details .detail .icon {
+        color: #888 !important;
+    }
+    .background-card h4 {
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+        margin-top: 1em !important;
+    }
+    h4 > .fa {
+        display: none !important;
+    }
+    .card-nested {
+        padding: .5rem 0 .5rem 0;
+    }
+    .labels {
+        display: inline;
+    }
+    .skill-info {
+        margin-left: 0;
+    }
+    
+    blockquote {
+        font-size: 100%;
+    }
+}

@@ -38,3 +38,7 @@ Instrucciones si se quiere actualizar el `pdf` del curriculum.
     $ sudo apt-get install wkhtmltopdf
     $ npm i jsonresume-theme-stackoverflow
     $ hackmyresume build resume.json to Daniel_C_Patiño.pdf -t node_modules/jsonresume-theme-stackoverflow
+
+* jsonresume-theme-stackoverflow
+* jsonresume-theme-short
+* jsonresume-theme-flat
