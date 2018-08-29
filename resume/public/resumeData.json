@@ -29,19 +29,11 @@
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/daielchom/",
         "className":"fa fa-linkedin"
-
       },
-
-
-
       {
-
         "name":"telegram",
-
         "url":"https://www.telegram.me/daielchom",
-
         "className":"fa fa-inbox"
-
       },
 
       {

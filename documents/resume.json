@@ -8,11 +8,11 @@
     "website": "https://github.com/DaielChom",
     "summary": "Soy Aguazuleño, me gusta el joropo y la tierra llanera. Estudio Ingeniería de Sistemas en la Universidad de Santander, apoyo el Software libre y estoy enfocando mi carrera al desarrollo y a machine learning realizando distintos cursos virtuales. Mi distribución favorita es Xubuntu y en mi proyecto de grado uso redes neuronales para detectar el estrato social de una zona urbana, dicho trabajo se puede encontrar en mi Github, en el cual tengo varios proyectos en los que he trabajado. Me considero una persona responsable y la puntualidad es muy importante para mí. Me gusta asistir a eventos culturales y en mis tiempos de ocio me gusta jugar video juegos o ver Anime.",
     "location": {
-      "address": "",
+      "address": "Carrera 21 N° 9 - 22",
       "postalCode": "",
-      "city": "",
+      "city": "Aguazul",
       "countryCode": "Co",
-      "region": ""
+      "region": "Casanare"
     },
     "profiles": [
       {
@@ -44,6 +44,14 @@
     ]
   },
   "work": [
+    {
+      "company": "Frontierx",
+      "position": "Desarrollador",
+      "website": "Frontierx",
+      "startDate": "2018-08",
+      "endDate": "",
+      "summary": "Apoyo en las tareas de post-procesado para uno de los proyectos de Frontierx. Se usó el Framework Robosat y funciones propias para mejorar la visualización de los resultados de un modelo de predicción que usaba imágenes satelitales."
+    },
     {
       "company": "Chasegroup",
       "position": "Desarrollador Backend",
