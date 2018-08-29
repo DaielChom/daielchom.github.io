@@ -20,25 +20,14 @@
     "resumedownload":"https://github.com/DaielChom/daielchom.github.io/raw/master/documents/Daniel_C_Patiño.pdf",
 
     "social":[
-
       {
-
         "name":"github",
-
         "url":"http://github.com/daielchom",
-
         "className":"fa fa-github"
-
       },
-
-
-
       {
-
         "name":"linkedin",
-
         "url":"https://www.linkedin.com/in/daielchom/",
-
         "className":"fa fa-linkedin"
 
       },
@@ -102,29 +91,20 @@
       },
 
       {
-
         "school":"UIS - Universidad Industrial de Santander",
-
         "degree":"Ingeniería de Sistemas",
-
-        "graduated":"-",
-
+        "graduated":"Septiembre 2018",
         "description":"Trabajando o estudiando con compañeros, amigos y maestros mejoré mis habilidades y conocimientos en el campo de la ingeniería de sistemas, el trabajo en equipo y el autoaprendizaje. Logrando de esta manera la realización de proyectos, cursos o talleres dentro y fuera de la Universidad",
-
         "certificate":"##########"
-
-
-
       },
 
       {
 
         "school":"Grupo Geomática - UIS",
-
         "degree":"Diplomado en Computación Móvil",
         "graduated":"Marzo 2018",
         "description":"Primeramente se estudiaron las ventajas en el uso de tecnologías móviles y la necesidad de tener conocimientos sobre la programación en dicha tecnología. Se estudiaron lenguajes para programación móvil como los es JAVA y LUA, usando estos lenguajes se realizaron varios proyectos",
-        "certificate":"##########3"
+        "certificate":"##########"
       }
 
     ],
@@ -210,43 +190,31 @@
     ],
 
     "work":[
-
       {
-
-        "company":"Chasegroup",
-
-        "title":"Desarrollador Backend",
-
-        "years":"Febrero 2017 - Octubre 2017",
-
-        "description":"Encargado de la creación de una plataforma web que servía como plataforma auxiliar al proyecto Sevent, un ChatBot de información de eventos. Se trabajo con Flask, para la elaboración de dicha plataforma auxiliar, la cual se encargaba de llenar la base de datos de Sevent, tomando eventos de Facebook."
-
-      },
-
-      {
-
-        "company":"Universidad Industrial de Santander",
-
+        "company":"Frontierx",
         "title":"Desarrollador",
-
-        "years":"Septiembre 2017 - Junio 2018",
-
-        "description":"Encargado de la actualización y mantenimiento del proyecto mooc-grader (https://github.com/DaielChom/mooc-grader) dirigido por el profesor Raúl Ramos Pollan. Se trabajo en el mejoramiento de un Framework implementado en Jupyter notebook para la calificación y administración de tareas, evaluaciones y talleres, usando La API de Google para hojas de cálculo."
-
+        "years":"Agosto 2018 - Actualidad",
+        "description":"Apoyo en las tareas de post-procesado para uno de los proyectos de Frontierx. Se usó el Framework Robosat y funciones propias para mejorar la visualización de los resultados de un modelo de predicción que usaba imágenes satelitales."
       },
 
       {
-
+        "company":"Chasegroup",
+        "title":"Desarrollador Backend",
+        "years":"Febrero 2017 - Octubre 2017",
+        "description":"Encargado de la creación de una plataforma web que servía como plataforma auxiliar al proyecto Sevent, un ChatBot de información de eventos. Se trabajo con Flask, para la elaboración de dicha plataforma auxiliar, la cual se encargaba de llenar la base de datos de Sevent, tomando eventos de Facebook."
+      },
+      {
+        "company":"Universidad Industrial de Santander",
+        "title":"Desarrollador",
+        "years":"Septiembre 2017 - Junio 2018",
+        "description":"Encargado de la actualización y mantenimiento del proyecto mooc-grader (https://github.com/DaielChom/mooc-grader) dirigido por el profesor Raúl Ramos Pollan. Se trabajo en el mejoramiento de un Framework implementado en Jupyter notebook para la calificación y administración de tareas, evaluaciones y talleres, usando La API de Google para hojas de cálculo."
+      },
+      {
         "company": "Escuela de Matemáticas - Universidad Industrial de Santander",
-
         "title": "Administrador de sala de computo",
-
         "years": "Agsto 2016 - Junio 2017",
-
         "description": "Encargado de administrar las salas de computo de la escuela de Matemáticas de la Universidad Industrial de Santander."
-
       }
-
     ],
 
     "skills":[
@@ -302,33 +270,19 @@
     ],
 
     "volunteer":[
-
       {
-
         "company": "Comunidad Universitaria de Software Libre - CUSOL-UIS",
-
         "title": "Miembro",
-
         "years": "Agsto 2016 - Junio 2017",
-
         "description": "Apoyo en la organización de actividades para la comunidad universitaria como talleres, eventos, cine foros, etc. Se apoyo en la realización del Software Freedom Day del año 2016"
-
       },
-
       {
-
         "company": "Centro de Estudios de Ingeniería de Sistemas - CEIS-UIS",
-
         "title": "Miembro",
-
         "years": "Marzo 2016 - Febrero 2017",
-
         "description": "Apoyo en la administración y buen funcionamiento del centro de estudios de Ing. de Sistemas de la Universidad Industrial de Santander"
-
 }
-
     ]
-
   },
 
   "testimonials":{

@@ -91,29 +91,20 @@
       },
 
       {
-
         "school":"UIS - Universidad Industrial de Santander",
-
         "degree":"Ingeniería de Sistemas",
-
-        "graduated":"-",
-
+        "graduated":"Septiembre 2018",
         "description":"Trabajando o estudiando con compañeros, amigos y maestros mejoré mis habilidades y conocimientos en el campo de la ingeniería de sistemas, el trabajo en equipo y el autoaprendizaje. Logrando de esta manera la realización de proyectos, cursos o talleres dentro y fuera de la Universidad",
-
         "certificate":"##########"
-
-
-
       },
 
       {
 
         "school":"Grupo Geomática - UIS",
-
         "degree":"Diplomado en Computación Móvil",
         "graduated":"Marzo 2018",
         "description":"Primeramente se estudiaron las ventajas en el uso de tecnologías móviles y la necesidad de tener conocimientos sobre la programación en dicha tecnología. Se estudiaron lenguajes para programación móvil como los es JAVA y LUA, usando estos lenguajes se realizaron varios proyectos",
-        "certificate":"##########3"
+        "certificate":"##########"
       }
 
     ],
@@ -199,6 +190,12 @@
     ],
 
     "work":[
+      {
+        "company":"Frontierx",
+        "title":"Desarrollador",
+        "years":"Agosto 2018 - Actualidad",
+        "description":"Apoyo en las tareas de post-procesado para uno de los proyectos de Frontierx. Se usó el Framework Robosat y funciones propias para mejorar la visualización de los resultados de un modelo de predicción que usaba imágenes satelitales."
+      },
 
       {
         "company":"Chasegroup",
