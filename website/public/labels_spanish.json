@@ -1,0 +1,27 @@
+{
+    "header":{
+        "home":"Inicio",
+        "about":"Acerca De",
+        "resume":"currículum",
+        "testimonials":"referencias",
+        "live":"Vivo en",
+        "occupation":"soy "
+    },
+    "about":{
+        "me":"Acerca de mi",
+        "contact_details":"Detalles de contacto",
+        "download":"Descargar currículum"
+    },
+    "resume":{
+        "certificate":"certificado",
+        "experience":"Experiencia",
+        "education":"Educación",
+        "courses":"Cursos",
+        "volunteering":"voluntariado",
+        "skills":"habilidades"      
+    },
+    "testimonials":{
+        "testimonials":"referencias"
+    }
+    
+}

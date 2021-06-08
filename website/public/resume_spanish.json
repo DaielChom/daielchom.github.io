@@ -1,0 +1,220 @@
+{
+  "main": {
+    "name": "Daniel C. Patiño",
+    "image": "profilepic.png",
+    "phone": "3115315773",
+    "email": "danielcarvajalpatino@gmail.com",
+    "address": {
+      "street": "Calle 56 Sur # 28'42. Apto 402",
+      "city": "Bogotá",
+      "state": "Cundinamarca",
+      "zip": ""
+    },
+    "occupation": "Analista de datos en Frontierx",
+    "description": "He trabajado en distintos proyectos que implican el uso de analítica de datos e inteligencia artificial, el más reciente de ellos implicó el uso de modelos generativos profundos para la producción de datos sintéticos del mercado de materias primas que sirvieran como insumo a predicciones y estrategias de trading",
+    "bio": "He enfocado mi carrera en analítica de datos e inteligencia artificial a través de diferentes estudios y experiencia laboral. Apoyo el software libre y en mis tiempos libres suelo dibujar. Soy oriundo de Aguazul - Casanare, me gusta el joropo y la tierra llanera. Me considero responsable y la puntualidad es muy importante para mí.",
+    "website": "http://www.daielchom.github.io",
+    "resumedownload": "https://github.com/DaielChom/daielchom.github.io/raw/master/resume/spanish_version.pdf",
+    "social": [
+      {
+        "name": "telegram",
+        "url": "https://www.telegram.me/daielchom",
+        "className": "fa fa-telegram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/daielchom",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/daielchom/",
+        "className": "fa fa-linkedin-square"
+      },
+      {
+        "name": "separator",
+        "url": "",
+        "className": "fa fa-ll"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/DaielChom",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "deviantart",
+        "url": "https://www.deviantart.com/daielchom",
+        "className": "fa fa-deviantart"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/danielc.patino/",
+        "className": "fa fa-instagram"
+      }
+    ]
+  },
+  "resume": {
+    "work": [
+      {
+        "company": "Frontierx",
+        "title": "Analista de datos",
+        "years": "Agosto 2018 - Actualidad",
+        "description": "Realizo tareas de analítica de datos, inteligencia artificial y desarrollo vinculados al convenio entre FRONTIERX SAS y la empresa MKS Sarl en un proyecto de diseño, implementación, simulación, visualización y despliegue de estrategias de trading en el mercado de materias primas basadas en comportamientos y nociones de los traders de la empresa. Realicé tareas de analítica de datos e inteligencia artificial vinculados al convenio entre FRONTIERX SAS y la empresa hAItta Sarl, de acuerdo a las actividades planteadas en el proyecto de posicionamiento de cartera para la empresa Wind To Market, la cual operaba en el mercado de energía español. Elaboré tareas de post-procesado para uno de los proyectos de FRONTIERX usando el Framework Robosat y funciones propias para mejorar la visualización de los resultados de un modelo de predicción que usaba imágenes satelitales."
+      },
+      {
+        "company": "Chasegroup",
+        "title": "Desarrollador Backend",
+        "years": "Febrero 2017 - Octubre 2017",
+        "description": "Encargado de la creación de una plataforma web auxiliar al proyecto Sevent, un ChatBot de información de eventos. Se trabajó con Flask para la elaboración de dicha plataforma, la cual se encargaba de llenar la base de datos de Sevent, tomando eventos de Facebook."
+      },
+      {
+        "company": "Universidad Industrial de Santander",
+        "title": "Desarrollador",
+        "years": "Septiembre 2017 - Junio 2018",
+        "description": "Encargado de la actualización y mantenimiento del proyecto mooc-grader dirigido por el profesor Raúl Ramos Pollán. Se trabajó en el mejoramiento de un Framework implementado en Jupyter notebook para la calificación y administración de tareas, evaluaciones y talleres, usando La API de Google para hojas de cálculo."
+      },
+      {
+        "company": "Escuela de Matemáticas - Universidad Industrial de Santander",
+        "title": "Administrador de sala de computo",
+        "years": "Julio 2016 - Junio 2017",
+        "description": "Encargado de administrar las salas de cómputo de la escuela de Matemáticas de la Universidad Industrial de Santander."
+      }
+    ],
+    "education": [
+      {
+        "school": "Universidad de Antioquia",
+        "degree": "Maestría en Ingeniería",
+        "graduated": "Actualmente",
+        "description": "Enfocando la maestría en la línea de investigación de Deep learning ofrecida por el profesor Raúl Ramos Pollán, se está llevando a cabo un proyecto para determinar el impacto de uso de datos sintéticos producidos por modelos generativos profundos en predicciones y estrategias de trading del mercado de materias primas.",
+        "certificate": ""
+      },
+      {
+        "school": "Grupo Geomática - Universidad Industrial de Santander",
+        "degree": "Diplomado en Computación Móvil",
+        "graduated": "Mayo 2018",
+        "description": "Se estudiaron las ventajas del uso de tecnologías móviles para el desarrollo de proyectos. Se determinó la necesidad de tener conocimientos sobre la programación en estas tecnologías y se realizaron varios proyectos usando lenguajes de alto nivel como Java y Lua. Se usó Java en la programación de aplicaciones con Android Studio y Lua para desarrollos multiplataforma usando el Framework Corona Lab.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/diplomado.pdf"
+      },
+      {
+        "school": "Universidad Industrial de Santander",
+        "degree": "Ingeniería de Sistemas",
+        "graduated": "Septiembre 2018",
+        "description": "Trabajando y estudiando con compañeros, amigos y maestros se desarrollaron habilidades y conocimientos en el campo de la ingeniería de sistemas, el trabajo en equipo y el autoaprendizaje. Logrando de esta manera la realización de proyectos, cursos o talleres dentro y fuera de la Universidad. Como proyecto de grado se realizó la estimación del nivel de estratificación socioeconómico urbano usando redes neuronales convolucionales sobre imágenes satelitales con información aumentada.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/sistemas.pdf"
+      },
+      {
+        "school": "Colegio Nacional de Sugamuxi",
+        "degree": "Bachiller",
+        "graduated": "Diciembre 2011",
+        "description": "Cursé los grados 10° y 11° en el colegio nacional de sugamuxi preparándome para el ingreso a la vida universitaria.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/bachillerato.pdf"
+      }
+    ],
+    "courses": [
+      {
+        "school": "Coursera",
+        "degree": "Tensorflow developer",
+        "graduated": "Octubre 2019",
+        "description": "Introducción al desarrollo de modelos de deep learning con el framework TensorFlow a través de 4 cursos virtuales.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/tensorflow.pdf"
+      },
+      {
+        "school": "Coursera",
+        "degree": "Deep Learning",
+        "graduated": "Julio 2019",
+        "description": "Introducción teórico práctica a uno de los campos de la inteligencia artificial, se estudiaron distintos modelos y arquitecturas utilizadas en el aprendizaje profundo.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/deep_learning.pdf"
+      },
+      {
+        "school": "Dirección Nacional de Derechos de Autor",
+        "degree": "Derechos de autor en la industria del software",
+        "graduated": "Junio 2018",
+        "description": "Mediante lecturas y casos de uso se estudiaron los distintos derechos y deberes con los que cuentan los desarrolladores y la industria en el país, también se estudió la importancia de licenciar el software.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/derechos_de_autor_para_la_industria_del_software.pdf"
+      },
+      {
+        "school": "Platzi",
+        "degree": "React.js",
+        "graduated": "Junio 2018",
+        "description": "Con la elaboración de un proyecto se estudió el funcionamiento de React, con el fin de aprender sobre esta herramienta y poder usarla en distintos proyectos.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/react.pdf"
+      },
+      {
+        "school": "Platzi",
+        "degree": "Redux.js",
+        "graduated": "Junio 2018",
+        "description": "Con la elaboración de un proyecto se estudió el funcionamiento de Redux, con el fin de aprender sobre esta herramienta y poder usarla en distintos proyectos.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/redux.pdf"
+      },
+      {
+        "school": "Two Scoops Press",
+        "degree": "Creating and Distributing Python Package",
+        "graduated": "Marzo 2018",
+        "description": "Se estudiaron las distintas técnicas y herramientas usadas a la hora de crear y mantener un paquete en Python. Herramientas como coockicutter, Travis, Read the Docs, entre otras.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/creating_and_distributing_python_packages.pdf"
+      },
+      {
+        "school": "Cisco Networking Academy",
+        "degree": "Curso de Redes, Niveles I y II",
+        "graduated": "Febrero 2017",
+        "description": "Curso virtual ofrecido por Cisco donde se estudiaron los principios básicos de routing y switching, cursos elaborados en la clase de redes de la Universidad Industrial de Santander, dirigidas por el profesor Pedro Trujillo.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/cisco.pdf"
+      }
+    ],
+    "volunteer": [
+      {
+        "company": "Comunidad Universitaria de Software Libre - CUSOL-UIS",
+        "title": "Miembro",
+        "years": "Abril 2016 - Febrero 2017",
+        "description": "Apoyo en la organización de actividades para la comunidad universitaria como talleres, eventos, cine foros, etc. Se apoyó en la realización del Software Freedom Day del año 2016."
+      },
+      {
+        "company": "Centro de Estudios de Ingeniería de Sistemas - CEIS-UIS",
+        "title": "Miembro",
+        "years": "Marzo 2016 - Febrero 2017",
+        "description": "Apoyo en la administración y buen funcionamiento del centro de estudios de Ing. de Sistemas de la Universidad Industrial de Santander."
+      }
+    ],
+    "skillmessage": "Las Habilidades y herramientas que manejo son las siguientes.",
+    "skills": [
+      {
+        "name": "machine learning: Python, scikit-learn, Tensorflow, numpy, pandas, Jupyter Notebooks, Matplotlib, Bokeh.",
+        "level": "70%"
+      },
+      {
+        "name": "desarrollo backend: GIT, GNU-LINUX, GOOGLE-APIS, docker, flask.",
+        "level": "60%"
+      },
+      {
+        "name": "desarrollo frontend: HTML, JS, CSS, REACT, Materialize, Normalaize",
+        "level": "50%"
+      },      
+      {
+        "name": "desarrollo móvil: java, ANDORID, CORONALAB",
+        "level": "30%"
+      },
+      {
+        "name": "DISEÑO gráfico: Inkscape, CorelDraw",
+        "level": "70%"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "name":"David Fernando Gutiérrez Ramírez",
+        "type":"Personal",
+        "description":"Amigo Universidad",
+        "phone":"3044811962",
+        "email":"dguti0917@gmail.com"
+      },
+      {
+        "name":"Christian Pinzon",
+        "type":"Personal",
+        "description":"Amigo Universidad",
+        "phone":"3017510346",
+        "email":"rdz.cristhian@gmail.com"
+      }
+    ]
+  }
+}

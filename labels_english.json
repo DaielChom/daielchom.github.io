@@ -1,0 +1,26 @@
+{
+    "header":{
+        "home":"Home",
+        "about":"About",
+        "resume":"resume",
+        "testimonials":"testimonials",
+        "live":"I live in ",
+        "occupation":"I'm"
+    },
+    "about":{
+        "me":"About me",
+        "contact_details":"Contact details",
+        "download":"Download resume"
+    },
+    "resume":{
+        "certificate":"certificate",
+        "experience":"experience",
+        "education":"education",
+        "courses":"courses",
+        "volunteering":"volunteering",
+        "skills":"skills"      
+    },
+    "testimonials":{
+        "testimonials":"testimonials"
+    }
+}

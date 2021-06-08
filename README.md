@@ -1,6 +1,6 @@
 # Curriculum vitae
 
-Curriculum disponible en el sitio [web](daielchom.github.io) y elaborado usando [react-resume-template](https://github.com/tbakerx/react-resume-template), una plantilla de react para el Curriculum.
+Curriculum disponible en el sitio [web](https://daielchom.github.io/) y elaborado usando [react-resume-template](https://github.com/tbakerx/react-resume-template), una plantilla de react para el Curriculum.
 
 #### Dependencias
 Se requiere de node y npm
@@ -15,6 +15,7 @@ Para instalar el repositorio.
     $ git clone https://github.com/DaielChom/daielchom.github.io.git
     $ cd daielchom.github.io/resume
     $ npm install
+    $ npm install react react-dom --save
 
 #### Edición
 Si se desean realizar cambios en la plantilla
@@ -30,15 +31,5 @@ Si se desean realizar cambios en la plantilla
 
   Se generará el proyecto en un nuevo directorio `build`. Copiar el contenido de dicho directorio en el directorio `daielchom.github.io` para que Github tome el archivo index y lo monte en la pagina `.io`
 
-### Convertir JSON a PDF
-Instrucciones si se quiere actualizar el `pdf` del curriculum.
-
-    $ cd documents
-    $ sudo npm install hackmyresume -g
-    $ sudo apt-get install wkhtmltopdf
-    $ npm i jsonresume-theme-stackoverflow
-    $ hackmyresume build resume.json to Daniel_C_Patiño.pdf -t node_modules/jsonresume-theme-stackoverflow
-
-* jsonresume-theme-stackoverflow
-* jsonresume-theme-short
-* jsonresume-theme-flat
+  ### Icons
+  The icons font used is [fontawesome](https://fontawesome.com/v4.7/icons/)

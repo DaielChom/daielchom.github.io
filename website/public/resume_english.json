@@ -1,0 +1,220 @@
+{
+  "main": {
+    "name": "Daniel C. Patiño",
+    "image": "profilepic.png",
+    "phone": "3115315773",
+    "email": "danielcarvajalpatino@gmail.com",
+    "address": {
+      "street": "Calle 56 Sur # 28'42. Apto 402",
+      "city": "Bogotá",
+      "state": "Cundinamarca",
+      "zip": ""
+    },
+    "occupation": "Data science and developer at Frontierx",
+    "description": "I have worked on several projects involving the use of data analytics and artificial intelligence, the most recent of which involved the use of deep generative models for the production of synthetic commodity market data to serve as input to predictions and trading strategies",
+    "bio": "I have focused my career in data science and artificial intelligence through different studies and work experience. I support free software and in my free time, I usually draw. I am a native of Aguazul - Casanare, I like the joropo, the Orinoquía region, and their culture. I consider myself responsible and punctuality is very important to me.",
+    "website": "http://www.daielchom.github.io",
+    "resumedownload": "https://github.com/DaielChom/daielchom.github.io/raw/master/resume/english_version.pdf",
+    "social": [
+      {
+        "name": "telegram",
+        "url": "https://www.telegram.me/daielchom",
+        "className": "fa fa-telegram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/daielchom",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/daielchom/",
+        "className": "fa fa-linkedin-square"
+      },
+      {
+        "name": "separator",
+        "url": "",
+        "className": "fa fa-ll"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/DaielChom",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "deviantart",
+        "url": "https://www.deviantart.com/daielchom",
+        "className": "fa fa-deviantart"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/danielc.patino/",
+        "className": "fa fa-instagram"
+      }
+    ]
+  },
+  "resume": {
+    "work": [
+      {
+        "company": "Frontierx",
+        "title": "Data science and Developer",
+        "years": "August 2018 - Present",
+        "description":"I perform data analytics, artificial intelligence, and development tasks linked to the agreement between FRONTIERX SAS and the company MKS Sarl in a project of design, implementation, simulation, visualization, and deployment of trading strategies in the commodities market based on behaviors and notions of the company's traders. I performed data analytics and artificial intelligence tasks related to the agreement between FRONTIERX SAS and the company hAItta Sarl, according to the activities proposed in the portfolio positioning project for the company Wind To Market, which operated in the Spanish energy market. I developed post-processing tasks for one of the FRONTIERX projects using the Robosat Framework and proprietary functions to improve the visualization of the results of a prediction model using satellite images."
+      },
+      {
+        "company": "Chasegroup",
+        "title": "Backend Developer",
+        "years": "February 2017 - October 2017",
+        "description": "Responsible for the creation of an auxiliary web platform for the Sevent project, an event information ChatBot. Worked with Flask for the development of this platform, which was in charge of filling Sevent's database, taking events from Facebook."
+      },
+      {
+        "company": "Universidad Industrial de Santander",
+        "title": "Developer",
+        "years": "September 2017 - June 2018",
+        "description": "Responsible for updating and maintenance of the mooc-grader project led by Professor Raúl Ramos Pollán. Worked on the improvement of a Framework implemented in Jupyter-Notebook for grading and administration of assignments, evaluations, and workshops, using Google API for spreadsheets."
+      },
+      {
+        "company": "Mathematics Faculty - Universidad Industrial de Santander",
+        "title": "Computer Room Administrator",
+        "years": "July 2016 - June 2017",
+        "description": "In charge of managing the computer rooms of the mathematics faculty of the Universidad Industrial de Santander."
+      }
+    ],
+    "education": [
+      {
+        "school": "Universidad de Antioquia",
+        "degree": "Master's Degree in Engineering.",
+        "graduated": "Present",
+        "description": "Focusing the master's degree on the Deep learning research line offered by Professor Raúl Ramos Pollán, a project is being carried out to determine the impact of using synthetic data produced by deep generative models in predictions and trading strategies in the commodities market.",
+        "certificate": ""
+      },
+      {
+        "school": "Geomática - Universidad Industrial de Santander",
+        "degree": "Mobile Computing Diploma",
+        "graduated": "May 2018",
+        "description": "The advantages of using mobile technologies for project development were studied. The need to know programming in these technologies was determined and several projects were carried out using high-level languages such as Java and Lua. Java was used in the programming of applications with Android Studio and Lua for multiplatform developments using the CoronaLab Framework.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/diplomado.pdf"
+      },
+      {
+        "school": "Universidad Industrial de Santander",
+        "degree": "System Engineering",
+        "graduated": "September 2018",
+        "description": "Working and studying with classmates, friends and teachers developed skills and knowledge in the field of systems engineering, teamwork, and self-learning. In this way, the realization of projects, courses, or workshops inside and outside the University was achieved. As a degree project, the estimation of the level of urban socioeconomic stratification was carried out using convolutional neural networks on satellite images with augmented information.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/sistemas.pdf"
+      },
+      {
+        "school": "Sugamuxi School",
+        "degree": "Bachelor",
+        "graduated": "December 2011",
+        "description": "I attended the 10th and 11th grades preparing myself to enter university life.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/bachillerato.pdf"
+      }
+    ],
+    "courses": [
+      {
+        "school": "Coursera",
+        "degree": "Tensorflow developer",
+        "graduated": "October 2019",
+        "description": "Introduction to the development of deep learning models with the TensorFlow framework through 4 virtual courses.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/tensorflow.pdf"
+      },
+      {
+        "school": "Coursera",
+        "degree": "Deep Learning",
+        "graduated": "July 2019",
+        "description": "A theoretical and practical introduction to one of the fields of artificial intelligence, different models, and architectures used in deep learning was studied.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/deep_learning.pdf"
+      },
+      {
+        "school": "National Copyright Office",
+        "degree": " Copyright in the software industry.",
+        "graduated": "June 2018",
+        "description": "Through readings and use cases, the different rights and duties of developers and the industry in the country were studied, as well as the importance of licensing software.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/derechos_de_autor_para_la_industria_del_software.pdf"
+      },
+      {
+        "school": "Platzi",
+        "degree": "React.js",
+        "graduated": "June 2018",
+        "description": "With the development of a project, we studied how React works, in order to learn about this tool and be able to use it in different projects.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/react.pdf"
+      },
+      {
+        "school": "Platzi",
+        "degree": "Redux.js",
+        "graduated": "June 2018",
+        "description": "With the development of a project, we studied how Redux works, in order to learn about this tool and be able to use it in different projects.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/redux.pdf"
+      },
+      {
+        "school": "Two Scoops Press",
+        "degree": "Creating and Distributing Python Package",
+        "graduated": "March 2018",
+        "description": "The different techniques and tools used when creating and maintaining a Python package were studied. Tools such as coockicutter, Travis, Read the Docs, among others.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/creating_and_distributing_python_packages.pdf"
+      },
+      {
+        "school": "Cisco Networking Academy",
+        "degree": "Networking Course, levels I and II.",
+        "graduated": "February 2017",
+        "description": "Virtual course offered by Cisco where they studied the basic principles of routing and switching, courses developed in the networking class at the Universidad Industrial de Santander, led by Professor Pedro Trujillo.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/cisco.pdf"
+      }
+    ],
+    "volunteer": [
+      {
+        "company": "Comunidad Universitaria de Software Libre - CUSOL-UIS",
+        "title": "Member",
+        "years": "April 2016 - February 2017",
+        "description": "Support in the organization of activities for the university community such as workshops, events, film forums, etc. Support was provided for the Software Freedom Day 2016."
+      },
+      {
+        "company": "Centro de Estudios de Ingeniería de Sistemas - CEIS-UIS",
+        "title": "Member",
+        "years": "March 2016 - February 2017",
+        "description": "Support in the administration and proper functioning of the Systems Engineering study center of the Universidad Industrial de Santander."
+      }
+    ],
+    "skillmessage": "The skills and tools that I manage are the following",
+    "skills": [
+      {
+        "name": "machine learning: Python, scikit-learn, Tensorflow, numpy, pandas, Jupyter Notebooks, Matplotlib, Bokeh.",
+        "level": "70%"
+      },
+      {
+        "name": "Backend Development: GIT, GNU-LINUX, GOOGLE-APIS, docker, flask.",
+        "level": "60%"
+      },
+      {
+        "name": "Frontend Development: HTML, JS, CSS, REACT, Materialize, Normalaize",
+        "level": "50%"
+      },      
+      {
+        "name": "Mobile Development: java, ANDORID, CORONALAB",
+        "level": "30%"
+      },
+      {
+        "name": "Graphical Design: Inkscape, CorelDraw",
+        "level": "70%"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "name":"David Fernando Gutiérrez Ramírez",
+        "type":"Personal",
+        "description":"University friend",
+        "phone":"3044811962",
+        "email":"dguti0917@gmail.com"
+      },
+      {
+        "name":"Christian Pinzon",
+        "type":"Personal",
+        "description":"University friend",
+        "phone":"3017510346",
+        "email":"rdz.cristhian@gmail.com"
+      }
+    ]
+  }
+}
