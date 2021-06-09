@@ -13,7 +13,7 @@ Se requiere de node y npm
 Para instalar el repositorio.
 
     $ git clone https://github.com/DaielChom/daielchom.github.io.git
-    $ cd daielchom.github.io/resume
+    $ cd daielchom.github.io/website
     $ npm install
     $ npm install react react-dom --save
 
@@ -21,13 +21,15 @@ Para instalar el repositorio.
 Si se desean realizar cambios en la plantilla
 
     $ cd daielchom.github.io
-    $ rm -rf ./css ./images ./js ./static asset-manifest.json favicon.ico index.html manifest.json resumeData.json service-worker.js
-    $ cd resume
+    $ rm -rf ./css ./images ./js ./static *.json favicon.ico index.html *.js
+    $ cd website
     $ npm start
   Se montará el proyecto en un servidor local. Editar los documentos en `public` o `src`.</br>
   Una vez terminados los cambios.
 
     $ npm run build
+    $ cp -r build/* ../
+    $ rm -rf build/
 
   Se generará el proyecto en un nuevo directorio `build`. Copiar el contenido de dicho directorio en el directorio `daielchom.github.io` para que Github tome el archivo index y lo monte en la pagina `.io`
 
