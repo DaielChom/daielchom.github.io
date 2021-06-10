@@ -18,7 +18,8 @@
         "education":"Educación",
         "courses":"Cursos",
         "volunteering":"voluntariado",
-        "skills":"habilidades"      
+        "skills":"habilidades",
+        "certificates":"certificados"  
     },
     "testimonials":{
         "testimonials":"referencias"

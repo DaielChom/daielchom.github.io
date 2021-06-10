@@ -10,7 +10,7 @@
       "state": "Cundinamarca",
       "zip": ""
     },
-    "occupation": "Data science and developer at Frontierx",
+    "occupation": "Data scientist and developer at Frontierx",
     "description": "I have worked on several projects involving the use of data analytics and artificial intelligence, the most recent of which involved the use of deep generative models for the production of synthetic commodity market data to serve as input to predictions and trading strategies",
     "bio": "I have focused my career in data science and artificial intelligence through different studies and work experience. I support free software and in my free time, I usually draw. I am a native of Aguazul - Casanare, I like the joropo, the Orinoquía region, and their culture. I consider myself responsible and punctuality is very important to me.",
     "website": "http://www.daielchom.github.io",
@@ -173,6 +173,14 @@
         "title": "Member",
         "years": "March 2016 - February 2017",
         "description": "Support in the administration and proper functioning of the Systems Engineering study center of the Universidad Industrial de Santander."
+      }
+    ],
+    "certificates":[
+      {
+        "company":"EF SET English Certificate",
+        "title":"64/100 (C1 ADVANCED)",
+        "obtained":"June 2021",
+        "certificate":"https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/english_EF_SET.pdf"
       }
     ],
     "skillmessage": "The skills and tools that I manage are the following",

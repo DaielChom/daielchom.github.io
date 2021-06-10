@@ -18,7 +18,8 @@
         "education":"education",
         "courses":"courses",
         "volunteering":"volunteering",
-        "skills":"skills"      
+        "skills":"skills",
+        "certificates":"certificates"     
     },
     "testimonials":{
         "testimonials":"testimonials"

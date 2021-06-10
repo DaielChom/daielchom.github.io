@@ -175,6 +175,14 @@
         "description": "Apoyo en la administración y buen funcionamiento del centro de estudios de Ing. de Sistemas de la Universidad Industrial de Santander."
       }
     ],
+    "certificates":[
+      {
+        "company":"EF SET English Certificate",
+        "title":"64/100 (C1 ADVANCED)",
+        "obtained":"Junio 2021",
+        "certificate":"https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/english_EF_SET.pdf"
+      }
+    ],
     "skillmessage": "Las Habilidades y herramientas que manejo son las siguientes.",
     "skills": [
       {
