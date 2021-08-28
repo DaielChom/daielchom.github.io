@@ -39,6 +39,7 @@ class App extends Component {
     $.ajax({
       url: '/resume_' + language + '.json',
       dataType: 'json',
+      async: false,
       cache: false,
       success: function (data) {
         this.setState({ resumeData: data });
@@ -59,6 +60,7 @@ class App extends Component {
       url: '/labels_' + language + '.json',
       dataType: 'json',
       cache: false,
+      async: false,
       success: function (data) {
         this.setState({ labels: data });
         this.setState({ labels_loading: true });        
