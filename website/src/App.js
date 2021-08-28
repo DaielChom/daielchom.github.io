@@ -18,8 +18,8 @@ class App extends Component {
       resumeData: {},
       labels: {},
 
-      data_loading:false,
-      labels_loading:false,
+      data_loading: false,
+      labels_loading: false,
     };
 
     ReactGA.initialize('UA-110570651-1');
@@ -31,7 +31,6 @@ class App extends Component {
   LanguageHandle(language) {
     this.getResumeData(language.target.value);
     this.getLabelsData(language.target.value);
-
   }
 
   getResumeData(language) {
@@ -39,42 +38,40 @@ class App extends Component {
     $.ajax({
       url: '/resume_' + language + '.json',
       dataType: 'json',
-      async: false,
+      //async: false,
       cache: false,
       success: function (data) {
         this.setState({ resumeData: data });
-        this.setState({ data_loading: true });        
+        this.setState({ data_loading: true });
 
       }.bind(this),
       error: function (xhr, status, err) {
         console.log(err);
-        alert(err);
+
       }
     });
-    
+
   }
 
   getLabelsData(language) {
-    
+
     $.ajax({
       url: '/labels_' + language + '.json',
       dataType: 'json',
+      //async: false,
       cache: false,
-      async: false,
       success: function (data) {
         this.setState({ labels: data });
-        this.setState({ labels_loading: true });        
+        this.setState({ labels_loading: true });
       }.bind(this),
       error: function (xhr, status, err) {
         console.log(err);
-        alert(err);
+
       }
     });
-    
+
 
   }
-
-  
 
   componentDidMount() {
     this.getLabelsData('spanish');
@@ -82,21 +79,19 @@ class App extends Component {
   }
 
   render() {
+
     
-    if (this.state.labels_loading & this.state.data_loading){
-      console.log('a', this.state)
+
       return (
         <div className="App">
           <Header data={this.state.resumeData.main} LanguageHandle={this.LanguageHandle} labels={this.state.labels.header} />
-          <About data={this.state.resumeData.main} labels={this.state.labels.about}/>
+          <About data={this.state.resumeData.main} labels={this.state.labels.about} />
           <Resume data={this.state.resumeData.resume} labels={this.state.labels.resume} />
-          <Testimonials data={this.state.resumeData.testimonials} labels={this.state.labels.testimonials}/>
+          <Testimonials data={this.state.resumeData.testimonials} labels={this.state.labels.testimonials} />
           <Footer data={this.state.resumeData.main} />
         </div>
       );
-    }
-    return <div></div>
-     
+    
   }
 }
 

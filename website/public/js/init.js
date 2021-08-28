@@ -37,27 +37,30 @@
 /* Highlight the current section in the navigation bar
 ------------------------------------------------------*/
 
-	var sections = $("section");
-	var navigation_links = $("#nav-wrap a");
-   
-	sections.waypoint({
-      
-      handler: function(event, direction) {
+    var sections = $("section");
+       
+    sections.waypoint({
 
-		   var active_section;
-   
-			active_section = $(this);
-			if (direction === "up") active_section = active_section.prev();
+       handler: function (event, direction) {
 
-			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+          var active_section;
 
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
+          active_section = $(this);
+          
+          if (direction === "up"){
+             active_section = active_section.prev();
+            }
 
-		},
-		offset: '35%'
+          var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+          let no_active = $('.current')
+                   
+          no_active.removeClass("current")
+          active_link.parent().addClass("current");
 
-	});
+       },
+       offset: '35%'
+
+    });
 
 
 /*----------------------------------------------------*/
