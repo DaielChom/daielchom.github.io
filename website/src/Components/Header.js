@@ -4,7 +4,7 @@ class Header extends Component {
 
    render() {
 
-      if (this.props.data) {
+      if (this.props.data && this.props.labels) {
          var name = this.props.data.name;
          var occupation = this.props.data.occupation;
          var description = this.props.data.description;
@@ -22,8 +22,8 @@ class Header extends Component {
                   <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
                   <select className='language-selector minimal' onChange={this.props.LanguageHandle}>
-                     <option value='spanish'>Español</option>
-                     <option value='english'>English</option>
+                     <option value='spanish' className='text-black'>Español</option>
+                     <option value='english' className='text-black'>English</option>
                   </select>
 
                   <ul id="nav" className="nav">

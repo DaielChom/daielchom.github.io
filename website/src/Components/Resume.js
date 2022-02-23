@@ -4,7 +4,7 @@ class Resume extends Component {
 
    render() {
 
-      if (this.props.data) {var skillmessage = this.props.data.skillmessage;
+      if (this.props.data && this.props.labels) {var skillmessage = this.props.data.skillmessage;
          var certi = this.props.labels.certificate
    
          var education = this.props.data.education.map(function (education) {

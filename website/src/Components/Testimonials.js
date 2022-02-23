@@ -4,7 +4,7 @@ class Testimonials extends Component {
 
    render() {
 
-      if (this.props.data) {
+      if (this.props.data && this.props.labels) {
 
          var testimonials = this.props.data.testimonials.map(function (testimonials) {
 

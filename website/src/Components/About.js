@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class About extends Component {
    render() {
 
-      if (this.props.data) {
+      if (this.props.data && this.props.labels) {
          var name = this.props.data.name;
          var profilepic = "images/" + this.props.data.image;
          var bio = this.props.data.bio;

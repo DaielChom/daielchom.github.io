@@ -5,7 +5,7 @@
     "phone": "3115315773",
     "email": "danielcarvajalpatino@gmail.com",
     "address": {
-      "street": "Calle 56 Sur # 28'42. Apto 402",
+      "street": "Calle 56 Sur # 28 - 42. Apto 402",
       "city": "Bogotá",
       "state": "Cundinamarca",
       "zip": ""
@@ -111,6 +111,13 @@
       }
     ],
     "courses": [
+      {
+        "school": "Coursera",
+        "degree": "Build Basic Generative Adversarial Networks (GANs)",
+        "graduated": "Junio 2021",
+        "description": "Introducción al desarrollo básico de redes generativas adversariales a través del framework PyTorch.",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/gan_1.pdf"
+      },
       {
         "school": "Coursera",
         "degree": "Tensorflow developer",
@@ -222,6 +229,13 @@
         "description":"Amigo Universidad",
         "phone":"3017510346",
         "email":"rdz.cristhian@gmail.com"
+      },
+      {
+        "name":"Laura Catalina Carvajal Patiño",
+        "type":"Familiar",
+        "description":"Hermana",
+        "phone":"3138996687",
+        "email":""
       }
     ]
   }

@@ -207,6 +207,10 @@ ul#nav li.current a { color: var(--main-color); }
   -moz-appearance: none;
 }
 
+.text-black{
+   color: black;
+}
+
 select.minimal {
    background-image:
      linear-gradient(45deg, transparent 50%, gray 50%),
