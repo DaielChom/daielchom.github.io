@@ -218,25 +218,22 @@
   "testimonials": {
     "testimonials": [
       {
+        "name":"Raúl Ramos Pollán",
+        "type":"Work",
+        "description":"Boss in Forntierx",
+        "email":"rramosp@unal.edu.co"
+      },
+      {
         "name":"David Fernando Gutiérrez Ramírez",
         "type":"Personal",
         "description":"University friend",
-        "phone":"3044811962",
         "email":"dguti0917@gmail.com"
-      },
-      {
-        "name":"Cristhian Camilo Rodríguez Pinzón",
-        "type":"Personal",
-        "description":"University friend",
-        "phone":"3017510346",
-        "email":"rdz.cristhian@gmail.com"
       },
       {
         "name":"Laura Catalina Carvajal Patiño",
         "type":"Family",
         "description":"Sister",
-        "phone":"3138996687",
-        "email":""
+        "email":"Laura21.cp@hotmail.es"
       }
     ]
   }

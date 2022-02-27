@@ -217,25 +217,22 @@
   "testimonials": {
     "testimonials": [
       {
-        "name":"David Fernando Gutiérrez Ramírez",
-        "type":"Personal",
-        "description":"Amigo Universidad",
-        "phone":"3044811962",
-        "email":"dguti0917@gmail.com"
+        "name":"Raúl Ramos Pollán",
+        "type":"Laboral",
+        "description":"Jefe en Forntierx",
+        "email":"rramosp@unal.edu.co"
       },
       {
-        "name":"Cristhian Camilo Rodríguez Pinzón",
+        "name":"David Fernando Gutiérrez Ramírez",
         "type":"Personal",
-        "description":"Amigo Universidad",
-        "phone":"3017510346",
-        "email":"rdz.cristhian@gmail.com"
+        "description":"Amigo de la universidad",
+        "email":"dguti0917@gmail.com"
       },
       {
         "name":"Laura Catalina Carvajal Patiño",
         "type":"Familiar",
         "description":"Hermana",
-        "phone":"3138996687",
-        "email":""
+        "email":"Laura21.cp@hotmail.es"
       }
     ]
   }
