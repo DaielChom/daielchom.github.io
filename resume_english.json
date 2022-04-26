@@ -10,7 +10,7 @@
       "state": "Cundinamarca",
       "zip": ""
     },
-    "occupation": "Data scientist and developer at Frontierx",
+    "occupation": " Data engineer at Ultracom",
     "description": "I have worked on several projects involving the use of data analytics and artificial intelligence, the most recent of which involved the use of deep generative models for the production of synthetic commodity market data to serve as input to predictions and trading strategies",
     "bio": "I have focused my career in data science and artificial intelligence through different studies and work experience. I support free software and in my free time, I usually draw. I am a native of Aguazul - Casanare, I like the joropo, the Orinoquía region, and their culture. I consider myself responsible and punctuality is very important to me.",
     "website": "http://www.daielchom.github.io",
@@ -56,9 +56,15 @@
   "resume": {
     "work": [
       {
+        "company": "Ultracom",
+        "title": "Data engineer",
+        "years": "May 2022 - Present",
+        "description":""
+      },
+      {
         "company": "Frontierx",
         "title": "Data science and Developer",
-        "years": "August 2018 - Present",
+        "years": "August 2018 - April 2022",
         "description":"I perform data analytics, artificial intelligence, and development tasks linked to the agreement between FRONTIERX SAS and the company MKS Sarl in a project of design, implementation, simulation, visualization, and deployment of trading strategies in the commodities market based on behaviors and notions of the company's traders. I performed data analytics and artificial intelligence tasks related to the agreement between FRONTIERX SAS and the company hAItta Sarl, according to the activities proposed in the portfolio positioning project for the company Wind To Market, which operated in the Spanish energy market. I developed post-processing tasks for one of the FRONTIERX projects using the Robosat Framework and proprietary functions to improve the visualization of the results of a prediction model using satellite images."
       },
       {

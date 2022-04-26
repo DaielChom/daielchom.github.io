@@ -10,7 +10,7 @@
       "state": "Cundinamarca",
       "zip": ""
     },
-    "occupation": "Analista de datos en Frontierx",
+    "occupation": "Ingeniero de datos en Ultracom",
     "description": "He trabajado en distintos proyectos que implican el uso de analítica de datos e inteligencia artificial, el más reciente de ellos implicó el uso de modelos generativos profundos para la producción de datos sintéticos del mercado de materias primas que sirvieran como insumo a predicciones y estrategias de trading",
     "bio": "He enfocado mi carrera en analítica de datos e inteligencia artificial a través de diferentes estudios y experiencia laboral. Apoyo el software libre y en mis tiempos libres suelo dibujar. Soy oriundo de Aguazul - Casanare, me gusta el joropo y la tierra llanera. Me considero responsable y la puntualidad es muy importante para mí.",
     "website": "http://www.daielchom.github.io",
@@ -56,9 +56,15 @@
   "resume": {
     "work": [
       {
+        "company": "Ultracom",
+        "title": "Ingeniero de datos",
+        "years": "Mayo 2022 - Actualidad",
+        "description": ""
+      },
+      {
         "company": "Frontierx",
-        "title": "Analista de datos",
-        "years": "Agosto 2018 - Actualidad",
+        "title": "Científico de datos",
+        "years": "Agosto 2018 - Abril 2022",
         "description": "Realizo tareas de analítica de datos, inteligencia artificial y desarrollo vinculados al convenio entre FRONTIERX SAS y la empresa MKS Sarl en un proyecto de diseño, implementación, simulación, visualización y despliegue de estrategias de trading en el mercado de materias primas basadas en comportamientos y nociones de los traders de la empresa. Realicé tareas de analítica de datos e inteligencia artificial vinculados al convenio entre FRONTIERX SAS y la empresa hAItta Sarl, de acuerdo a las actividades planteadas en el proyecto de posicionamiento de cartera para la empresa Wind To Market, la cual operaba en el mercado de energía español. Elaboré tareas de post-procesado para uno de los proyectos de FRONTIERX usando el Framework Robosat y funciones propias para mejorar la visualización de los resultados de un modelo de predicción que usaba imágenes satelitales."
       },
       {
