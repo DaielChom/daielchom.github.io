@@ -119,6 +119,27 @@
     
     "courses": [
       {
+        "school": "Cognitive Class",
+        "degree": "Accessing Hadoop Data Using Hiv",
+        "graduated": "May 2022",
+        "description": "",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/accessing_hadoop_data_using_hive.pdf"
+      },
+      {
+        "school": "Cognitive Class",
+        "degree": "Moving Data into Hadoop",
+        "graduated": "May 2022",
+        "description": "",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/moving_data_into_hadoop.pdf"
+      },
+      {
+        "school": "Cognitive Class",
+        "degree": "MapReduce and YARN",
+        "graduated": "May 2022",
+        "description": "",
+        "certificate": "https://raw.githubusercontent.com/DaielChom/daielchom.github.io/master/certificates/mapreduce_and_yarn.pdf"
+      },
+      {
         "school": "Coursera",
         "degree": "Build Basic Generative Adversarial Networks (GANs)",
         "graduated": "June 2021",

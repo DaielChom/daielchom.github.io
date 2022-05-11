@@ -40,8 +40,8 @@ class Resume extends Component {
          })
    
          var courses = this.props.data.courses.map(function (course) {
-            return <div id={"certificate-a"} key={course.degree}><h3>{course.school}</h3>
-               <p className="info">{course.degree} <span>&bull;</span><em className="date">{course.graduated}</em></p>
+            return <div id={"certificate-a"} key={course.degree}><h3>{course.degree}</h3>
+               <p className="info">{course.school} <span>&bull;</span><em className="date">{course.graduated}</em></p>
                <a href={course.certificate} download>{certi}</a>
                <p id={"certificate-p"}>{course.description}</p>
    
