@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Generated PDFs (se regeneran en CI)
+public/cv/*.pdf
+!public/cv/.gitkeep
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+*.local
+.env
+.env.*
+
+# TypeScript cache
+*.tsbuildinfo

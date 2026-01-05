@@ -1,0 +1,520 @@
+# =============================================================================
+# RESUME DATA - Daniel Carvajal Patiño
+# =============================================================================
+# Este archivo es la fuente única de datos para:
+# - El sitio web (versión completa)
+# - El PDF del CV (versión resumida)
+# - Ambos idiomas (español e inglés)
+# =============================================================================
+
+meta:
+  version: "2.0"
+  lastUpdated: "2026-01-05"
+
+# -----------------------------------------------------------------------------
+# INFORMACIÓN PERSONAL
+# -----------------------------------------------------------------------------
+personal:
+  name: "Daniel C. Patiño"
+  photo: "profilepic.png"
+  email: "danielcarvajalpatino@gmail.com"
+  phone: "+57 311 531 5773"
+  location:
+    city: "Bogotá"
+    state: "Cundinamarca"
+    country: "Colombia"
+  links:
+    website: "https://daielchom.github.io"
+    linkedin: "https://linkedin.com/in/daielchom"
+    github: "https://github.com/daielchom"
+    twitter: "https://twitter.com/DaielChom"
+    telegram: "https://t.me/daielchom"
+    instagram: "https://instagram.com/danielc.patino"
+    deviantart: "https://deviantart.com/daielchom"
+
+# -----------------------------------------------------------------------------
+# TÍTULO PROFESIONAL
+# -----------------------------------------------------------------------------
+title:
+  es: "Ingeniero de Datos"
+  en: "Data Engineer"
+
+# -----------------------------------------------------------------------------
+# RESUMEN PROFESIONAL
+# -----------------------------------------------------------------------------
+summary:
+  # Versión corta para PDF (máximo 3 líneas)
+  short:
+    es: >-
+      Ingeniero de Datos con más de 6 años de experiencia en analítica de datos, 
+      inteligencia artificial y desarrollo de pipelines ETL. Especializado en 
+      Python, SQL, y plataformas cloud. Apasionado por el machine learning y 
+      los modelos generativos.
+    en: >-
+      Data Engineer with 6+ years of experience in data analytics, artificial 
+      intelligence, and ETL pipeline development. Specialized in Python, SQL, 
+      and cloud platforms. Passionate about machine learning and generative models.
+  
+  # Versión completa para la web
+  full:
+    es: >-
+      He enfocado mi carrera en analítica de datos e inteligencia artificial 
+      a través de diferentes estudios y experiencia laboral. Apoyo el software 
+      libre y en mis tiempos libres suelo dibujar. Soy oriundo de Aguazul - 
+      Casanare, me gusta el joropo y la tierra llanera. Me considero responsable 
+      y la puntualidad es muy importante para mí.
+    en: >-
+      I have focused my career in data science and artificial intelligence 
+      through different studies and work experience. I support free software 
+      and in my free time, I usually draw. I am a native of Aguazul - Casanare, 
+      I like the joropo, the Orinoquía region, and their culture. I consider 
+      myself responsible and punctuality is very important to me.
+
+# -----------------------------------------------------------------------------
+# EXPERIENCIA LABORAL
+# -----------------------------------------------------------------------------
+experience:
+  - company: "Ultracom"
+    location: "Bogotá, Colombia"
+    title:
+      es: "Ingeniero de Datos"
+      en: "Data Engineer"
+    startDate: "2022-05"
+    endDate: null  # null = presente/current
+    # Bullets para PDF (concisos, orientados a logros)
+    highlights:
+      es:
+        - "Diseño e implementación de pipelines de datos"
+        - "Desarrollo de soluciones de analítica de datos"
+        - "Integración de sistemas y automatización de procesos"
+      en:
+        - "Design and implementation of data pipelines"
+        - "Development of data analytics solutions"
+        - "Systems integration and process automation"
+    # Descripción larga para web
+    description:
+      es: ""
+      en: ""
+    keywords:
+      - "Python"
+      - "SQL"
+      - "Data Engineering"
+      - "ETL"
+
+  - company: "Frontierx"
+    location: "Colombia"
+    title:
+      es: "Científico de Datos y Desarrollador"
+      en: "Data Scientist and Developer"
+    startDate: "2018-08"
+    endDate: "2022-04"
+    highlights:
+      es:
+        - "Desarrollo de estrategias de trading basadas en IA para mercado de commodities"
+        - "Implementación de modelos de deep learning para predicción de mercados"
+        - "Procesamiento de imágenes satelitales con el framework Robosat"
+        - "Análisis de datos para posicionamiento de cartera en mercado energético español"
+      en:
+        - "Development of AI-based trading strategies for commodities market"
+        - "Implementation of deep learning models for market prediction"
+        - "Satellite image processing using Robosat framework"
+        - "Data analysis for portfolio positioning in Spanish energy market"
+    description:
+      es: >-
+        Realicé tareas de analítica de datos, inteligencia artificial y desarrollo 
+        vinculados al convenio entre FRONTIERX SAS y la empresa MKS Sarl en un 
+        proyecto de diseño, implementación, simulación, visualización y despliegue 
+        de estrategias de trading en el mercado de materias primas basadas en 
+        comportamientos y nociones de los traders de la empresa.
+      en: >-
+        I performed data analytics, artificial intelligence, and development tasks 
+        linked to the agreement between FRONTIERX SAS and MKS Sarl in a project of 
+        design, implementation, simulation, visualization, and deployment of trading 
+        strategies in the commodities market based on behaviors and notions of the 
+        company's traders.
+    keywords:
+      - "Python"
+      - "Deep Learning"
+      - "Trading"
+      - "Data Science"
+      - "PyTorch"
+      - "TensorFlow"
+
+  - company: "Universidad Industrial de Santander"
+    location: "Bucaramanga, Colombia"
+    title:
+      es: "Desarrollador"
+      en: "Developer"
+    startDate: "2017-09"
+    endDate: "2018-06"
+    highlights:
+      es:
+        - "Mantenimiento del proyecto mooc-grader para calificación automatizada"
+        - "Integración con Google Sheets API para gestión de evaluaciones"
+        - "Desarrollo de herramientas en Jupyter Notebook"
+      en:
+        - "Maintenance of mooc-grader project for automated grading"
+        - "Integration with Google Sheets API for assessment management"
+        - "Development of Jupyter Notebook tools"
+    description:
+      es: >-
+        Encargado de la actualización y mantenimiento del proyecto mooc-grader 
+        dirigido por el profesor Raúl Ramos Pollán. Se trabajó en el mejoramiento 
+        de un Framework implementado en Jupyter notebook para la calificación y 
+        administración de tareas, evaluaciones y talleres.
+      en: >-
+        Responsible for updating and maintenance of the mooc-grader project led 
+        by Professor Raúl Ramos Pollán. Worked on the improvement of a Framework 
+        implemented in Jupyter-Notebook for grading and administration of 
+        assignments, evaluations, and workshops.
+    keywords:
+      - "Python"
+      - "Jupyter"
+      - "Google APIs"
+      - "Education Technology"
+
+  - company: "Chasegroup"
+    location: "Colombia"
+    title:
+      es: "Desarrollador Backend"
+      en: "Backend Developer"
+    startDate: "2017-02"
+    endDate: "2017-10"
+    highlights:
+      es:
+        - "Desarrollo de plataforma web auxiliar para ChatBot de eventos"
+        - "Implementación de integración con Facebook API"
+        - "Desarrollo backend con Flask"
+      en:
+        - "Development of auxiliary web platform for events ChatBot"
+        - "Implementation of Facebook API integration"
+        - "Backend development with Flask"
+    description:
+      es: >-
+        Encargado de la creación de una plataforma web auxiliar al proyecto Sevent, 
+        un ChatBot de información de eventos. Se trabajó con Flask para la elaboración 
+        de dicha plataforma, la cual se encargaba de llenar la base de datos de Sevent, 
+        tomando eventos de Facebook.
+      en: >-
+        Responsible for the creation of an auxiliary web platform for the Sevent 
+        project, an event information ChatBot. Worked with Flask for the development 
+        of this platform, which was in charge of filling Sevent's database, taking 
+        events from Facebook.
+    keywords:
+      - "Python"
+      - "Flask"
+      - "REST API"
+      - "Facebook API"
+      - "ChatBot"
+
+  - company: "Universidad Industrial de Santander"
+    location: "Bucaramanga, Colombia"
+    title:
+      es: "Administrador de Sala de Cómputo"
+      en: "Computer Room Administrator"
+    startDate: "2016-07"
+    endDate: "2017-06"
+    highlights:
+      es:
+        - "Administración de salas de cómputo de la Escuela de Matemáticas"
+        - "Soporte técnico y mantenimiento de equipos"
+      en:
+        - "Administration of Mathematics School computer rooms"
+        - "Technical support and equipment maintenance"
+    description:
+      es: >-
+        Encargado de administrar las salas de cómputo de la escuela de Matemáticas 
+        de la Universidad Industrial de Santander.
+      en: >-
+        In charge of managing the computer rooms of the mathematics faculty of 
+        the Universidad Industrial de Santander.
+    keywords:
+      - "IT Support"
+      - "System Administration"
+    # No mostrar en PDF por ser menos relevante
+    showInPdf: false
+
+# -----------------------------------------------------------------------------
+# EDUCACIÓN
+# -----------------------------------------------------------------------------
+education:
+  - institution: "Universidad de Antioquia"
+    location: "Medellín, Colombia"
+    degree:
+      es: "Maestría en Ingeniería"
+      en: "Master's Degree in Engineering"
+    field:
+      es: "Deep Learning"
+      en: "Deep Learning"
+    startDate: "2019"
+    endDate: null
+    highlights:
+      es:
+        - "Línea de investigación: Deep Learning bajo dirección del Prof. Raúl Ramos Pollán"
+        - "Proyecto: Impacto de datos sintéticos de modelos generativos en trading"
+      en:
+        - "Research line: Deep Learning under Professor Raúl Ramos Pollán"
+        - "Project: Impact of synthetic data from generative models in trading"
+    description:
+      es: >-
+        Enfocando la maestría en la línea de investigación de Deep learning, 
+        se está llevando a cabo un proyecto para determinar el impacto de uso 
+        de datos sintéticos producidos por modelos generativos profundos en 
+        predicciones y estrategias de trading del mercado de materias primas.
+      en: >-
+        Focusing the master's degree on the Deep learning research line, a 
+        project is being carried out to determine the impact of using synthetic 
+        data produced by deep generative models in predictions and trading 
+        strategies in the commodities market.
+    certificate: null
+
+  - institution: "Universidad Industrial de Santander"
+    location: "Bucaramanga, Colombia"
+    degree:
+      es: "Ingeniería de Sistemas"
+      en: "Systems Engineering"
+    field:
+      es: "Ingeniería"
+      en: "Engineering"
+    startDate: "2012"
+    endDate: "2018-09"
+    highlights:
+      es:
+        - "Proyecto de grado: Estimación de estratificación socioeconómica con CNNs"
+        - "Uso de imágenes satelitales con información aumentada"
+      en:
+        - "Thesis: Socioeconomic stratification estimation using CNNs"
+        - "Satellite images with augmented information"
+    description:
+      es: >-
+        Como proyecto de grado se realizó la estimación del nivel de 
+        estratificación socioeconómico urbano usando redes neuronales 
+        convolucionales sobre imágenes satelitales con información aumentada.
+      en: >-
+        As a degree project, the estimation of the level of urban socioeconomic 
+        stratification was carried out using convolutional neural networks on 
+        satellite images with augmented information.
+    certificate: "certificates/sistemas.pdf"
+
+  - institution: "Universidad Industrial de Santander - Geomática"
+    location: "Bucaramanga, Colombia"
+    degree:
+      es: "Diplomado en Computación Móvil"
+      en: "Mobile Computing Diploma"
+    field:
+      es: "Desarrollo Móvil"
+      en: "Mobile Development"
+    startDate: "2017"
+    endDate: "2018-05"
+    highlights:
+      es:
+        - "Desarrollo de aplicaciones Android con Java"
+        - "Desarrollo multiplataforma con CoronaLab (Lua)"
+      en:
+        - "Android application development with Java"
+        - "Cross-platform development with CoronaLab (Lua)"
+    description:
+      es: ""
+      en: ""
+    certificate: "certificates/diplomado.pdf"
+    showInPdf: false
+
+# -----------------------------------------------------------------------------
+# CURSOS Y CERTIFICACIONES
+# -----------------------------------------------------------------------------
+certifications:
+  - name: "Accessing Hadoop Data Using Hive"
+    issuer: "Cognitive Class"
+    date: "2022-05"
+    certificate: "certificates/accessing_hadoop_data_using_hive.pdf"
+    showInPdf: false
+
+  - name: "Moving Data into Hadoop"
+    issuer: "Cognitive Class"
+    date: "2022-05"
+    certificate: "certificates/moving_data_into_hadoop.pdf"
+    showInPdf: false
+
+  - name: "MapReduce and YARN"
+    issuer: "Cognitive Class"
+    date: "2022-05"
+    certificate: "certificates/mapreduce_and_yarn.pdf"
+    showInPdf: false
+
+  - name: "Build Basic Generative Adversarial Networks (GANs)"
+    issuer: "Coursera"
+    date: "2021-06"
+    certificate: "certificates/gan_1.pdf"
+    description:
+      es: "Introducción al desarrollo básico de GANs con PyTorch"
+      en: "Introduction to basic GAN development with PyTorch"
+
+  - name: "TensorFlow Developer"
+    issuer: "Coursera"
+    date: "2019-10"
+    certificate: "certificates/tensorflow.pdf"
+    description:
+      es: "Desarrollo de modelos de deep learning con TensorFlow (4 cursos)"
+      en: "Deep learning model development with TensorFlow (4 courses)"
+
+  - name: "Deep Learning Specialization"
+    issuer: "Coursera"
+    date: "2019-07"
+    certificate: "certificates/deep_learning.pdf"
+    description:
+      es: "Especialización completa en Deep Learning"
+      en: "Complete Deep Learning Specialization"
+
+  - name: "React.js"
+    issuer: "Platzi"
+    date: "2018-06"
+    certificate: "certificates/react.pdf"
+    showInPdf: false
+
+  - name: "Redux.js"
+    issuer: "Platzi"
+    date: "2018-06"
+    certificate: "certificates/redux.pdf"
+    showInPdf: false
+
+  - name: "Creating and Distributing Python Packages"
+    issuer: "Two Scoops Press"
+    date: "2018-03"
+    certificate: "certificates/creating_and_distributing_python_packages.pdf"
+    showInPdf: false
+
+  - name: "CCNA Routing and Switching (Levels I & II)"
+    issuer: "Cisco Networking Academy"
+    date: "2017-02"
+    certificate: "certificates/cisco.pdf"
+    showInPdf: false
+
+# -----------------------------------------------------------------------------
+# CERTIFICADOS DE IDIOMAS
+# -----------------------------------------------------------------------------
+languages:
+  - name:
+      es: "Español"
+      en: "Spanish"
+    level:
+      es: "Nativo"
+      en: "Native"
+  - name:
+      es: "Inglés"
+      en: "English"
+    level:
+      es: "C1 Avanzado"
+      en: "C1 Advanced"
+    certificate: "certificates/english_EF_SET.pdf"
+    score: "64/100 EF SET"
+
+# -----------------------------------------------------------------------------
+# HABILIDADES TÉCNICAS
+# -----------------------------------------------------------------------------
+skills:
+  # Categorías para mejor organización
+  categories:
+    - name:
+        es: "Lenguajes de Programación"
+        en: "Programming Languages"
+      items:
+        - "Python"
+        - "SQL"
+        - "JavaScript"
+        - "TypeScript"
+
+    - name:
+        es: "Data Engineering"
+        en: "Data Engineering"
+      items:
+        - "Apache Spark"
+        - "Databricks"
+        - "Airflow"
+        - "ETL/ELT"
+        - "Data Pipelines"
+
+    - name:
+        es: "Cloud & Bases de Datos"
+        en: "Cloud & Databases"
+      items:
+        - "Google Cloud Platform"
+        - "BigQuery"
+        - "Cloud Functions"
+        - "Datastore"
+        - "PostgreSQL"
+
+    - name:
+        es: "Machine Learning"
+        en: "Machine Learning"
+      items:
+        - "TensorFlow"
+        - "PyTorch"
+        - "scikit-learn"
+        - "Pandas"
+        - "NumPy"
+        - "Jupyter"
+
+    - name:
+        es: "Desarrollo Web"
+        en: "Web Development"
+      items:
+        - "React"
+        - "Flask"
+        - "REST APIs"
+        - "HTML/CSS"
+
+    - name:
+        es: "Herramientas"
+        en: "Tools"
+      items:
+        - "Git"
+        - "Docker"
+        - "Linux"
+        - "VS Code"
+
+# -----------------------------------------------------------------------------
+# VOLUNTARIADO
+# -----------------------------------------------------------------------------
+volunteer:
+  - organization: "CUSOL-UIS"
+    fullName: "Comunidad Universitaria de Software Libre"
+    role:
+      es: "Miembro"
+      en: "Member"
+    startDate: "2016-04"
+    endDate: "2017-02"
+    description:
+      es: "Apoyo en organización de actividades para la comunidad universitaria. Participación en Software Freedom Day 2016."
+      en: "Support in organizing activities for the university community. Participation in Software Freedom Day 2016."
+    showInPdf: false
+
+  - organization: "CEIS-UIS"
+    fullName: "Centro de Estudios de Ingeniería de Sistemas"
+    role:
+      es: "Miembro"
+      en: "Member"
+    startDate: "2016-03"
+    endDate: "2017-02"
+    description:
+      es: "Apoyo en la administración del centro de estudios de Ingeniería de Sistemas."
+      en: "Support in the administration of the Systems Engineering study center."
+    showInPdf: false
+
+# -----------------------------------------------------------------------------
+# REFERENCIAS
+# -----------------------------------------------------------------------------
+references:
+  - name: "Raúl Ramos Pollán"
+    relationship:
+      es: "Jefe en Frontierx / Director de Maestría"
+      en: "Boss at Frontierx / Master's Advisor"
+    email: "rramosp@unal.edu.co"
+    showInPdf: false
+
+  - name: "David Fernando Gutiérrez Ramírez"
+    relationship:
+      es: "Amigo de la universidad"
+      en: "University friend"
+    email: "dguti0917@gmail.com"
+    showInPdf: false
+

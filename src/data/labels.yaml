@@ -1,0 +1,111 @@
+# =============================================================================
+# UI LABELS - Textos de la interfaz en múltiples idiomas
+# =============================================================================
+
+navigation:
+  home:
+    es: "Inicio"
+    en: "Home"
+  about:
+    es: "Sobre mí"
+    en: "About"
+  experience:
+    es: "Experiencia"
+    en: "Experience"
+  education:
+    es: "Educación"
+    en: "Education"
+  skills:
+    es: "Habilidades"
+    en: "Skills"
+  contact:
+    es: "Contacto"
+    en: "Contact"
+
+header:
+  greeting:
+    es: "Hola, soy"
+    en: "Hi, I'm"
+  basedIn:
+    es: "Ubicado en"
+    en: "Based in"
+  downloadCv:
+    es: "Descargar CV"
+    en: "Download CV"
+  viewCv:
+    es: "Ver CV"
+    en: "View CV"
+
+about:
+  title:
+    es: "Sobre mí"
+    en: "About me"
+  contactDetails:
+    es: "Información de contacto"
+    en: "Contact details"
+
+experience:
+  title:
+    es: "Experiencia Profesional"
+    en: "Professional Experience"
+  present:
+    es: "Presente"
+    en: "Present"
+
+education:
+  title:
+    es: "Educación"
+    en: "Education"
+  certifications:
+    es: "Certificaciones"
+    en: "Certifications"
+  viewCertificate:
+    es: "Ver certificado"
+    en: "View certificate"
+
+skills:
+  title:
+    es: "Habilidades Técnicas"
+    en: "Technical Skills"
+
+languages:
+  title:
+    es: "Idiomas"
+    en: "Languages"
+
+volunteer:
+  title:
+    es: "Voluntariado"
+    en: "Volunteer Work"
+
+references:
+  title:
+    es: "Referencias"
+    en: "References"
+  available:
+    es: "Referencias disponibles a solicitud"
+    en: "References available upon request"
+
+footer:
+  madeWith:
+    es: "Hecho con"
+    en: "Made with"
+  and:
+    es: "y"
+    en: "and"
+
+pdf:
+  generatedOn:
+    es: "Generado el"
+    en: "Generated on"
+  page:
+    es: "Página"
+    en: "Page"
+  of:
+    es: "de"
+    en: "of"
+
+languageSelector:
+  es: "Español"
+  en: "English"
+
