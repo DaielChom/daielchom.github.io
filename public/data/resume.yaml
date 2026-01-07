@@ -294,7 +294,8 @@ education:
         As a degree project, the estimation of the level of urban socioeconomic 
         stratification was carried out using convolutional neural networks on 
         satellite images with augmented information.
-    certificate: "certificates/sistemas.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
 
   - institution: "Universidad Industrial de Santander - Geomática"
     location: "Bucaramanga, Colombia"
@@ -316,35 +317,43 @@ education:
     description:
       es: ""
       en: ""
-    certificate: "certificates/diplomado.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
 # -----------------------------------------------------------------------------
 # CURSOS Y CERTIFICACIONES
+# Los certificados ahora usan URLs externas (OneDrive, etc.)
+# Para agregar un certificado, usa una URL completa:
+# certificate: "https://onedrive.live.com/..."
 # -----------------------------------------------------------------------------
 certifications:
   - name: "Accessing Hadoop Data Using Hive"
     issuer: "Cognitive Class"
     date: "2022-05"
-    certificate: "certificates/accessing_hadoop_data_using_hive.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
   - name: "Moving Data into Hadoop"
     issuer: "Cognitive Class"
     date: "2022-05"
-    certificate: "certificates/moving_data_into_hadoop.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
   - name: "MapReduce and YARN"
     issuer: "Cognitive Class"
     date: "2022-05"
-    certificate: "certificates/mapreduce_and_yarn.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
   - name: "Build Basic Generative Adversarial Networks (GANs)"
     issuer: "Coursera"
     date: "2021-06"
-    certificate: "certificates/gan_1.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     description:
       es: "Introducción al desarrollo básico de GANs con PyTorch"
       en: "Introduction to basic GAN development with PyTorch"
@@ -352,7 +361,8 @@ certifications:
   - name: "TensorFlow Developer"
     issuer: "Coursera"
     date: "2019-10"
-    certificate: "certificates/tensorflow.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     description:
       es: "Desarrollo de modelos de deep learning con TensorFlow (4 cursos)"
       en: "Deep learning model development with TensorFlow (4 courses)"
@@ -360,7 +370,8 @@ certifications:
   - name: "Deep Learning Specialization"
     issuer: "Coursera"
     date: "2019-07"
-    certificate: "certificates/deep_learning.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     description:
       es: "Especialización completa en Deep Learning"
       en: "Complete Deep Learning Specialization"
@@ -368,25 +379,29 @@ certifications:
   - name: "React.js"
     issuer: "Platzi"
     date: "2018-06"
-    certificate: "certificates/react.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
   - name: "Redux.js"
     issuer: "Platzi"
     date: "2018-06"
-    certificate: "certificates/redux.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
   - name: "Creating and Distributing Python Packages"
     issuer: "Two Scoops Press"
     date: "2018-03"
-    certificate: "certificates/creating_and_distributing_python_packages.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
   - name: "CCNA Routing and Switching (Levels I & II)"
     issuer: "Cisco Networking Academy"
     date: "2017-02"
-    certificate: "certificates/cisco.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     showInPdf: false
 
 # -----------------------------------------------------------------------------
@@ -405,7 +420,8 @@ languages:
     level:
       es: "C1 Avanzado"
       en: "C1 Advanced"
-    certificate: "certificates/english_EF_SET.pdf"
+    # TODO: Reemplazar con URL de OneDrive
+    certificate: null
     score: "64/100 EF SET"
 
 # -----------------------------------------------------------------------------
@@ -517,4 +533,3 @@ references:
       en: "University friend"
     email: "dguti0917@gmail.com"
     showInPdf: false
-

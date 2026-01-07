@@ -95,3 +95,4 @@ export function formatDateRange(startDate: string, endDate: string | null, lang:
   return `${start} - ${end}`;
 }
 
+
