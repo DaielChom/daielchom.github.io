@@ -55,51 +55,51 @@ summary:
   short:
     hybrid:
       es: >-
-        Data Engineer & Scientist con +6 años en arquitecturas de datos, pipelines ETL y 
-        Machine Learning. Experto en Python, SQL, Linux, GCP, Databricks, TensorFlow y PyTorch. 
-        Experiencia en Data Warehouses y modelos predictivos. POO y código limpio.
+        Data Engineer & Scientist con +6 años de experiencia diseñando arquitecturas de datos 
+        escalables, pipelines ETL robustos y modelos de Machine Learning en producción. Experto en 
+        Python, SQL, Linux, GCP, Databricks, TensorFlow y PyTorch. Investigador publicado en GANs.
       en: >-
-        Data Engineer & Scientist with 6+ years in data architectures, ETL pipelines, and 
-        Machine Learning. Expert in Python, SQL, Linux, GCP, Databricks, TensorFlow, and PyTorch. 
-        Experience in Data Warehouses and predictive models. OOP and clean code.
+        Data Engineer & Scientist with 6+ years designing scalable data architectures, 
+        robust ETL pipelines, and production ML models. Expert in Python, SQL, Linux, GCP, 
+        Databricks, TensorFlow, and PyTorch. Published researcher on GANs.
     de:
       es: >-
         Senior Data Engineer con +6 años diseñando arquitecturas de datos escalables en 
         retail, fintech y trading. Experto en Python, SQL, Linux, GCP, AWS, Databricks y 
-        Terraform. Experiencia en pipelines ETL y Data Warehouses. POO y código limpio.
+        Terraform. Experiencia sólida en pipelines ETL y Data Warehouses empresariales.
       en: >-
-        Senior Data Engineer with 6+ years designing scalable data architectures in retail, 
+        Senior Data Engineer with 6+ years designing scalable data architectures across retail, 
         fintech, and trading. Expert in Python, SQL, Linux, GCP, AWS, Databricks, and Terraform. 
-        Experience in ETL pipelines and Data Warehouses. OOP and clean code.
+        Strong experience in ETL pipelines and enterprise Data Warehouses.
     ds:
-    es: >-
-        Data Scientist & ML Engineer con +6 años desarrollando modelos de ML en producción en areas como retail, fintech y trading. 
+      es: >-
+        Data Scientist & ML Engineer con +6 años desarrollando modelos de ML en producción en áreas como retail, fintech y trading. 
         Experto en Python, SQL, Linux, TensorFlow, PyTorch y GANs. Autor de publicación 
         científica sobre datos sintéticos en trading. POO y experimentación rigurosa.
-    en: >-
-        Data Scientist & ML Engineer with 6+ years deploying ML models in production. 
-        Expert in Python, SQL, Linux, TensorFlow, PyTorch, and GANs. Published research 
+      en: >-
+        Data Scientist & ML Engineer with 6+ years deploying production ML models across retail, fintech, and trading. 
+        Expert in Python, SQL, Linux, TensorFlow, PyTorch, and GANs. Published researcher 
         on synthetic data in trading. OOP and rigorous experimentation.
   
   # Versión completa para la sección About de la web
   full:
     es: >-
       Data Engineer & Scientist con más de 6 años de experiencia diseñando arquitecturas 
-      de datos, construyendo pipelines ETL y desarrollando modelos de Machine Learning. 
-      He participado activamente en el diseño y construcción de Data Warehouses en diferentes 
-      industrias (retail, fintech, trading), implementación de modelos predictivos y toma 
-      de decisiones técnicas en equipos multidisciplinarios. Autor de publicación científica 
-      sobre modelos generativos (GANs) aplicados a trading en Research in International 
-      Business and Finance. Experto en Python, SQL, Linux, GCP, AWS y Databricks. Enfocado 
-      en POO, código limpio y buenas prácticas de desarrollo.
+      de datos escalables, construyendo pipelines ETL robustos y desarrollando modelos de 
+      Machine Learning en producción. He co-liderado y participado activamente en el diseño y 
+      construcción de Data Warehouses empresariales en diferentes industrias (retail, fintech, 
+      trading), implementación de modelos predictivos y toma de decisiones técnicas en equipos 
+      multidisciplinarios. Investigador publicado sobre modelos generativos (GANs) aplicados 
+      a trading en Research in International Business and Finance. Experto en Python, SQL, 
+      Linux, GCP, AWS y Databricks. Enfocado en POO, código limpio y buenas prácticas de desarrollo.
     en: >-
-      Data Engineer & Scientist with 6+ years of experience designing data architectures, 
-      building ETL pipelines, and developing Machine Learning models. Actively participated 
-      in Data Warehouse design and construction across industries (retail, fintech, trading), 
-      predictive model implementation, and technical decision-making in multidisciplinary teams. 
-      Published author on generative models (GANs) applied to trading in Research in International 
-      Business and Finance. Expert in Python, SQL, Linux, GCP, AWS, and Databricks. Focused 
-      on OOP, clean code, and development best practices.
+      Data Engineer & Scientist with 6+ years of experience designing scalable data architectures, 
+      building robust ETL pipelines, and developing production Machine Learning models. Co-led and 
+      actively participated in enterprise Data Warehouse design and construction across industries 
+      (retail, fintech, trading), predictive model implementation, and technical decision-making 
+      in multidisciplinary teams. Published researcher on generative models (GANs) applied to 
+      trading in Research in International Business and Finance. Expert in Python, SQL, Linux, 
+      GCP, AWS, and Databricks. Focused on OOP, clean code, and development best practices.
 
 # -----------------------------------------------------------------------------
 # EXPERIENCIA LABORAL
@@ -127,45 +127,45 @@ experience:
     highlights:
       hybrid:
         es:
-          - "Participé activamente en el diseño y construcción del Data Warehouse en BigQuery, integrando Oracle, Braze, Amplitude y Algolia"
-          - "Diseñé e implementé pipelines ETL en Python con monitoreo y alertamiento de errores"
-          - "Participé en la migración de infraestructura de datos a Databricks usando Terraform y código limpio"
-          - "Desarrollé e implementé sistema de afinidad de usuarios con dashboards de monitoreo y análisis de métricas"
-          - "Implementé sistema de atribución de marketing, habilitando análisis de ROI por estrategia"
+          - "Co-lideré el diseño y construcción del Data Warehouse en BigQuery, integrando +5 fuentes de datos (Oracle, Braze, Amplitude, Algolia)"
+          - "Diseñé e implementé pipelines ETL en Python con monitoreo proactivo, alertas automáticas y recuperación de errores"
+          - "Participé en la migración de infraestructura de datos a Databricks, implementando IaC con Terraform y principios de código limpio"
+          - "Desarrollé sistema de afinidad de usuarios con dashboards de monitoreo, mejorando la personalización de ofertas"
+          - "Implementé sistema de atribución de marketing multicanal, habilitando análisis de ROI por estrategia y canal"
         en:
-          - "Actively participated in Data Warehouse design and construction in BigQuery, integrating Oracle, Braze, Amplitude, and Algolia"
-          - "Designed and implemented ETL pipelines in Python with monitoring and error alerting"
-          - "Participated in data infrastructure migration to Databricks using Terraform and clean code"
-          - "Developed and implemented user affinity system with monitoring dashboards and metrics analysis"
-          - "Implemented marketing attribution system, enabling ROI analysis per strategy"
+          - "Co-led Data Warehouse design and construction in BigQuery, integrating 5+ data sources (Oracle, Braze, Amplitude, Algolia)"
+          - "Architected ETL pipelines in Python with proactive monitoring, automated alerts, and error recovery"
+          - "Participated in data infrastructure migration to Databricks, implementing IaC with Terraform and clean code principles"
+          - "Built user affinity scoring system with monitoring dashboards, improving offer personalization"
+          - "Implemented multi-channel marketing attribution system, enabling ROI analysis per strategy and channel"
       de:
         es:
-          - "Participé en el diseño y construcción del Data Warehouse en BigQuery integrando múltiples fuentes"
-          - "Diseñé e implementé pipelines ETL en Python con monitoreo, alertamiento y manejo de errores"
-          - "Participé en migración a Databricks: jobs, dashboards de monitoreo y alertas"
-          - "Implementé infraestructura como código con Terraform siguiendo principios de código limpio"
-          - "Construí dominios de datos: clientes, ventas, productos, promociones con calidad de datos"
-          - "Configuré servicios GCP: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
+          - "Co-lideré el diseño y construcción del Data Warehouse en BigQuery, integrando +5 fuentes de datos empresariales"
+          - "Diseñé e implementé pipelines ETL en Python con monitoreo proactivo, alertas automáticas y manejo robusto de errores"
+          - "Participé en migración a Databricks: orquestación de jobs, dashboards de monitoreo y sistema de alertas"
+          - "Implementé Infraestructura como Código con Terraform, siguiendo principios SOLID y código limpio"
+          - "Construí dominios de datos empresariales (clientes, ventas, productos, promociones) con validación de calidad"
+          - "Configuré y administré servicios GCP: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
         en:
-          - "Participated in Data Warehouse design and construction in BigQuery integrating multiple sources"
-          - "Designed and implemented ETL pipelines in Python with monitoring, alerting, and error handling"
-          - "Participated in Databricks migration: jobs, monitoring dashboards, and alerts"
-          - "Implemented Infrastructure as Code with Terraform following clean code principles"
-          - "Built data domains: customers, sales, products, promotions with data quality"
-          - "Configured GCP services: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
+          - "Co-led Data Warehouse design and construction in BigQuery, integrating 5+ enterprise data sources"
+          - "Architected ETL pipelines in Python with proactive monitoring, automated alerts, and robust error handling"
+          - "Participated in Databricks migration: job orchestration, monitoring dashboards, and alerting system"
+          - "Implemented Infrastructure as Code with Terraform, following SOLID principles and clean code"
+          - "Built enterprise data domains (customers, sales, products, promotions) with data quality validation"
+          - "Configured and managed GCP services: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
       ds:
         es:
-          - "Desarrollé e implementé sistema de afinidad de usuarios basado en comportamientos de compra"
-          - "Construí dashboards de monitoreo y análisis de métricas para medir resultados de personalización"
-          - "Diseñé e implementé modelo de atribución de marketing para medir efectividad de estrategias"
-          - "Realicé análisis exploratorio y presenté insights a stakeholders de negocio"
-          - "Construí dashboards analíticos para toma de decisiones en tiempo real"
+          - "Desarrollé sistema de afinidad de usuarios basado en patrones de comportamiento de compra, mejorando segmentación"
+          - "Construí dashboards de monitoreo y análisis de métricas para medir impacto de personalización"
+          - "Diseñé modelo de atribución de marketing multicanal para cuantificar efectividad de estrategias"
+          - "Lideré análisis exploratorio de datos y presenté insights accionables a stakeholders de negocio"
+          - "Construí dashboards analíticos interactivos para toma de decisiones en tiempo real"
         en:
-          - "Developed and implemented user affinity system based on purchase behavior patterns"
-          - "Built monitoring dashboards and metrics analysis to measure personalization results"
-          - "Designed and implemented marketing attribution model to measure strategy effectiveness"
-          - "Performed exploratory analysis and presented insights to business stakeholders"
-          - "Built analytical dashboards for real-time decision making"
+          - "Built user affinity system based on purchase behavior patterns, improving customer segmentation"
+          - "Developed monitoring dashboards and metrics analysis to measure personalization impact"
+          - "Designed multi-channel marketing attribution model to quantify strategy effectiveness"
+          - "Led exploratory data analysis and presented actionable insights to business stakeholders"
+          - "Built interactive analytical dashboards for real-time decision making"
     keywords:
       - "Python"
       - "SQL"
@@ -190,8 +190,8 @@ experience:
         es: "Ingeniero de Datos"
         en: "Data Engineer"
       ds:
-      es: "Ingeniero de Datos"
-      en: "Data Engineer"
+        es: "Ingeniero de Datos"
+        en: "Data Engineer"
     startDate: "2022-05"
     endDate: "2023-04"
     highlights:
@@ -251,46 +251,46 @@ experience:
         es: "Data Engineer"
         en: "Data Engineer"
       ds:
-        es: "Data Scientist"
-        en: "Data Scientist"
+        es: "Data Scientist & ML Engineer"
+        en: "Data Scientist & ML Engineer"
     startDate: "2018-08"
     endDate: "2022-04"
     highlights:
       hybrid:
         es:
-          - "Desarrollé modelos de Deep Learning (GANs) para generación de datos sintéticos de commodities"
-          - "Implementé y desplegué estrategias de trading basadas en ML para mercado de materias primas"
-          - "Construí modelos predictivos para posicionamiento de cartera en mercado energético español"
-          - "Procesé imágenes satelitales usando Robosat para proyectos de computer vision"
+          - "Investigué y desarrollé modelos generativos (GANs) para datos sintéticos de commodities, resultando en publicación científica indexada"
+          - "Implementé y desplegué estrategias de trading algorítmico basadas en ML para mercados de materias primas"
+          - "Construí modelos predictivos para posicionamiento de cartera en el mercado energético español"
+          - "Procesé y analicé imágenes satelitales con Robosat para proyectos de Computer Vision"
         en:
-          - "Developed Deep Learning models (GANs) for synthetic commodities data generation"
-          - "Implemented and deployed ML-based trading strategies for commodities market"
-          - "Built predictive models for portfolio positioning in Spanish energy market"
-          - "Processed satellite images using Robosat for computer vision projects"
+          - "Researched and developed generative models (GANs) for synthetic commodities data, resulting in indexed scientific publication"
+          - "Implemented and deployed algorithmic ML-based trading strategies for commodities markets"
+          - "Built predictive models for portfolio positioning in the Spanish energy market"
+          - "Processed and analyzed satellite imagery with Robosat for Computer Vision projects"
       de:
         es:
-          - "Construí pipelines de datos para alimentar modelos de trading en tiempo real"
-          - "Desarrollé ETLs para procesamiento de datos de mercados financieros"
-          - "Implementé sistema de visualización y monitoreo de estrategias de trading"
-          - "Procesé y transformé imágenes satelitales para modelos de predicción"
+          - "Diseñé pipelines de datos en tiempo real para alimentar modelos de trading algorítmico"
+          - "Desarrollé ETLs robustos para procesamiento de datos de mercados financieros"
+          - "Implementé sistema de visualización y monitoreo de estrategias de trading en producción"
+          - "Procesé y transformé imágenes satelitales de alta resolución para modelos predictivos"
         en:
-          - "Built data pipelines to feed real-time trading models"
-          - "Developed ETLs for financial market data processing"
-          - "Implemented visualization and monitoring system for trading strategies"
-          - "Processed and transformed satellite images for prediction models"
+          - "Architected real-time data pipelines feeding algorithmic trading models"
+          - "Developed robust ETLs for financial market data processing"
+          - "Implemented production visualization and monitoring system for trading strategies"
+          - "Processed and transformed high-resolution satellite imagery for predictive models"
       ds:
         es:
-          - "Desarrollé modelos generativos (GANs) para producción de datos sintéticos de trading"
-          - "Implementé modelos de predicción de mercados usando TensorFlow y PyTorch"
-          - "Diseñé y desplegué estrategias de trading basadas en comportamientos de traders"
-          - "Construí modelos de Computer Vision con CNNs para imágenes satelitales"
-          - "Investigué impacto de datos sintéticos en predicciones de trading (tesis de maestría)"
+          - "Investigué y desarrollé modelos generativos (GANs) para datos sintéticos de trading, publicando en revista científica indexada"
+          - "Implementé modelos de predicción de mercados usando TensorFlow y PyTorch en producción"
+          - "Diseñé y desplegué estrategias de trading algorítmico basadas en patrones de comportamiento"
+          - "Construí modelos de Computer Vision con CNNs para clasificación de imágenes satelitales"
+          - "Investigué impacto de datos sintéticos en predicciones de trading (tesis de maestría publicada)"
         en:
-          - "Developed generative models (GANs) for synthetic trading data production"
-          - "Implemented market prediction models using TensorFlow and PyTorch"
-          - "Designed and deployed trading strategies based on trader behaviors"
-          - "Built Computer Vision models with CNNs for satellite images"
-          - "Researched impact of synthetic data on trading predictions (master's thesis)"
+          - "Researched and developed generative models (GANs) for synthetic trading data, publishing in indexed scientific journal"
+          - "Deployed market prediction models using TensorFlow and PyTorch in production"
+          - "Designed and deployed algorithmic trading strategies based on behavioral patterns"
+          - "Built Computer Vision models with CNNs for satellite image classification"
+          - "Researched impact of synthetic data on trading predictions (published master's thesis)"
     keywords:
       - "Python"
       - "Deep Learning"
@@ -311,32 +311,32 @@ experience:
         es: "Desarrollador"
         en: "Developer"
       ds:
-      es: "Desarrollador"
-      en: "Developer"
+        es: "Desarrollador"
+        en: "Developer"
     startDate: "2017-09"
     endDate: "2018-06"
     highlights:
       hybrid:
         es:
-          - "Desarrollé sistema de calificación automatizada mooc-grader con Python"
-          - "Integré Google Sheets API para gestión de evaluaciones académicas"
+          - "Desarrollé sistema de calificación automatizada MOOC-Grader con Python para evaluación de estudiantes"
+          - "Integré Google Sheets API para gestión y seguimiento de evaluaciones académicas"
         en:
-          - "Developed automated grading system mooc-grader with Python"
-          - "Integrated Google Sheets API for academic assessment management"
+          - "Built automated grading system MOOC-Grader with Python for student evaluation"
+          - "Integrated Google Sheets API for academic assessment tracking and management"
       de:
         es:
-          - "Desarrollé sistema de calificación automatizada mooc-grader con Python"
-          - "Integré Google Sheets API para gestión de evaluaciones académicas"
+          - "Desarrollé sistema de calificación automatizada MOOC-Grader con Python para evaluación de estudiantes"
+          - "Integré Google Sheets API para gestión y seguimiento de evaluaciones académicas"
         en:
-          - "Developed automated grading system mooc-grader with Python"
-          - "Integrated Google Sheets API for academic assessment management"
+          - "Built automated grading system MOOC-Grader with Python for student evaluation"
+          - "Integrated Google Sheets API for academic assessment tracking and management"
       ds:
         es:
-          - "Desarrollé sistema de calificación automatizada mooc-grader con Python"
-          - "Integré Google Sheets API para gestión de evaluaciones académicas"
+          - "Desarrollé sistema de calificación automatizada MOOC-Grader con Python para evaluación de estudiantes"
+          - "Integré Google Sheets API para gestión y seguimiento de evaluaciones académicas"
         en:
-          - "Developed automated grading system mooc-grader with Python"
-          - "Integrated Google Sheets API for academic assessment management"
+          - "Built automated grading system MOOC-Grader with Python for student evaluation"
+          - "Integrated Google Sheets API for academic assessment tracking and management"
     keywords:
       - "Python"
       - "Jupyter"
@@ -353,32 +353,32 @@ experience:
         es: "Desarrollador Backend"
         en: "Backend Developer"
       ds:
-      es: "Desarrollador Backend"
-      en: "Backend Developer"
+        es: "Desarrollador Backend"
+        en: "Backend Developer"
     startDate: "2017-02"
     endDate: "2017-10"
     highlights:
       hybrid:
         es:
-          - "Desarrollé plataforma web para ChatBot de eventos usando Flask"
-          - "Implementé integración con Facebook API para extracción de eventos"
+          - "Desarrollé plataforma web backend para ChatBot de eventos culturales usando Flask"
+          - "Implementé integración con Facebook Graph API para extracción automática de eventos"
         en:
-          - "Developed web platform for events ChatBot using Flask"
-          - "Implemented Facebook API integration for event extraction"
+          - "Built backend web platform for cultural events ChatBot using Flask"
+          - "Implemented Facebook Graph API integration for automated event extraction"
       de:
         es:
-          - "Desarrollé plataforma web para ChatBot de eventos usando Flask"
-          - "Implementé integración con Facebook API para extracción de eventos"
+          - "Desarrollé plataforma web backend para ChatBot de eventos culturales usando Flask"
+          - "Implementé integración con Facebook Graph API para extracción automática de eventos"
         en:
-          - "Developed web platform for events ChatBot using Flask"
-          - "Implemented Facebook API integration for event extraction"
+          - "Built backend web platform for cultural events ChatBot using Flask"
+          - "Implemented Facebook Graph API integration for automated event extraction"
       ds:
         es:
-          - "Desarrollé plataforma web para ChatBot de eventos usando Flask"
-          - "Implementé integración con Facebook API para extracción de eventos"
+          - "Desarrollé plataforma web backend para ChatBot de eventos culturales usando Flask"
+          - "Implementé integración con Facebook Graph API para extracción automática de eventos"
         en:
-          - "Developed web platform for events ChatBot using Flask"
-          - "Implemented Facebook API integration for event extraction"
+          - "Built backend web platform for cultural events ChatBot using Flask"
+          - "Implemented Facebook Graph API integration for automated event extraction"
     keywords:
       - "Python"
       - "Flask"
@@ -396,8 +396,8 @@ experience:
         es: "Administrador de Sala de Cómputo"
         en: "Computer Room Administrator"
       ds:
-      es: "Administrador de Sala de Cómputo"
-      en: "Computer Room Administrator"
+        es: "Administrador de Sala de Cómputo"
+        en: "Computer Room Administrator"
     startDate: "2016-07"
     endDate: "2017-06"
     highlights:
@@ -412,10 +412,10 @@ experience:
         en:
           - "Administration of Mathematics School computer rooms"
       ds:
-      es:
-        - "Administración de salas de cómputo de la Escuela de Matemáticas"
-      en:
-        - "Administration of Mathematics School computer rooms"
+        es:
+          - "Administración de salas de cómputo de la Escuela de Matemáticas"
+        en:
+          - "Administration of Mathematics School computer rooms"
     keywords:
       - "IT Support"
     showInPdf: false
@@ -436,13 +436,13 @@ education:
     endDate: "2022-12"
     highlights:
       es:
-        - "Línea de investigación: Deep Learning bajo dirección del Prof. Raúl Ramos Pollán"
+        - "Línea de investigación: Deep Learning bajo la dirección del Prof. Raúl Ramos Pollán"
         - "Tesis: Impacto de datos sintéticos (GANs) en predicciones de trading de commodities"
-        - "Publicación científica en Research in International Business and Finance (2022)"
+        - "Publicación científica indexada en Research in International Business and Finance (2022)"
       en:
-        - "Research line: Deep Learning under Professor Raúl Ramos Pollán"
+        - "Research focus: Deep Learning under Professor Raúl Ramos Pollán's supervision"
         - "Thesis: Impact of synthetic data (GANs) on commodities trading predictions"
-        - "Scientific publication in Research in International Business and Finance (2022)"
+        - "Indexed scientific publication in Research in International Business and Finance (2022)"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQDBY4e_J0-vRJ8_y6Z6Pn0IAQaq-3MCYxmm3PYcXXaL5Eo?e=uNd6Y9"
 
   - institution: "Universidad Industrial de Santander"
@@ -457,9 +457,9 @@ education:
     endDate: "2018-09"
     highlights:
       es:
-        - "Proyecto de grado: Estimación de estratificación socioeconómica urbana usando CNNs sobre imágenes satelitales"
+        - "Proyecto de grado: Estimación de estratificación socioeconómica urbana mediante CNNs aplicadas a imágenes satelitales"
       en:
-        - "Thesis: Urban socioeconomic stratification estimation using CNNs on satellite images"
+        - "Thesis: Urban socioeconomic stratification estimation using CNNs applied to satellite imagery"
     certificate: null
 
   - institution: "Universidad Industrial de Santander"
@@ -503,7 +503,7 @@ certifications:
   - name: "Deep Learning Specialization"
     issuer: "Coursera (DeepLearning.AI)"
     date: "2019-07"
-    certificate: null
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQCdI6UMmHbaTLD4x05eiPqqART166xwbBQQb3rzdI0P0mQ?e=KbaCbT"
     category: "ml"
     isCertification: true
     profiles: ["hybrid", "ds"]
@@ -845,7 +845,7 @@ languages:
       es: "C1 Avanzado"
       en: "C1 Advanced"
     # TODO: Reemplazar con URL de OneDrive
-    certificate: "https://www.efset.org/cert/YLSHpu "
+    certificate: "https://www.efset.org/cert/YLSHpu"
 
 # -----------------------------------------------------------------------------
 # HABILIDADES TÉCNICAS
@@ -1002,8 +1002,8 @@ publications:
     year: 2022
     doi: "https://doi.org/10.1016/j.ribaf.2022.101747"
     description:
-      es: "Investigación sobre el uso de modelos generativos profundos (GANs) para generar datos sintéticos y mejorar tareas predictivas en estrategias de trading."
-      en: "Research on using deep generative models (GANs) to generate synthetic data and enhance predictive tasks in trading strategies."
+      es: "Investigación sobre el uso de modelos generativos profundos (GANs) para generar datos sintéticos y mejorar tareas predictivas en estrategias de trading de commodities."
+      en: "Research on leveraging deep generative models (GANs) to generate synthetic data and enhance predictive tasks in commodities trading strategies."
     profiles: ["hybrid", "ds"]  # Mostrar en perfiles hybrid y ds
 
 # -----------------------------------------------------------------------------
