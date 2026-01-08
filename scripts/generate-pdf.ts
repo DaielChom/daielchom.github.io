@@ -1,6 +1,7 @@
 /**
  * Script to generate PDF CVs from YAML data
- * Usage: npm run pdf:es | npm run pdf:en | npm run pdf:all
+ * Generates 6 versions: 3 profiles (hybrid, de, ds) x 2 languages (es, en)
+ * Usage: npm run pdf:all
  */
 
 import { renderToFile } from '@react-pdf/renderer';
@@ -9,18 +10,44 @@ import * as path from 'path';
 import { fileURLToPath } from 'url';
 import yaml from 'js-yaml';
 import React from 'react';
+import {
+  Document,
+  Page,
+  Text,
+  View,
+  StyleSheet,
+  Link,
+} from '@react-pdf/renderer';
 
 // ESM equivalent of __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Import types
+// =============================================================================
+// Types
+// =============================================================================
+
+type Language = 'es' | 'en';
+type Profile = 'hybrid' | 'de' | 'ds';
+
 interface LocalizedString {
   es: string;
   en: string;
 }
 
-interface ResumeData {
+interface ProfiledLocalizedString {
+  hybrid: LocalizedString;
+  de: LocalizedString;
+  ds: LocalizedString;
+}
+
+interface ProfiledHighlights {
+  hybrid: { es: string[]; en: string[] };
+  de: { es: string[]; en: string[] };
+  ds: { es: string[]; en: string[] };
+}
+
+interface ResumeDataRaw {
   meta: { version: string; lastUpdated: string };
   personal: {
     name: string;
@@ -30,16 +57,17 @@ interface ResumeData {
     location: { city: string; state: string; country: string };
     links: Record<string, string>;
   };
-  title: LocalizedString;
-  summary: { short: LocalizedString; full: LocalizedString };
+  summary: {
+    short: ProfiledLocalizedString;
+    full: LocalizedString;
+  };
   experience: Array<{
     company: string;
     location: string;
-    title: LocalizedString;
+    title: ProfiledLocalizedString;
     startDate: string;
     endDate: string | null;
-    highlights: { es: string[]; en: string[] };
-    description: LocalizedString;
+    highlights: ProfiledHighlights;
     keywords: string[];
     showInPdf?: boolean;
   }>;
@@ -51,7 +79,6 @@ interface ResumeData {
     startDate: string;
     endDate: string | null;
     highlights?: { es: string[]; en: string[] };
-    description: LocalizedString;
     certificate: string | null;
     showInPdf?: boolean;
   }>;
@@ -59,9 +86,11 @@ interface ResumeData {
     name: string;
     issuer: string;
     date: string;
-    certificate: string;
-    description?: LocalizedString;
+    certificate: string | null;
+    category?: string;
+    profiles?: Profile[];
     showInPdf?: boolean;
+    isCertification?: boolean;
   }>;
   languages: Array<{
     name: LocalizedString;
@@ -72,29 +101,31 @@ interface ResumeData {
   skills: {
     categories: Array<{
       name: LocalizedString;
+      category?: string;
       items: string[];
+      priority?: number;
+      profiles?: Profile[];
+      showInPdf?: boolean;
     }>;
   };
-  volunteer: Array<{
-    organization: string;
-    fullName: string;
-    role: LocalizedString;
-    startDate: string;
-    endDate: string;
+  publications?: Array<{
+    title: string;
+    journal: string;
+    year: number;
+    doi: string;
     description: LocalizedString;
-    showInPdf?: boolean;
-  }>;
-  references: Array<{
-    name: string;
-    relationship: LocalizedString;
-    email: string;
-    showInPdf?: boolean;
+    profiles?: Profile[];
   }>;
 }
 
-type Language = 'es' | 'en';
+interface TitlesData {
+  titles: ProfiledLocalizedString;
+}
 
-// Helper function
+// =============================================================================
+// Helper Functions
+// =============================================================================
+
 function t(obj: LocalizedString | undefined, lang: Language): string {
   if (!obj) return '';
   return obj[lang] || obj.es || '';
@@ -110,17 +141,19 @@ function formatDate(dateStr: string | null, lang: Language): string {
   return date.toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-US', options);
 }
 
-// We need to import the PDF renderer components directly
-import {
-  Document,
-  Page,
-  Text,
-  View,
-  StyleSheet,
-  Link,
-} from '@react-pdf/renderer';
+function getProfileLabel(profile: Profile, lang: Language): string {
+  const labels: Record<Profile, LocalizedString> = {
+    hybrid: { es: 'Híbrido', en: 'Hybrid' },
+    de: { es: 'Data Engineer', en: 'Data Engineer' },
+    ds: { es: 'Data Scientist', en: 'Data Scientist' },
+  };
+  return labels[profile][lang];
+}
 
-// ATS-friendly styles
+// =============================================================================
+// PDF Styles (ATS-friendly)
+// =============================================================================
+
 const styles = StyleSheet.create({
   page: {
     fontFamily: 'Helvetica',
@@ -264,15 +297,59 @@ const styles = StyleSheet.create({
     fontSize: 9,
     color: '#64748b',
   },
+  publicationItem: {
+    marginBottom: 6,
+  },
+  publicationTitle: {
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#0f172a',
+  },
+  publicationJournal: {
+    fontSize: 9,
+    color: '#64748b',
+    fontStyle: 'italic',
+  },
 });
 
+// =============================================================================
 // PDF Document Component
-function createPdfDocument(data: ResumeData, lang: Language) {
-  const { personal, title, summary, experience, education, skills, languages, certifications } = data;
+// =============================================================================
 
+function createPdfDocument(
+  data: ResumeDataRaw,
+  titles: TitlesData,
+  profile: Profile,
+  lang: Language
+) {
+  const { personal, summary, experience, education, skills, languages, certifications, publications } = data;
+
+  // Get title for this profile
+  const title = titles.titles[profile];
+
+  // Filter data by profile and showInPdf
   const pdfExperience = experience.filter(e => e.showInPdf !== false);
   const pdfEducation = education.filter(e => e.showInPdf !== false);
-  const pdfCertifications = certifications.filter(c => c.showInPdf !== false);
+  
+  // Filter certifications: must be real certifications (isCertification: true) and match profile
+  const pdfCertifications = certifications.filter(c => 
+    c.isCertification === true && 
+    c.showInPdf !== false &&
+    (!c.profiles || c.profiles.includes(profile))
+  );
+
+  // Filter skills by profile and showInPdf
+  const pdfSkills = skills.categories
+    .filter(cat => 
+      cat.showInPdf !== false &&
+      (!cat.profiles || cat.profiles.includes(profile))
+    )
+    .sort((a, b) => (a.priority || 99) - (b.priority || 99));
+
+  // Filter publications by profile
+  const pdfPublications = (publications || []).filter(pub =>
+    !pub.profiles || pub.profiles.includes(profile)
+  );
 
   const labels = {
     summary: lang === 'es' ? 'Resumen Profesional' : 'Professional Summary',
@@ -281,6 +358,7 @@ function createPdfDocument(data: ResumeData, lang: Language) {
     skills: lang === 'es' ? 'Habilidades Técnicas' : 'Technical Skills',
     languages: lang === 'es' ? 'Idiomas' : 'Languages',
     certifications: lang === 'es' ? 'Certificaciones' : 'Certifications',
+    publications: lang === 'es' ? 'Publicaciones' : 'Publications',
   };
 
   return React.createElement(
@@ -317,12 +395,12 @@ function createPdfDocument(data: ResumeData, lang: Language) {
           )
         )
       ),
-      // Summary
+      // Summary (short version for this profile)
       React.createElement(
         View,
         { style: styles.section },
         React.createElement(Text, { style: styles.sectionTitle }, labels.summary),
-        React.createElement(Text, { style: styles.summary }, t(summary.short, lang))
+        React.createElement(Text, { style: styles.summary }, t(summary.short[profile], lang))
       ),
       // Experience
       React.createElement(
@@ -339,7 +417,7 @@ function createPdfDocument(data: ResumeData, lang: Language) {
               React.createElement(
                 View,
                 null,
-                React.createElement(Text, { style: styles.itemTitle }, t(job.title, lang)),
+                React.createElement(Text, { style: styles.itemTitle }, t(job.title[profile], lang)),
                 React.createElement(Text, { style: styles.itemSubtitle }, job.company)
               ),
               React.createElement(
@@ -356,7 +434,7 @@ function createPdfDocument(data: ResumeData, lang: Language) {
             React.createElement(
               View,
               { style: styles.bulletList },
-              ...job.highlights[lang].map((highlight, i) =>
+              ...job.highlights[profile][lang].map((highlight, i) =>
                 React.createElement(
                   View,
                   { key: i, style: styles.bulletItem },
@@ -412,7 +490,21 @@ function createPdfDocument(data: ResumeData, lang: Language) {
           )
         )
       ),
-      // Two columns: Skills and Languages
+      // Publications (if any for this profile)
+      pdfPublications.length > 0 && React.createElement(
+        View,
+        { style: styles.section },
+        React.createElement(Text, { style: styles.sectionTitle }, labels.publications),
+        ...pdfPublications.map((pub, index) =>
+          React.createElement(
+            View,
+            { key: index, style: styles.publicationItem },
+            React.createElement(Text, { style: styles.publicationTitle }, pub.title),
+            React.createElement(Text, { style: styles.publicationJournal }, `${pub.journal}, ${pub.year}`)
+          )
+        )
+      ),
+      // Two columns: Skills and Languages/Certifications
       React.createElement(
         View,
         { style: styles.twoColumn },
@@ -421,7 +513,7 @@ function createPdfDocument(data: ResumeData, lang: Language) {
           View,
           { style: [styles.section, styles.column] },
           React.createElement(Text, { style: styles.sectionTitle }, labels.skills),
-          ...skills.categories.slice(0, 4).map((category, index) =>
+          ...pdfSkills.slice(0, 5).map((category, index) =>
             React.createElement(
               View,
               { key: index, style: styles.skillCategory },
@@ -451,7 +543,7 @@ function createPdfDocument(data: ResumeData, lang: Language) {
             View,
             { style: { marginTop: 10 } },
             React.createElement(Text, { style: styles.sectionTitle }, labels.certifications),
-            ...pdfCertifications.slice(0, 3).map((cert, index) =>
+            ...pdfCertifications.slice(0, 4).map((cert, index) =>
               React.createElement(
                 View,
                 { key: index, style: { marginBottom: 3 } },
@@ -466,13 +558,48 @@ function createPdfDocument(data: ResumeData, lang: Language) {
   );
 }
 
-async function generatePdf(lang: Language) {
+// =============================================================================
+// PDF Generation
+// =============================================================================
+
+async function generatePdf(
+  data: ResumeDataRaw,
+  titles: TitlesData,
+  profile: Profile,
+  lang: Language,
+  outputDir: string
+) {
+  const profileNames: Record<Profile, string> = {
+    hybrid: 'Hybrid',
+    de: 'DataEngineer',
+    ds: 'DataScientist',
+  };
+
+  const outputPath = path.join(
+    outputDir,
+    `CV_Daniel_Carvajal_${profileNames[profile]}_${lang.toUpperCase()}.pdf`
+  );
+
+  console.log(`  Generating ${profileNames[profile]} (${lang.toUpperCase()})...`);
+
+  const document = createPdfDocument(data, titles, profile, lang);
+  await renderToFile(document, outputPath);
+
+  console.log(`  ✓ ${outputPath}`);
+}
+
+async function main() {
   const projectRoot = path.resolve(__dirname, '..');
-  
+
   // Read YAML data
-  const yamlPath = path.join(projectRoot, 'src', 'data', 'resume.yaml');
+  const yamlPath = path.join(projectRoot, 'public', 'data', 'resume.yaml');
   const yamlContent = fs.readFileSync(yamlPath, 'utf-8');
-  const data = yaml.load(yamlContent) as ResumeData;
+  const data = yaml.load(yamlContent) as ResumeDataRaw;
+
+  // Read titles.json
+  const titlesPath = path.join(projectRoot, 'public', 'data', 'titles.json');
+  const titlesContent = fs.readFileSync(titlesPath, 'utf-8');
+  const titles = JSON.parse(titlesContent) as TitlesData;
 
   // Create output directory
   const outputDir = path.join(projectRoot, 'public', 'cv');
@@ -480,38 +607,26 @@ async function generatePdf(lang: Language) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  // Generate PDF
-  const outputPath = path.join(outputDir, `CV_Daniel_Carvajal_${lang.toUpperCase()}.pdf`);
-  
-  console.log(`Generating ${lang.toUpperCase()} PDF...`);
-  
-  const document = createPdfDocument(data, lang);
-  await renderToFile(document, outputPath);
-  
-  console.log(`✓ Generated: ${outputPath}`);
-}
+  console.log('\n📄 Generating PDF CVs...\n');
 
-async function main() {
-  const args = process.argv.slice(2);
-  const lang = args[0] || 'all';
+  const profiles: Profile[] = ['hybrid', 'de', 'ds'];
+  const languages: Language[] = ['es', 'en'];
 
   try {
-    if (lang === 'all') {
-      await generatePdf('es');
-      await generatePdf('en');
-    } else if (lang === 'es' || lang === 'en') {
-      await generatePdf(lang);
-    } else {
-      console.error('Invalid language. Use: es, en, or all');
-      process.exit(1);
+    for (const profile of profiles) {
+      for (const lang of languages) {
+        await generatePdf(data, titles, profile, lang, outputDir);
+      }
     }
-    
-    console.log('\n✅ PDF generation complete!');
+
+    console.log('\n✅ All 6 PDFs generated successfully!\n');
+    console.log('Files created:');
+    const files = fs.readdirSync(outputDir).filter(f => f.endsWith('.pdf'));
+    files.forEach(f => console.log(`  - ${f}`));
   } catch (error) {
-    console.error('Error generating PDF:', error);
+    console.error('\n❌ Error generating PDFs:', error);
     process.exit(1);
   }
 }
 
 main();
-

@@ -18,6 +18,9 @@ navigation:
   skills:
     es: "Habilidades"
     en: "Skills"
+  publications:
+    es: "Publicaciones"
+    en: "Publications"
   contact:
     es: "Contacto"
     en: "Contact"
@@ -59,6 +62,9 @@ education:
   certifications:
     es: "Certificaciones"
     en: "Certifications"
+  courses:
+    es: "Cursos"
+    en: "Courses"
   viewCertificate:
     es: "Ver certificado"
     en: "View certificate"
@@ -77,6 +83,14 @@ volunteer:
   title:
     es: "Voluntariado"
     en: "Volunteer Work"
+
+publications:
+  title:
+    es: "Publicaciones Académicas"
+    en: "Academic Publications"
+  viewPaper:
+    es: "Ver publicación"
+    en: "View paper"
 
 references:
   title:

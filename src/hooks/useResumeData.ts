@@ -1,6 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import yaml from 'js-yaml';
-import type { ResumeData, Labels, Language } from '@/types/resume';
+import type { ResumeData, ResumeDataRaw, Labels, Language, Profile, TitlesData } from '@/types/resume';
+
+// Re-export normalizeResumeData from types
+export { normalizeResumeData } from '@/types/resume';
 
 interface UseResumeDataReturn {
   resumeData: ResumeData | null;
@@ -11,7 +14,7 @@ interface UseResumeDataReturn {
   error: string | null;
 }
 
-export function useResumeData(): UseResumeDataReturn {
+export function useResumeData(profile: Profile = 'hybrid'): UseResumeDataReturn {
   const [resumeData, setResumeData] = useState<ResumeData | null>(null);
   const [labels, setLabels] = useState<Labels | null>(null);
   const [language, setLanguage] = useState<Language>('es');
@@ -23,25 +26,31 @@ export function useResumeData(): UseResumeDataReturn {
       setLoading(true);
       setError(null);
 
-      // Load YAML files
-      const [resumeResponse, labelsResponse] = await Promise.all([
+      // Load YAML and JSON files
+      const [resumeResponse, labelsResponse, titlesResponse] = await Promise.all([
         fetch('/data/resume.yaml'),
         fetch('/data/labels.yaml'),
+        fetch('/data/titles.json'),
       ]);
 
-      if (!resumeResponse.ok || !labelsResponse.ok) {
+      if (!resumeResponse.ok || !labelsResponse.ok || !titlesResponse.ok) {
         throw new Error('Failed to load data files');
       }
 
-      const [resumeText, labelsText] = await Promise.all([
+      const [resumeText, labelsText, titlesData] = await Promise.all([
         resumeResponse.text(),
         labelsResponse.text(),
+        titlesResponse.json() as Promise<TitlesData>,
       ]);
 
-      const resumeYaml = yaml.load(resumeText) as ResumeData;
+      const resumeRaw = yaml.load(resumeText) as ResumeDataRaw;
       const labelsYaml = yaml.load(labelsText) as Labels;
 
-      setResumeData(resumeYaml);
+      // Import and use normalizeResumeData
+      const { normalizeResumeData: normalize } = await import('@/types/resume');
+      const normalizedData = normalize(resumeRaw, titlesData, profile);
+
+      setResumeData(normalizedData);
       setLabels(labelsYaml);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error');
@@ -49,7 +58,7 @@ export function useResumeData(): UseResumeDataReturn {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [profile]);
 
   useEffect(() => {
     loadData();
@@ -82,6 +91,11 @@ export function formatDate(dateStr: string | null, lang: Language): string {
     return lang === 'es' ? 'Presente' : 'Present';
   }
 
+  // Handle year-only format
+  if (dateStr.length === 4) {
+    return dateStr;
+  }
+
   const date = new Date(dateStr);
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short' };
   
@@ -94,5 +108,3 @@ export function formatDateRange(startDate: string, endDate: string | null, lang:
   const end = formatDate(endDate, lang);
   return `${start} - ${end}`;
 }
-
-

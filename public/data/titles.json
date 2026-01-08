@@ -1,0 +1,21 @@
+{
+  "titles": {
+    "hybrid": {
+      "es": "Senior Data Engineer & Scientist",
+      "en": "Senior Data Engineer & Scientist"
+    },
+    "de": {
+      "es": "Senior Data Engineer",
+      "en": "Senior Data Engineer"
+    },
+    "ds": {
+      "es": "Semi-Senior Data Scientist",
+      "en": "Semi-Senior Data Scientist"
+    }
+  },
+  "descriptions": {
+    "hybrid": "Perfil combinado para web y CV general. Muestra experiencia en ambas áreas.",
+    "de": "Perfil enfocado en Data Engineering: ETLs, arquitectura de datos, cloud, Databricks.",
+    "ds": "Perfil enfocado en Data Science: ML, modelos predictivos, GANs, análisis."
+  }
+}

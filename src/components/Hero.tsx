@@ -1,4 +1,4 @@
-import { Download, ChevronDown, Github, Linkedin, Mail, Send } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Send } from 'lucide-react';
 import type { ResumeData, Labels, Language } from '@/types/resume';
 
 interface HeroProps {
@@ -46,15 +46,15 @@ export function Hero({ data, labels, lang }: HeroProps) {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 text-center relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-28 pb-20 text-center relative z-10">
         {/* Profile Image */}
-        <div className="mb-8 animate-fade-in">
+        <div className="mb-5 sm:mb-6 animate-fade-in">
           <div className="relative inline-block">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden ring-4 ring-primary-200 ring-offset-4 ring-offset-white shadow-xl">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-primary-200 ring-offset-4 ring-offset-white shadow-xl">
               <img
                 src={`/images/${personal.photo}`}
                 alt={personal.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-125"
               />
             </div>
             {/* Status indicator */}
@@ -63,8 +63,8 @@ export function Hero({ data, labels, lang }: HeroProps) {
         </div>
 
         {/* Name & Title */}
-        <div className="mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-4">
+        <div className="mb-3 sm:mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-2 sm:mb-3">
             <span className="text-surface-700">{t(labels.header.greeting, lang)} </span>
             <span className="gradient-text">{personal.name}</span>
           </h1>
@@ -74,17 +74,17 @@ export function Hero({ data, labels, lang }: HeroProps) {
         </div>
 
         {/* Location */}
-        <p className="text-surface-500 mb-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+        <p className="text-sm sm:text-base text-surface-500 mb-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           📍 {t(labels.header.basedIn, lang)} {personal.location.city}, {personal.location.country}
         </p>
 
         {/* Summary */}
-        <p className="text-lg text-surface-600 max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+        <p className="text-base sm:text-lg text-surface-600 max-w-2xl mx-auto mb-5 sm:mb-6 px-2 animate-slide-up" style={{ animationDelay: '0.3s' }}>
           {t(summary.short, lang)}
         </p>
 
         {/* Social Links */}
-        <div className="flex items-center justify-center gap-3 mb-10 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+        <div className="flex items-center justify-center gap-2 sm:gap-3 animate-slide-up" style={{ animationDelay: '0.4s' }}>
           {mainSocials.map((key) => {
             const url = personal.links[key as keyof typeof personal.links];
             return (
@@ -93,7 +93,7 @@ export function Hero({ data, labels, lang }: HeroProps) {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-white border border-surface-200 shadow-sm
+                className="p-2.5 sm:p-3 rounded-full bg-white border border-surface-200 shadow-sm
                          hover:border-primary-400 hover:bg-primary-50 hover:text-primary-600
                          transition-all duration-300 hover:scale-110 hover:shadow-md"
                 aria-label={key}
@@ -104,7 +104,7 @@ export function Hero({ data, labels, lang }: HeroProps) {
           })}
           <a
             href={`mailto:${personal.email}`}
-            className="p-3 rounded-full bg-white border border-surface-200 shadow-sm
+            className="p-2.5 sm:p-3 rounded-full bg-white border border-surface-200 shadow-sm
                      hover:border-primary-400 hover:bg-primary-50 hover:text-primary-600
                      transition-all duration-300 hover:scale-110 hover:shadow-md"
             aria-label="Email"
@@ -112,28 +112,13 @@ export function Hero({ data, labels, lang }: HeroProps) {
             <Mail className="w-5 h-5" />
           </a>
         </div>
+      </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.5s' }}>
-          <a
-            href={`/cv/CV_Daniel_Carvajal_${lang.toUpperCase()}.pdf`}
-            download
-            className="btn-primary"
-          >
-            <Download className="w-5 h-5" />
-            {t(labels.header.downloadCv, lang)}
-          </a>
-          <a href="#about" className="btn-secondary">
-            {t(labels.navigation.about, lang)}
-          </a>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#about" className="text-surface-400 hover:text-primary-500 transition-colors">
-            <ChevronDown className="w-8 h-8" />
-          </a>
-        </div>
+      {/* Scroll indicator - positioned relative to section, not content */}
+      <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 animate-bounce z-10">
+        <a href="#about" className="text-surface-400 hover:text-primary-500 transition-colors">
+          <ChevronDown className="w-7 h-7 sm:w-8 sm:h-8" />
+        </a>
       </div>
     </section>
   );

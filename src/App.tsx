@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import yaml from 'js-yaml';
 import { LanguageProvider, useLanguage } from '@/context/LanguageContext';
-import type { ResumeData, Labels } from '@/types/resume';
+import type { ResumeData, ResumeDataRaw, Labels, TitlesData } from '@/types/resume';
+import { normalizeResumeData } from '@/types/resume';
 
 // Components
 import { Header } from '@/components/Header';
@@ -10,6 +11,7 @@ import { About } from '@/components/About';
 import { Experience } from '@/components/Experience';
 import { Education } from '@/components/Education';
 import { Skills } from '@/components/Skills';
+import { Publications } from '@/components/Publications';
 import { Footer } from '@/components/Footer';
 import { LoadingScreen } from '@/components/LoadingScreen';
 
@@ -24,24 +26,31 @@ function AppContent() {
     async function loadData() {
       try {
         setLoading(true);
-        const [resumeRes, labelsRes] = await Promise.all([
+        const [resumeRes, labelsRes, titlesRes] = await Promise.all([
           fetch('/data/resume.yaml'),
           fetch('/data/labels.yaml'),
+          fetch('/data/titles.json'),
         ]);
 
-        if (!resumeRes.ok || !labelsRes.ok) {
+        if (!resumeRes.ok || !labelsRes.ok || !titlesRes.ok) {
           throw new Error('Failed to load data');
         }
 
-        const [resumeText, labelsText] = await Promise.all([
+        const [resumeText, labelsText, titlesJson] = await Promise.all([
           resumeRes.text(),
           labelsRes.text(),
+          titlesRes.json() as Promise<TitlesData>,
         ]);
 
-        setResumeData(yaml.load(resumeText) as ResumeData);
+        // Load raw data and normalize for 'hybrid' profile (web default)
+        const rawData = yaml.load(resumeText) as ResumeDataRaw;
+        const normalizedData = normalizeResumeData(rawData, titlesJson, 'hybrid');
+
+        setResumeData(normalizedData);
         setLabels(yaml.load(labelsText) as Labels);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Error loading data');
+        console.error('Error loading data:', err);
       } finally {
         setLoading(false);
       }
@@ -56,17 +65,17 @@ function AppContent() {
 
   if (error || !resumeData || !labels) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-dark-950">
+      <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-red-400 mb-2">Error</h1>
-          <p className="text-dark-400">{error || 'Failed to load data'}</p>
+          <h1 className="text-2xl font-bold text-red-500 mb-2">Error</h1>
+          <p className="text-surface-500">{error || 'Failed to load data'}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="noise-overlay">
+    <div className="pattern-overlay">
       <Header labels={labels} />
       
       <main>
@@ -100,6 +109,12 @@ function AppContent() {
           labels={labels} 
           lang={language} 
         />
+
+        <Publications
+          data={resumeData.publications}
+          labels={labels}
+          lang={language}
+        />
       </main>
       
       <Footer 
@@ -120,5 +135,3 @@ function App() {
 }
 
 export default App;
-
-

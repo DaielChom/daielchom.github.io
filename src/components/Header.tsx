@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Menu, X, Globe, Download, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import type { Labels, Language } from '@/types/resume';
 
@@ -11,10 +11,31 @@ function t(obj: { es: string; en: string }, lang: Language): string {
   return obj[lang];
 }
 
+// CV download options
+const cvOptions = [
+  { 
+    id: 'hybrid', 
+    label: { es: 'General (Híbrido)', en: 'General (Hybrid)' },
+    description: { es: 'Data Scientist & Engineer', en: 'Data Scientist & Engineer' }
+  },
+  { 
+    id: 'de', 
+    label: { es: 'Data Engineer', en: 'Data Engineer' },
+    description: { es: 'Enfocado en ETLs y arquitectura', en: 'Focused on ETLs and architecture' }
+  },
+  { 
+    id: 'ds', 
+    label: { es: 'Data Scientist', en: 'Data Scientist' },
+    description: { es: 'Enfocado en ML y análisis', en: 'Focused on ML and analysis' }
+  },
+];
+
 export function Header({ labels }: HeaderProps) {
   const { language, toggleLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isCvDropdownOpen, setIsCvDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,13 +46,33 @@ export function Header({ labels }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsCvDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const navItems = [
     { href: '#home', label: t(labels.navigation.home, language) },
     { href: '#about', label: t(labels.navigation.about, language) },
     { href: '#experience', label: t(labels.navigation.experience, language) },
     { href: '#education', label: t(labels.navigation.education, language) },
     { href: '#skills', label: t(labels.navigation.skills, language) },
+    { href: '#publications', label: t(labels.navigation.publications, language) },
   ];
+
+  const getCvFileName = (profile: string, lang: Language) => {
+    if (profile === 'hybrid') {
+      return `CV_Daniel_Carvajal_${lang.toUpperCase()}.pdf`;
+    }
+    return `CV_Daniel_Carvajal_${profile.toUpperCase()}_${lang.toUpperCase()}.pdf`;
+  };
 
   return (
     <header
@@ -67,6 +108,65 @@ export function Header({ labels }: HeaderProps) {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
+            {/* Download CV Dropdown */}
+            <div className="relative hidden sm:block" ref={dropdownRef}>
+              <button
+                onClick={() => setIsCvDropdownOpen(!isCvDropdownOpen)}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm
+                         bg-gradient-to-r from-primary-500 to-primary-600 text-white font-medium
+                         hover:from-primary-600 hover:to-primary-700
+                         transition-all duration-200 shadow-sm hover:shadow-md"
+              >
+                <Download className="w-4 h-4" />
+                <span className="hidden lg:inline">{t(labels.header.downloadCv, language)}</span>
+                <span className="lg:hidden">CV</span>
+                <ChevronDown className={`w-3 h-3 transition-transform ${isCvDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {/* Dropdown Menu */}
+              {isCvDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-surface-200 py-2 animate-fade-in z-50">
+                  <div className="px-3 py-2 border-b border-surface-100">
+                    <p className="text-xs text-surface-500 font-medium uppercase tracking-wide">
+                      {language === 'es' ? 'Selecciona versión' : 'Select version'}
+                    </p>
+                  </div>
+                  
+                  {cvOptions.map((option) => (
+                    <div key={option.id} className="px-2 py-1">
+                      <div className="px-2 py-1.5 text-xs text-surface-400 font-medium">
+                        {t(option.label, language)}
+                      </div>
+                      <div className="flex gap-1">
+                        <a
+                          href={`/cv/${getCvFileName(option.id, 'es')}`}
+                          download
+                          onClick={() => setIsCvDropdownOpen(false)}
+                          className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg
+                                   text-sm text-surface-700 hover:bg-primary-50 hover:text-primary-600
+                                   transition-colors border border-surface-200"
+                        >
+                          <span>🇪🇸</span>
+                          <span>Español</span>
+                        </a>
+                        <a
+                          href={`/cv/${getCvFileName(option.id, 'en')}`}
+                          download
+                          onClick={() => setIsCvDropdownOpen(false)}
+                          className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg
+                                   text-sm text-surface-700 hover:bg-primary-50 hover:text-primary-600
+                                   transition-colors border border-surface-200"
+                        >
+                          <span>🇺🇸</span>
+                          <span>English</span>
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
@@ -107,6 +207,43 @@ export function Header({ labels }: HeaderProps) {
                 </li>
               ))}
             </ul>
+
+            {/* CV Downloads in Mobile */}
+            <div className="mt-4 pt-4 border-t border-surface-200">
+              <p className="px-4 text-xs text-surface-500 font-medium uppercase tracking-wide mb-2">
+                {t(labels.header.downloadCv, language)}
+              </p>
+              
+              {cvOptions.map((option) => (
+                <div key={option.id} className="px-4 py-2">
+                  <p className="text-sm font-medium text-surface-700 mb-2">{t(option.label, language)}</p>
+                  <div className="flex gap-2">
+                    <a
+                      href={`/cv/${getCvFileName(option.id, 'es')}`}
+                      download
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg
+                               text-sm text-surface-600 bg-surface-100 hover:bg-primary-50 hover:text-primary-600
+                               transition-colors"
+                    >
+                      <span>🇪🇸</span>
+                      <span>ES</span>
+                    </a>
+                    <a
+                      href={`/cv/${getCvFileName(option.id, 'en')}`}
+                      download
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg
+                               text-sm text-surface-600 bg-surface-100 hover:bg-primary-50 hover:text-primary-600
+                               transition-colors"
+                    >
+                      <span>🇺🇸</span>
+                      <span>EN</span>
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </nav>

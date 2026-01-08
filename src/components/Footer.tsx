@@ -31,18 +31,18 @@ export function Footer({ data, labels, lang }: FooterProps) {
     }));
 
   return (
-    <footer className="py-12 border-t border-surface-200 bg-surface-50">
+    <footer className="py-8 sm:py-12 border-t border-surface-200 bg-surface-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-4 sm:gap-6">
           {/* Social Links */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {socialLinks.map((social) => (
               <a
                 key={social.name}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-full bg-white border border-surface-200 shadow-sm
+                className="p-2 sm:p-2.5 rounded-full bg-white border border-surface-200 shadow-sm
                          text-surface-500 hover:text-primary-600 hover:border-primary-300
                          transition-all duration-200 hover:scale-110 hover:shadow-md"
                 aria-label={social.name}
@@ -52,7 +52,7 @@ export function Footer({ data, labels, lang }: FooterProps) {
             ))}
             <a
               href={`mailto:${data.email}`}
-              className="p-2.5 rounded-full bg-white border border-surface-200 shadow-sm
+              className="p-2 sm:p-2.5 rounded-full bg-white border border-surface-200 shadow-sm
                        text-surface-500 hover:text-primary-600 hover:border-primary-300
                        transition-all duration-200 hover:scale-110 hover:shadow-md"
               aria-label="Email"
@@ -62,14 +62,14 @@ export function Footer({ data, labels, lang }: FooterProps) {
           </div>
 
           {/* Made with */}
-          <p className="text-surface-500 text-sm flex items-center gap-1.5">
+          <p className="text-surface-500 text-xs sm:text-sm flex flex-wrap items-center justify-center gap-1.5 text-center px-4">
             {t(labels.footer.madeWith, lang)}{' '}
             <Heart className="w-4 h-4 text-red-500 fill-red-500" />{' '}
             {t(labels.footer.and, lang)} React + TypeScript + Tailwind
           </p>
 
           {/* Copyright */}
-          <p className="text-surface-400 text-sm">
+          <p className="text-surface-400 text-xs sm:text-sm text-center">
             © {currentYear} {data.name}. All rights reserved.
           </p>
         </div>

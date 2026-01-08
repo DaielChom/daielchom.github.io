@@ -2,21 +2,30 @@
 # RESUME DATA - Daniel Carvajal Patiño
 # =============================================================================
 # Este archivo es la fuente única de datos para:
-# - El sitio web (versión completa)
-# - El PDF del CV (versión resumida)
+# - El sitio web (versión completa - perfil híbrido)
+# - PDFs del CV (3 versiones: hybrid, de, ds)
 # - Ambos idiomas (español e inglés)
+# 
+# PERFILES DISPONIBLES:
+# - hybrid: Data Scientist & Engineer (web + PDF default)
+# - de: Data Engineer (PDF especializado)
+# - ds: Data Scientist / ML Engineer (PDF especializado)
 # =============================================================================
 
 meta:
-  version: "2.0"
-  lastUpdated: "2026-01-05"
+  version: "3.0"
+  lastUpdated: "2026-01-07"
+  profiles:
+    - hybrid  # Para web y PDF por defecto
+    - de      # Data Engineer
+    - ds      # Data Scientist
 
 # -----------------------------------------------------------------------------
 # INFORMACIÓN PERSONAL
 # -----------------------------------------------------------------------------
 personal:
   name: "Daniel C. Patiño"
-  photo: "profilepic.png"
+  photo: "profile_gemini.jpg"
   email: "danielcarvajalpatino@gmail.com"
   phone: "+57 311 531 5773"
   location:
@@ -35,203 +44,380 @@ personal:
 # -----------------------------------------------------------------------------
 # TÍTULO PROFESIONAL
 # -----------------------------------------------------------------------------
-title:
-  es: "Ingeniero de Datos"
-  en: "Data Engineer"
+# NOTA: Los títulos se cargan desde /data/titles.json para facilitar su edición
+# -----------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
-# RESUMEN PROFESIONAL
+# RESUMEN PROFESIONAL (por perfil)
 # -----------------------------------------------------------------------------
 summary:
-  # Versión corta para PDF (máximo 3 líneas)
+  # Versión corta para PDF y Hero (3 líneas)
   short:
+    hybrid:
+      es: >-
+        Data Engineer & Scientist con +6 años en arquitecturas de datos, pipelines ETL y 
+        Machine Learning. Experto en Python, SQL, Linux, GCP, Databricks, TensorFlow y PyTorch. 
+        Experiencia en Data Warehouses y modelos predictivos. POO y código limpio.
+      en: >-
+        Data Engineer & Scientist with 6+ years in data architectures, ETL pipelines, and 
+        Machine Learning. Expert in Python, SQL, Linux, GCP, Databricks, TensorFlow, and PyTorch. 
+        Experience in Data Warehouses and predictive models. OOP and clean code.
+    de:
+      es: >-
+        Senior Data Engineer con +6 años diseñando arquitecturas de datos escalables en 
+        retail, fintech y trading. Experto en Python, SQL, Linux, GCP, AWS, Databricks y 
+        Terraform. Experiencia en pipelines ETL y Data Warehouses. POO y código limpio.
+      en: >-
+        Senior Data Engineer with 6+ years designing scalable data architectures in retail, 
+        fintech, and trading. Expert in Python, SQL, Linux, GCP, AWS, Databricks, and Terraform. 
+        Experience in ETL pipelines and Data Warehouses. OOP and clean code.
+    ds:
     es: >-
-      Ingeniero de Datos con más de 6 años de experiencia en analítica de datos, 
-      inteligencia artificial y desarrollo de pipelines ETL. Especializado en 
-      Python, SQL, y plataformas cloud. Apasionado por el machine learning y 
-      los modelos generativos.
+        Data Scientist & ML Engineer con +6 años desarrollando modelos de ML en producción en areas como retail, fintech y trading. 
+        Experto en Python, SQL, Linux, TensorFlow, PyTorch y GANs. Autor de publicación 
+        científica sobre datos sintéticos en trading. POO y experimentación rigurosa.
     en: >-
-      Data Engineer with 6+ years of experience in data analytics, artificial 
-      intelligence, and ETL pipeline development. Specialized in Python, SQL, 
-      and cloud platforms. Passionate about machine learning and generative models.
+        Data Scientist & ML Engineer with 6+ years deploying ML models in production. 
+        Expert in Python, SQL, Linux, TensorFlow, PyTorch, and GANs. Published research 
+        on synthetic data in trading. OOP and rigorous experimentation.
   
-  # Versión completa para la web
+  # Versión completa para la sección About de la web
   full:
     es: >-
-      He enfocado mi carrera en analítica de datos e inteligencia artificial 
-      a través de diferentes estudios y experiencia laboral. Apoyo el software 
-      libre y en mis tiempos libres suelo dibujar. Soy oriundo de Aguazul - 
-      Casanare, me gusta el joropo y la tierra llanera. Me considero responsable 
-      y la puntualidad es muy importante para mí.
+      Data Engineer & Scientist con más de 6 años de experiencia diseñando arquitecturas 
+      de datos, construyendo pipelines ETL y desarrollando modelos de Machine Learning. 
+      He participado activamente en el diseño y construcción de Data Warehouses en diferentes 
+      industrias (retail, fintech, trading), implementación de modelos predictivos y toma 
+      de decisiones técnicas en equipos multidisciplinarios. Autor de publicación científica 
+      sobre modelos generativos (GANs) aplicados a trading en Research in International 
+      Business and Finance. Experto en Python, SQL, Linux, GCP, AWS y Databricks. Enfocado 
+      en POO, código limpio y buenas prácticas de desarrollo.
     en: >-
-      I have focused my career in data science and artificial intelligence 
-      through different studies and work experience. I support free software 
-      and in my free time, I usually draw. I am a native of Aguazul - Casanare, 
-      I like the joropo, the Orinoquía region, and their culture. I consider 
-      myself responsible and punctuality is very important to me.
+      Data Engineer & Scientist with 6+ years of experience designing data architectures, 
+      building ETL pipelines, and developing Machine Learning models. Actively participated 
+      in Data Warehouse design and construction across industries (retail, fintech, trading), 
+      predictive model implementation, and technical decision-making in multidisciplinary teams. 
+      Published author on generative models (GANs) applied to trading in Research in International 
+      Business and Finance. Expert in Python, SQL, Linux, GCP, AWS, and Databricks. Focused 
+      on OOP, clean code, and development best practices.
 
 # -----------------------------------------------------------------------------
 # EXPERIENCIA LABORAL
 # -----------------------------------------------------------------------------
+# Estructura de highlights por perfil:
+# - hybrid: Para web y PDF híbrido (Data Scientist & Engineer)
+# - de: Para PDF de Data Engineer
+# - ds: Para PDF de Data Scientist / ML Engineer
+# -----------------------------------------------------------------------------
 experience:
-  - company: "Ultracom"
+  - company: "Farmatodo"
     location: "Bogotá, Colombia"
     title:
-      es: "Ingeniero de Datos"
-      en: "Data Engineer"
-    startDate: "2022-05"
+      hybrid:
+        es: "Data Scientist & Engineer"
+        en: "Data Scientist & Engineer"
+      de:
+        es: "Senior Data Engineer"
+        en: "Senior Data Engineer"
+      ds:
+        es: "Data Scientist"
+        en: "Data Scientist"
+    startDate: "2023-04"
     endDate: null  # null = presente/current
-    # Bullets para PDF (concisos, orientados a logros)
     highlights:
-      es:
-        - "Diseño e implementación de pipelines de datos"
-        - "Desarrollo de soluciones de analítica de datos"
-        - "Integración de sistemas y automatización de procesos"
-      en:
-        - "Design and implementation of data pipelines"
-        - "Development of data analytics solutions"
-        - "Systems integration and process automation"
-    # Descripción larga para web
-    description:
-      es: ""
-      en: ""
+      hybrid:
+        es:
+          - "Participé activamente en el diseño y construcción del Data Warehouse en BigQuery, integrando Oracle, Braze, Amplitude y Algolia"
+          - "Diseñé e implementé pipelines ETL en Python con monitoreo y alertamiento de errores"
+          - "Participé en la migración de infraestructura de datos a Databricks usando Terraform y código limpio"
+          - "Desarrollé e implementé sistema de afinidad de usuarios con dashboards de monitoreo y análisis de métricas"
+          - "Implementé sistema de atribución de marketing, habilitando análisis de ROI por estrategia"
+        en:
+          - "Actively participated in Data Warehouse design and construction in BigQuery, integrating Oracle, Braze, Amplitude, and Algolia"
+          - "Designed and implemented ETL pipelines in Python with monitoring and error alerting"
+          - "Participated in data infrastructure migration to Databricks using Terraform and clean code"
+          - "Developed and implemented user affinity system with monitoring dashboards and metrics analysis"
+          - "Implemented marketing attribution system, enabling ROI analysis per strategy"
+      de:
+        es:
+          - "Participé en el diseño y construcción del Data Warehouse en BigQuery integrando múltiples fuentes"
+          - "Diseñé e implementé pipelines ETL en Python con monitoreo, alertamiento y manejo de errores"
+          - "Participé en migración a Databricks: jobs, dashboards de monitoreo y alertas"
+          - "Implementé infraestructura como código con Terraform siguiendo principios de código limpio"
+          - "Construí dominios de datos: clientes, ventas, productos, promociones con calidad de datos"
+          - "Configuré servicios GCP: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
+        en:
+          - "Participated in Data Warehouse design and construction in BigQuery integrating multiple sources"
+          - "Designed and implemented ETL pipelines in Python with monitoring, alerting, and error handling"
+          - "Participated in Databricks migration: jobs, monitoring dashboards, and alerts"
+          - "Implemented Infrastructure as Code with Terraform following clean code principles"
+          - "Built data domains: customers, sales, products, promotions with data quality"
+          - "Configured GCP services: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
+      ds:
+        es:
+          - "Desarrollé e implementé sistema de afinidad de usuarios basado en comportamientos de compra"
+          - "Construí dashboards de monitoreo y análisis de métricas para medir resultados de personalización"
+          - "Diseñé e implementé modelo de atribución de marketing para medir efectividad de estrategias"
+          - "Realicé análisis exploratorio y presenté insights a stakeholders de negocio"
+          - "Construí dashboards analíticos para toma de decisiones en tiempo real"
+        en:
+          - "Developed and implemented user affinity system based on purchase behavior patterns"
+          - "Built monitoring dashboards and metrics analysis to measure personalization results"
+          - "Designed and implemented marketing attribution model to measure strategy effectiveness"
+          - "Performed exploratory analysis and presented insights to business stakeholders"
+          - "Built analytical dashboards for real-time decision making"
     keywords:
       - "Python"
       - "SQL"
+      - "Linux"
+      - "BigQuery"
+      - "Databricks"
+      - "GCP"
+      - "Terraform"
+      - "ETL"
+      - "Data Warehouse"
+      - "Machine Learning"
+      - "Braze"
+      - "Amplitude"
+
+  - company: "Ultracom (Cliente: Bancolombia)"
+    location: "Medellín, Colombia"
+    title:
+      hybrid:
+        es: "Ingeniero de Datos"
+        en: "Data Engineer"
+      de:
+        es: "Ingeniero de Datos"
+        en: "Data Engineer"
+      ds:
+      es: "Ingeniero de Datos"
+      en: "Data Engineer"
+    startDate: "2022-05"
+    endDate: "2023-04"
+    highlights:
+      hybrid:
+        es:
+          - "Formé parte del equipo de mantenimiento del Data Warehouse de Bancolombia"
+          - "Migré scripts Python a CDP Public Cloud, mejorando escalabilidad"
+          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation)"
+          - "Certifiqué y optimicé código Python para despliegue en ambientes productivos"
+        en:
+          - "Part of the maintenance team for Bancolombia's Data Warehouse"
+          - "Migrated Python scripts to CDP Public Cloud, improving scalability"
+          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation)"
+          - "Certified and optimized Python code for production deployment"
+      de:
+        es:
+          - "Formé parte del equipo de mantenimiento del Data Warehouse de Bancolombia"
+          - "Migré scripts Python a CDP Public Cloud, mejorando escalabilidad"
+          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation)"
+          - "Certifiqué y optimicé código Python para despliegue en ambientes productivos"
+        en:
+          - "Part of the maintenance team for Bancolombia's Data Warehouse"
+          - "Migrated Python scripts to CDP Public Cloud, improving scalability"
+          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation)"
+          - "Certified and optimized Python code for production deployment"
+      ds:
+        es:
+          - "Formé parte del equipo de mantenimiento del Data Warehouse de Bancolombia"
+          - "Migré scripts Python a CDP Public Cloud, mejorando escalabilidad"
+          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation)"
+          - "Certifiqué y optimicé código Python para despliegue en ambientes productivos"
+        en:
+          - "Part of the maintenance team for Bancolombia's Data Warehouse"
+          - "Migrated Python scripts to CDP Public Cloud, improving scalability"
+          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation)"
+          - "Certified and optimized Python code for production deployment"
+    keywords:
+      - "Python"
+      - "AWS"
+      - "SQL"
       - "Data Engineering"
       - "ETL"
+      - "Django"
+      - "CDP"
+      - "Data Lake"
+      - "DynamoDB"
+      - "S3"
+      - "CloudFormation"
 
   - company: "Frontierx"
-    location: "Colombia"
+    location: "Medellín, Colombia"
     title:
-      es: "Científico de Datos y Desarrollador"
-      en: "Data Scientist and Developer"
+      hybrid:
+        es: "Data Scientist & Developer"
+        en: "Data Scientist & Developer"
+      de:
+        es: "Data Engineer"
+        en: "Data Engineer"
+      ds:
+        es: "Data Scientist"
+        en: "Data Scientist"
     startDate: "2018-08"
     endDate: "2022-04"
     highlights:
-      es:
-        - "Desarrollo de estrategias de trading basadas en IA para mercado de commodities"
-        - "Implementación de modelos de deep learning para predicción de mercados"
-        - "Procesamiento de imágenes satelitales con el framework Robosat"
-        - "Análisis de datos para posicionamiento de cartera en mercado energético español"
-      en:
-        - "Development of AI-based trading strategies for commodities market"
-        - "Implementation of deep learning models for market prediction"
-        - "Satellite image processing using Robosat framework"
-        - "Data analysis for portfolio positioning in Spanish energy market"
-    description:
-      es: >-
-        Realicé tareas de analítica de datos, inteligencia artificial y desarrollo 
-        vinculados al convenio entre FRONTIERX SAS y la empresa MKS Sarl en un 
-        proyecto de diseño, implementación, simulación, visualización y despliegue 
-        de estrategias de trading en el mercado de materias primas basadas en 
-        comportamientos y nociones de los traders de la empresa.
-      en: >-
-        I performed data analytics, artificial intelligence, and development tasks 
-        linked to the agreement between FRONTIERX SAS and MKS Sarl in a project of 
-        design, implementation, simulation, visualization, and deployment of trading 
-        strategies in the commodities market based on behaviors and notions of the 
-        company's traders.
+      hybrid:
+        es:
+          - "Desarrollé modelos de Deep Learning (GANs) para generación de datos sintéticos de commodities"
+          - "Implementé y desplegué estrategias de trading basadas en ML para mercado de materias primas"
+          - "Construí modelos predictivos para posicionamiento de cartera en mercado energético español"
+          - "Procesé imágenes satelitales usando Robosat para proyectos de computer vision"
+        en:
+          - "Developed Deep Learning models (GANs) for synthetic commodities data generation"
+          - "Implemented and deployed ML-based trading strategies for commodities market"
+          - "Built predictive models for portfolio positioning in Spanish energy market"
+          - "Processed satellite images using Robosat for computer vision projects"
+      de:
+        es:
+          - "Construí pipelines de datos para alimentar modelos de trading en tiempo real"
+          - "Desarrollé ETLs para procesamiento de datos de mercados financieros"
+          - "Implementé sistema de visualización y monitoreo de estrategias de trading"
+          - "Procesé y transformé imágenes satelitales para modelos de predicción"
+        en:
+          - "Built data pipelines to feed real-time trading models"
+          - "Developed ETLs for financial market data processing"
+          - "Implemented visualization and monitoring system for trading strategies"
+          - "Processed and transformed satellite images for prediction models"
+      ds:
+        es:
+          - "Desarrollé modelos generativos (GANs) para producción de datos sintéticos de trading"
+          - "Implementé modelos de predicción de mercados usando TensorFlow y PyTorch"
+          - "Diseñé y desplegué estrategias de trading basadas en comportamientos de traders"
+          - "Construí modelos de Computer Vision con CNNs para imágenes satelitales"
+          - "Investigué impacto de datos sintéticos en predicciones de trading (tesis de maestría)"
+        en:
+          - "Developed generative models (GANs) for synthetic trading data production"
+          - "Implemented market prediction models using TensorFlow and PyTorch"
+          - "Designed and deployed trading strategies based on trader behaviors"
+          - "Built Computer Vision models with CNNs for satellite images"
+          - "Researched impact of synthetic data on trading predictions (master's thesis)"
     keywords:
       - "Python"
       - "Deep Learning"
-      - "Trading"
-      - "Data Science"
-      - "PyTorch"
+      - "GANs"
       - "TensorFlow"
+      - "PyTorch"
+      - "Trading"
+      - "Computer Vision"
+      - "Time Series"
 
   - company: "Universidad Industrial de Santander"
     location: "Bucaramanga, Colombia"
     title:
+      hybrid:
+        es: "Desarrollador"
+        en: "Developer"
+      de:
+        es: "Desarrollador"
+        en: "Developer"
+      ds:
       es: "Desarrollador"
       en: "Developer"
     startDate: "2017-09"
     endDate: "2018-06"
     highlights:
-      es:
-        - "Mantenimiento del proyecto mooc-grader para calificación automatizada"
-        - "Integración con Google Sheets API para gestión de evaluaciones"
-        - "Desarrollo de herramientas en Jupyter Notebook"
-      en:
-        - "Maintenance of mooc-grader project for automated grading"
-        - "Integration with Google Sheets API for assessment management"
-        - "Development of Jupyter Notebook tools"
-    description:
-      es: >-
-        Encargado de la actualización y mantenimiento del proyecto mooc-grader 
-        dirigido por el profesor Raúl Ramos Pollán. Se trabajó en el mejoramiento 
-        de un Framework implementado en Jupyter notebook para la calificación y 
-        administración de tareas, evaluaciones y talleres.
-      en: >-
-        Responsible for updating and maintenance of the mooc-grader project led 
-        by Professor Raúl Ramos Pollán. Worked on the improvement of a Framework 
-        implemented in Jupyter-Notebook for grading and administration of 
-        assignments, evaluations, and workshops.
+      hybrid:
+        es:
+          - "Desarrollé sistema de calificación automatizada mooc-grader con Python"
+          - "Integré Google Sheets API para gestión de evaluaciones académicas"
+        en:
+          - "Developed automated grading system mooc-grader with Python"
+          - "Integrated Google Sheets API for academic assessment management"
+      de:
+        es:
+          - "Desarrollé sistema de calificación automatizada mooc-grader con Python"
+          - "Integré Google Sheets API para gestión de evaluaciones académicas"
+        en:
+          - "Developed automated grading system mooc-grader with Python"
+          - "Integrated Google Sheets API for academic assessment management"
+      ds:
+        es:
+          - "Desarrollé sistema de calificación automatizada mooc-grader con Python"
+          - "Integré Google Sheets API para gestión de evaluaciones académicas"
+        en:
+          - "Developed automated grading system mooc-grader with Python"
+          - "Integrated Google Sheets API for academic assessment management"
     keywords:
       - "Python"
       - "Jupyter"
       - "Google APIs"
-      - "Education Technology"
+    showInPdf: false
 
   - company: "Chasegroup"
-    location: "Colombia"
+    location: "Bucaramanga, Colombia"
     title:
+      hybrid:
+        es: "Desarrollador Backend"
+        en: "Backend Developer"
+      de:
+        es: "Desarrollador Backend"
+        en: "Backend Developer"
+      ds:
       es: "Desarrollador Backend"
       en: "Backend Developer"
     startDate: "2017-02"
     endDate: "2017-10"
     highlights:
-      es:
-        - "Desarrollo de plataforma web auxiliar para ChatBot de eventos"
-        - "Implementación de integración con Facebook API"
-        - "Desarrollo backend con Flask"
-      en:
-        - "Development of auxiliary web platform for events ChatBot"
-        - "Implementation of Facebook API integration"
-        - "Backend development with Flask"
-    description:
-      es: >-
-        Encargado de la creación de una plataforma web auxiliar al proyecto Sevent, 
-        un ChatBot de información de eventos. Se trabajó con Flask para la elaboración 
-        de dicha plataforma, la cual se encargaba de llenar la base de datos de Sevent, 
-        tomando eventos de Facebook.
-      en: >-
-        Responsible for the creation of an auxiliary web platform for the Sevent 
-        project, an event information ChatBot. Worked with Flask for the development 
-        of this platform, which was in charge of filling Sevent's database, taking 
-        events from Facebook.
+      hybrid:
+        es:
+          - "Desarrollé plataforma web para ChatBot de eventos usando Flask"
+          - "Implementé integración con Facebook API para extracción de eventos"
+        en:
+          - "Developed web platform for events ChatBot using Flask"
+          - "Implemented Facebook API integration for event extraction"
+      de:
+        es:
+          - "Desarrollé plataforma web para ChatBot de eventos usando Flask"
+          - "Implementé integración con Facebook API para extracción de eventos"
+        en:
+          - "Developed web platform for events ChatBot using Flask"
+          - "Implemented Facebook API integration for event extraction"
+      ds:
+        es:
+          - "Desarrollé plataforma web para ChatBot de eventos usando Flask"
+          - "Implementé integración con Facebook API para extracción de eventos"
+        en:
+          - "Developed web platform for events ChatBot using Flask"
+          - "Implemented Facebook API integration for event extraction"
     keywords:
       - "Python"
       - "Flask"
       - "REST API"
       - "Facebook API"
-      - "ChatBot"
+    showInPdf: false
 
   - company: "Universidad Industrial de Santander"
     location: "Bucaramanga, Colombia"
     title:
+      hybrid:
+        es: "Administrador de Sala de Cómputo"
+        en: "Computer Room Administrator"
+      de:
+        es: "Administrador de Sala de Cómputo"
+        en: "Computer Room Administrator"
+      ds:
       es: "Administrador de Sala de Cómputo"
       en: "Computer Room Administrator"
     startDate: "2016-07"
     endDate: "2017-06"
     highlights:
+      hybrid:
+        es:
+          - "Administración de salas de cómputo de la Escuela de Matemáticas"
+        en:
+          - "Administration of Mathematics School computer rooms"
+      de:
+        es:
+          - "Administración de salas de cómputo de la Escuela de Matemáticas"
+        en:
+          - "Administration of Mathematics School computer rooms"
+      ds:
       es:
         - "Administración de salas de cómputo de la Escuela de Matemáticas"
-        - "Soporte técnico y mantenimiento de equipos"
       en:
         - "Administration of Mathematics School computer rooms"
-        - "Technical support and equipment maintenance"
-    description:
-      es: >-
-        Encargado de administrar las salas de cómputo de la escuela de Matemáticas 
-        de la Universidad Industrial de Santander.
-      en: >-
-        In charge of managing the computer rooms of the mathematics faculty of 
-        the Universidad Industrial de Santander.
     keywords:
       - "IT Support"
-      - "System Administration"
-    # No mostrar en PDF por ser menos relevante
     showInPdf: false
 
 # -----------------------------------------------------------------------------
@@ -246,27 +432,18 @@ education:
     field:
       es: "Deep Learning"
       en: "Deep Learning"
-    startDate: "2019"
-    endDate: null
+    startDate: "2019-06"
+    endDate: "2022-12"
     highlights:
       es:
         - "Línea de investigación: Deep Learning bajo dirección del Prof. Raúl Ramos Pollán"
-        - "Proyecto: Impacto de datos sintéticos de modelos generativos en trading"
+        - "Tesis: Impacto de datos sintéticos (GANs) en predicciones de trading de commodities"
+        - "Publicación científica en Research in International Business and Finance (2022)"
       en:
         - "Research line: Deep Learning under Professor Raúl Ramos Pollán"
-        - "Project: Impact of synthetic data from generative models in trading"
-    description:
-      es: >-
-        Enfocando la maestría en la línea de investigación de Deep learning, 
-        se está llevando a cabo un proyecto para determinar el impacto de uso 
-        de datos sintéticos producidos por modelos generativos profundos en 
-        predicciones y estrategias de trading del mercado de materias primas.
-      en: >-
-        Focusing the master's degree on the Deep learning research line, a 
-        project is being carried out to determine the impact of using synthetic 
-        data produced by deep generative models in predictions and trading 
-        strategies in the commodities market.
-    certificate: null
+        - "Thesis: Impact of synthetic data (GANs) on commodities trading predictions"
+        - "Scientific publication in Research in International Business and Finance (2022)"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQDBY4e_J0-vRJ8_y6Z6Pn0IAQaq-3MCYxmm3PYcXXaL5Eo?e=uNd6Y9"
 
   - institution: "Universidad Industrial de Santander"
     location: "Bucaramanga, Colombia"
@@ -276,28 +453,16 @@ education:
     field:
       es: "Ingeniería"
       en: "Engineering"
-    startDate: "2012"
+    startDate: "2013-10"
     endDate: "2018-09"
     highlights:
       es:
-        - "Proyecto de grado: Estimación de estratificación socioeconómica con CNNs"
-        - "Uso de imágenes satelitales con información aumentada"
+        - "Proyecto de grado: Estimación de estratificación socioeconómica urbana usando CNNs sobre imágenes satelitales"
       en:
-        - "Thesis: Socioeconomic stratification estimation using CNNs"
-        - "Satellite images with augmented information"
-    description:
-      es: >-
-        Como proyecto de grado se realizó la estimación del nivel de 
-        estratificación socioeconómico urbano usando redes neuronales 
-        convolucionales sobre imágenes satelitales con información aumentada.
-      en: >-
-        As a degree project, the estimation of the level of urban socioeconomic 
-        stratification was carried out using convolutional neural networks on 
-        satellite images with augmented information.
-    # TODO: Reemplazar con URL de OneDrive
+        - "Thesis: Urban socioeconomic stratification estimation using CNNs on satellite images"
     certificate: null
 
-  - institution: "Universidad Industrial de Santander - Geomática"
+  - institution: "Universidad Industrial de Santander"
     location: "Bucaramanga, Colombia"
     degree:
       es: "Diplomado en Computación Móvil"
@@ -305,103 +470,362 @@ education:
     field:
       es: "Desarrollo Móvil"
       en: "Mobile Development"
-    startDate: "2017"
+    startDate: "2017-04"
     endDate: "2018-05"
     highlights:
       es:
-        - "Desarrollo de aplicaciones Android con Java"
-        - "Desarrollo multiplataforma con CoronaLab (Lua)"
+        - "Desarrollo Android con Java y multiplataforma con CoronaLab"
       en:
-        - "Android application development with Java"
-        - "Cross-platform development with CoronaLab (Lua)"
-    description:
-      es: ""
-      en: ""
-    # TODO: Reemplazar con URL de OneDrive
+        - "Android development with Java and cross-platform with CoronaLab"
     certificate: null
     showInPdf: false
 
 # -----------------------------------------------------------------------------
 # CURSOS Y CERTIFICACIONES
-# Los certificados ahora usan URLs externas (OneDrive, etc.)
-# Para agregar un certificado, usa una URL completa:
-# certificate: "https://onedrive.live.com/..."
+# isCertification: true = certificación real con evaluación estricta
+# isCertification: false/omitido = curso con diploma
+# profiles: controla qué perfiles lo muestran en PDF
+# showInPdf: false = no mostrar en ningún PDF
 # -----------------------------------------------------------------------------
 certifications:
-  - name: "Accessing Hadoop Data Using Hive"
-    issuer: "Cognitive Class"
-    date: "2022-05"
-    # TODO: Reemplazar con URL de OneDrive
-    certificate: null
-    showInPdf: false
+  # =============================================================================
+  # CERTIFICACIONES REALES (evaluación rigurosa)
+  # =============================================================================
+  
+  - name: "TensorFlow Developer Professional Certificate"
+    issuer: "Coursera (DeepLearning.AI)"
+    date: "2019-10"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQAbhQ4tIfpxRJbnJ3fISSOgAUtG5Ee_JA8HH6z2Jwlw_S8?e=wgs84i"
+    category: "ml"
+    isCertification: true
+    profiles: ["hybrid", "ds"]
 
-  - name: "Moving Data into Hadoop"
-    issuer: "Cognitive Class"
-    date: "2022-05"
-    # TODO: Reemplazar con URL de OneDrive
+  - name: "Deep Learning Specialization"
+    issuer: "Coursera (DeepLearning.AI)"
+    date: "2019-07"
     certificate: null
-    showInPdf: false
-
-  - name: "MapReduce and YARN"
-    issuer: "Cognitive Class"
-    date: "2022-05"
-    # TODO: Reemplazar con URL de OneDrive
-    certificate: null
-    showInPdf: false
+    category: "ml"
+    isCertification: true
+    profiles: ["hybrid", "ds"]
 
   - name: "Build Basic Generative Adversarial Networks (GANs)"
     issuer: "Coursera"
     date: "2021-06"
-    # TODO: Reemplazar con URL de OneDrive
     certificate: null
-    description:
-      es: "Introducción al desarrollo básico de GANs con PyTorch"
-      en: "Introduction to basic GAN development with PyTorch"
+    category: "ml"
+    isCertification: true
+    profiles: ["hybrid", "ds"]
 
-  - name: "TensorFlow Developer"
-    issuer: "Coursera"
-    date: "2019-10"
-    # TODO: Reemplazar con URL de OneDrive
+  - name: "CCNA Routing and Switching (I & II)"
+    issuer: "Cisco Networking Academy"
+    date: "2017-02"
     certificate: null
-    description:
-      es: "Desarrollo de modelos de deep learning con TensorFlow (4 cursos)"
-      en: "Deep learning model development with TensorFlow (4 courses)"
-
-  - name: "Deep Learning Specialization"
-    issuer: "Coursera"
-    date: "2019-07"
-    # TODO: Reemplazar con URL de OneDrive
-    certificate: null
-    description:
-      es: "Especialización completa en Deep Learning"
-      en: "Complete Deep Learning Specialization"
-
-  - name: "React.js"
-    issuer: "Platzi"
-    date: "2018-06"
-    # TODO: Reemplazar con URL de OneDrive
-    certificate: null
+    category: "networking"
+    isCertification: true
     showInPdf: false
 
-  - name: "Redux.js"
-    issuer: "Platzi"
-    date: "2018-06"
-    # TODO: Reemplazar con URL de OneDrive
+  - name: "EF SET English Certificate (C1 Advanced)"
+    issuer: "EF Education First"
+    date: "2023-03"
+    certificate: null  # TODO: Reemplazar con URL de OneDrive
+    category: "english"
+    isCertification: true
+    profiles: ["hybrid", "de", "ds"]
+
+  # =============================================================================
+  # CURSOS (diplomas sin evaluación estricta)
+  # =============================================================================
+
+  # === DATABRICKS & SPARK ===
+  - name: "Databricks and Apache Spark: From Zero to Expert"
+    issuer: "Udemy"
+    date: "2025-01"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/ET_AvNg16EBMv-600qIp34cBQ8Z-57aod5hrRZbyAtKxKA?e=3P2jIg"
+    category: "databricks"
+    profiles: ["hybrid", "de"]
+
+  - name: "Business Intelligence with Databricks"
+    issuer: "Coursera"
+    date: "2024-10"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EaSNGVsiniNLiir_B6VB7m0B-YR0lBSMZc8ykOL-DMbT2A?e=riFWQs"
+    category: "databricks"
+    profiles: ["hybrid", "de"]
+
+  # === MLOPS & DATA OPS ===
+  - name: "DevOps, DataOps, MLOps"
+    issuer: "Coursera"
+    date: "2024-09"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EZh0oJjmJStJkpLx9umr6zcBwERGQJhzy80xEibq8gOJZA?e=xb8EWS"
+    category: "mlops"
+    profiles: ["hybrid", "de", "ds"]
+
+  # === MACHINE LEARNING & AI ===
+  - name: "Machine Learning with Python"
+    issuer: "Coursera"
+    date: "2024-07"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EfE451mhSilCin8WI9fFPucBXO7lr0_Hznpku8AGQAuz4g?e=nQmhoi"
+    category: "ml"
+    profiles: ["hybrid", "ds"]
+
+  - name: "TensorFlow on Google Cloud"
+    issuer: "Google Cloud Skills Boost"
+    date: "2024-04"
     certificate: null
+    category: "ml"
+    profiles: ["hybrid", "ds"]
+
+  - name: "Launching into Machine Learning"
+    issuer: "Google Cloud Skills Boost"
+    date: "2024-01"
+    certificate: null
+    category: "ml"
+    profiles: ["hybrid", "ds"]
+    showInPdf: false
+
+  - name: "Introduction to AI and Machine Learning on Google Cloud"
+    issuer: "Google Cloud Skills Boost"
+    date: "2023-12"
+    certificate: null
+    category: "ml"
+    profiles: ["hybrid", "ds"]
+    showInPdf: false
+
+  - name: "Big Data and Machine Learning Fundamentals"
+    issuer: "Google Cloud Skills Boost"
+    date: "2023-11"
+    certificate: null
+    category: "ml"
+    profiles: ["hybrid", "de", "ds"]
+
+  # === DATA ENGINEERING & GCP ===
+  - name: "Building Batch Data Pipelines on Google Cloud"
+    issuer: "Google Cloud Skills Boost"
+    date: "2024-07"
+    certificate: null
+    category: "data-engineering"
+    profiles: ["hybrid", "de"]
+
+  - name: "Modernizing Data Lakes and Data Warehouses with Google Cloud"
+    issuer: "Google Cloud Skills Boost"
+    date: "2024-05"
+    certificate: null
+    category: "data-engineering"
+    profiles: ["hybrid", "de"]
+
+  # === DATA ANALYSIS & SQL ===
+  - name: "The Advanced SQL Server Masterclass For Data Analysis"
+    issuer: "Udemy"
+    date: "2025-08"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/ES9Pbm4fTdVBtkDIPinFdeABXQl1Wj6hR2g0KWkeJocG0Q?e=96o853"
+    category: "sql"
+    profiles: ["hybrid", "de", "ds"]
+
+  - name: "Master Course: Python Data Visualizations and Analysis"
+    issuer: "Udemy"
+    date: "2025-04"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EdKSydrlSB9PotLbCtFOuIgBAT3aEJjP_5J8pZhiYpsNrw?e=tQbx3L"
+    category: "data-analysis"
+    profiles: ["hybrid", "ds"]
+
+  # === AWS ===
+  - name: "AWS Cloud Technical Essentials"
+    issuer: "Coursera"
+    date: "2022-12"
+    certificate: null
+    category: "cloud"
+    profiles: ["hybrid", "de"]
+
+  - name: "AWS Cloud Practitioner Essentials"
+    issuer: "Coursera"
+    date: "2022-11"
+    certificate: null
+    category: "cloud"
+    profiles: ["hybrid", "de"]
+
+  - name: "Data Analytics Fundamentals"
+    issuer: "AWS Skill Builder"
+    date: "2022-11"
+    certificate: null
+    category: "cloud"
+    profiles: ["hybrid", "de", "ds"]
+
+  - name: "Getting Started with AWS Storage"
+    issuer: "AWS Skill Builder"
+    date: "2022-11"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  - name: "Introduction to Amazon Kinesis Analytics"
+    issuer: "AWS Skill Builder"
+    date: "2022-11"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  - name: "Introduction to Amazon Kinesis Streams"
+    issuer: "AWS Skill Builder"
+    date: "2022-11"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  - name: "Introducción a AWS: Fundamentos de Cloud Computing"
+    issuer: "Platzi"
+    date: "2022-12"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  - name: "Curso Práctico de AWS: Roles y Seguridad con IAM"
+    issuer: "Platzi"
+    date: "2023-01"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  - name: "Curso de Introducción a AWS: Redes, Gobernanza y Machine Learning"
+    issuer: "Platzi"
+    date: "2023-01"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  - name: "Curso de Introducción a AWS: Cómputo, Almacenamiento y Bases de Datos"
+    issuer: "Platzi"
+    date: "2022-12"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  - name: "Curso Práctico de AWS: Cómputo con EC2"
+    issuer: "Platzi"
+    date: "2023-01"
+    certificate: null
+    category: "cloud"
+    showInPdf: false
+
+  # === DEVELOPMENT ===
+  - name: "Design Patterns in Python"
+    issuer: "Udemy"
+    date: "2025-08"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EUuwenClmSBKkcUS9Zprhy4B69yfhgPKFvQTknS5WiTYww?e=QjeImg"
+    category: "dev"
+    profiles: ["hybrid", "de", "ds"]
+
+  - name: "Agile Practices for Software Engineering"
+    issuer: "Udemy"
+    date: "2024-07"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EW1ZxGTT_2pLsPOfSrPOUPABry0py7etvfzfVooIvGGmqQ?e=vHehfz"
+    category: "dev"
+    profiles: ["hybrid", "de", "ds"]
+
+  - name: "Curso Profesional de Git y GitHub"
+    issuer: "Platzi"
+    date: "2022-12"
+    certificate: null
+    category: "dev"
     showInPdf: false
 
   - name: "Creating and Distributing Python Packages"
     issuer: "Two Scoops Press"
     date: "2018-03"
-    # TODO: Reemplazar con URL de OneDrive
     certificate: null
+    category: "dev"
     showInPdf: false
 
-  - name: "CCNA Routing and Switching (Levels I & II)"
-    issuer: "Cisco Networking Academy"
-    date: "2017-02"
-    # TODO: Reemplazar con URL de OneDrive
+  - name: "React.js"
+    issuer: "Platzi"
+    date: "2018-06"
     certificate: null
+    category: "dev"
+    showInPdf: false
+
+  # === SOFT SKILLS ===
+  - name: "Developing Interpersonal Skills"
+    issuer: "Coursera"
+    date: "2024-07"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EYgj_uLBZoRCuWi99IVvWmUBYZX6b_KxQvpp0YCOIhoRlg?e=SoJV6W"
+    category: "softskills"
+    showInPdf: false
+
+  - name: "Effective Problem Solving and Decision Making"
+    issuer: "Coursera"
+    date: "2024-07"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/ERf_v9A7EZZErPB9d6qStS0BzxTFq1oQqiUarQzLwSzGbQ?e=gqy6Tt"
+    category: "softskills"
+    showInPdf: false
+
+  - name: "Técnicas de comunicación asertiva"
+    issuer: "Crehana"
+    date: "2024-01"
+    certificate: null
+    category: "softskills"
+    showInPdf: false
+
+  - name: "Herramientas para el manejo de conflictos"
+    issuer: "Crehana"
+    date: "2023-12"
+    certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/Ec8PgBSOHyhMnZFuDj9ytiYBgcvMAtIJsT2BO4YOFG5vaw?e=lbZafh"
+    category: "softskills"
+    showInPdf: false
+
+  # === BIG DATA / HADOOP ===
+  - name: "Accessing Hadoop Data Using Hive"
+    issuer: "Cognitive Class"
+    date: "2022-05"
+    certificate: null
+    category: "bigdata"
+    showInPdf: false
+
+  - name: "Moving Data into Hadoop"
+    issuer: "Cognitive Class"
+    date: "2022-05"
+    certificate: null
+    category: "bigdata"
+    showInPdf: false
+
+  - name: "MapReduce and YARN"
+    issuer: "Cognitive Class"
+    date: "2022-05"
+    certificate: null
+    category: "bigdata"
+    showInPdf: false
+
+  # === ENGLISH ===
+  - name: "Inglés Intermedio B1: Presente Perfecto y Preposiciones"
+    issuer: "Platzi"
+    date: "2023-01"
+    certificate: null
+    category: "english"
+    showInPdf: false
+
+  - name: "Inglés Intermedio B1: Verbos Infinitivos y Transitivos"
+    issuer: "Platzi"
+    date: "2022-12"
+    certificate: null
+    category: "english"
+    showInPdf: false
+
+  - name: "Inglés Intermedio B1: Expresiones de Tiempo y Cantidad"
+    issuer: "Platzi"
+    date: "2022-11"
+    certificate: null
+    category: "english"
+    showInPdf: false
+
+  - name: "Inglés Intermedio B1: Conectores y Preferencias"
+    issuer: "Platzi"
+    date: "2022-12"
+    certificate: null
+    category: "english"
+    showInPdf: false
+
+  - name: "Inglés Intermedio B1: Pronombres y Cláusulas Relativas"
+    issuer: "Platzi"
+    date: "2023-01"
+    certificate: null
+    category: "english"
     showInPdf: false
 
 # -----------------------------------------------------------------------------
@@ -421,72 +845,166 @@ languages:
       es: "C1 Avanzado"
       en: "C1 Advanced"
     # TODO: Reemplazar con URL de OneDrive
-    certificate: null
-    score: "64/100 EF SET"
+    certificate: "https://www.efset.org/cert/YLSHpu "
 
 # -----------------------------------------------------------------------------
 # HABILIDADES TÉCNICAS
+# Categorías alineadas con las de cursos/certificaciones
+# category keys: ml, databricks, data-engineering, cloud, sql, dev, data-analysis
 # -----------------------------------------------------------------------------
 skills:
-  # Categorías para mejor organización
   categories:
+    # === LENGUAJES DE PROGRAMACIÓN ===
     - name:
-        es: "Lenguajes de Programación"
-        en: "Programming Languages"
+        es: "Lenguajes"
+        en: "Languages"
+      category: "languages"
       items:
         - "Python"
         - "SQL"
-        - "JavaScript"
-        - "TypeScript"
+        - "JavaScript/TypeScript"
+      priority: 1
+      profiles: ["hybrid", "de", "ds"]
 
+    # === MACHINE LEARNING & AI (category: ml) ===
     - name:
-        es: "Data Engineering"
-        en: "Data Engineering"
-      items:
-        - "Apache Spark"
-        - "Databricks"
-        - "Airflow"
-        - "ETL/ELT"
-        - "Data Pipelines"
-
-    - name:
-        es: "Cloud & Bases de Datos"
-        en: "Cloud & Databases"
-      items:
-        - "Google Cloud Platform"
-        - "BigQuery"
-        - "Cloud Functions"
-        - "Datastore"
-        - "PostgreSQL"
-
-    - name:
-        es: "Machine Learning"
-        en: "Machine Learning"
+        es: "Machine Learning & AI"
+        en: "Machine Learning & AI"
+      category: "ml"
       items:
         - "TensorFlow"
         - "PyTorch"
         - "scikit-learn"
+        - "GANs"
+        - "CNNs"
+        - "Time Series"
+      priority: 2
+      profiles: ["hybrid", "ds"]
+
+    # === DATA ENGINEERING (category: data-engineering) ===
+    - name:
+        es: "Data Engineering"
+        en: "Data Engineering"
+      category: "data-engineering"
+      items:
+        - "ETL/ELT Pipelines"
+        - "Data Warehousing"
+        - "Data Modeling"
+        - "Data Quality"
+      priority: 2
+      profiles: ["hybrid", "de"]
+
+    # === DATABRICKS & SPARK (category: databricks) ===
+    - name:
+        es: "Databricks & Spark"
+        en: "Databricks & Spark"
+      category: "databricks"
+      items:
+        - "Databricks"
+        - "Apache Spark"
+        - "Delta Lake"
+        - "Terraform"
+      priority: 3
+      profiles: ["hybrid", "de"]
+
+    # === CLOUD (category: cloud) ===
+    - name:
+        es: "Cloud (GCP & AWS)"
+        en: "Cloud (GCP & AWS)"
+      category: "cloud"
+      items:
+        - "BigQuery"
+        - "Cloud Run"
+        - "Cloud Functions"
+        - "Compute Engine"
+        - "S3"
+        - "DynamoDB"
+        - "CloudFormation"
+      priority: 4
+      profiles: ["hybrid", "de"]
+
+    # === SQL & BASES DE DATOS (category: sql) ===
+    - name:
+        es: "SQL & Bases de Datos"
+        en: "SQL & Databases"
+      category: "sql"
+      items:
+        - "PostgreSQL"
+        - "MySQL"
+        - "Oracle"
+        - "SQL Server"
+      priority: 5
+      profiles: ["hybrid", "de", "ds"]
+
+    # === ANÁLISIS DE DATOS (category: data-analysis) ===
+    - name:
+        es: "Análisis de Datos"
+        en: "Data Analysis"
+      category: "data-analysis"
+      items:
         - "Pandas"
         - "NumPy"
+        - "Matplotlib"
         - "Jupyter"
+        - "Feature Engineering"
+      priority: 3
+      profiles: ["hybrid", "ds"]
 
+    # === DESARROLLO (category: dev) ===
     - name:
-        es: "Desarrollo Web"
-        en: "Web Development"
-      items:
-        - "React"
-        - "Flask"
-        - "REST APIs"
-        - "HTML/CSS"
-
-    - name:
-        es: "Herramientas"
-        en: "Tools"
+        es: "Desarrollo"
+        en: "Development"
+      category: "dev"
       items:
         - "Git"
         - "Docker"
         - "Linux"
-        - "VS Code"
+        - "CI/CD"
+        - "Clean Code"
+        - "Design Patterns"
+      priority: 6
+      profiles: ["hybrid", "de", "ds"]
+
+    # === DESARROLLO WEB (category: web) ===
+    - name:
+        es: "Desarrollo Web"
+        en: "Web Development"
+      category: "web"
+      items:
+        - "Flask"
+        - "Django"
+        - "REST APIs"
+        - "React"
+      priority: 7
+      profiles: ["hybrid"]
+      showInPdf: false
+
+    # === INTEGRACIONES ===
+    - name:
+        es: "Integraciones"
+        en: "Integrations"
+      category: "integrations"
+      items:
+        - "Braze"
+        - "Amplitude"
+        - "Algolia"
+        - "Google APIs"
+      priority: 8
+      profiles: ["hybrid", "de"]
+      showInPdf: false
+
+# -----------------------------------------------------------------------------
+# PUBLICACIONES ACADÉMICAS
+# -----------------------------------------------------------------------------
+publications:
+  - title: "Synthetic data generation with deep generative models to enhance predictive tasks in trading strategies"
+    journal: "Research in International Business and Finance"
+    year: 2022
+    doi: "https://doi.org/10.1016/j.ribaf.2022.101747"
+    description:
+      es: "Investigación sobre el uso de modelos generativos profundos (GANs) para generar datos sintéticos y mejorar tareas predictivas en estrategias de trading."
+      en: "Research on using deep generative models (GANs) to generate synthetic data and enhance predictive tasks in trading strategies."
+    profiles: ["hybrid", "ds"]  # Mostrar en perfiles hybrid y ds
 
 # -----------------------------------------------------------------------------
 # VOLUNTARIADO
