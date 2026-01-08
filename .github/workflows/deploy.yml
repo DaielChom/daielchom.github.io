@@ -43,10 +43,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Copy YAML data files to dist
+      - name: Copy data files to dist
         run: |
           mkdir -p dist/data
-          cp src/data/*.yaml dist/data/
+          cp public/data/*.yaml dist/data/
+          cp public/data/*.json dist/data/
 
       - name: Copy images to dist
         run: |
