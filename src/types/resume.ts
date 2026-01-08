@@ -213,35 +213,35 @@ export function normalizeResumeData(
     title: titles.titles[profile],
     summary: {
       // Short summary comes from resume.yaml (per profile)
-      short: raw.summary.short[profile],
+      short: raw.summary?.short?.[profile] || { es: '', en: '' },
       // Full summary comes from resume.yaml (same for all profiles)
-      full: raw.summary.full,
+      full: raw.summary?.full || { es: '', en: '' },
     },
-    experience: raw.experience.map((exp) => ({
+    experience: (raw.experience || []).map((exp) => ({
       company: exp.company,
       location: exp.location,
-      title: exp.title[profile],
+      title: exp.title?.[profile] || { es: '', en: '' },
       startDate: exp.startDate,
       endDate: exp.endDate,
-      highlights: exp.highlights[profile],
-      keywords: exp.keywords,
+      highlights: exp.highlights?.[profile] || { es: [], en: [] },
+      keywords: exp.keywords || [],
       showInPdf: exp.showInPdf,
     })),
-    education: raw.education,
-    certifications: raw.certifications.filter(
+    education: raw.education || [],
+    certifications: (raw.certifications || []).filter(
       (cert) => !cert.profiles || cert.profiles.includes(profile)
     ),
-    languages: raw.languages,
+    languages: raw.languages || [],
     skills: {
-      categories: raw.skills.categories.filter(
+      categories: (raw.skills?.categories || []).filter(
         (cat) => !cat.profiles || cat.profiles.includes(profile)
       ),
     },
-    publications: raw.publications.filter(
+    publications: (raw.publications || []).filter(
       (pub) => !pub.profiles || pub.profiles.includes(profile)
     ),
-    volunteer: raw.volunteer,
-    references: raw.references,
+    volunteer: raw.volunteer || [],
+    references: raw.references || [],
   };
 }
 
