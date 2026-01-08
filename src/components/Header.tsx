@@ -69,10 +69,12 @@ export function Header({ labels }: HeaderProps) {
   ];
 
   const getCvFileName = (profile: string, lang: Language) => {
-    if (profile === 'hybrid') {
-      return `CV_Daniel_Carvajal_${lang.toUpperCase()}.pdf`;
-    }
-    return `CV_Daniel_Carvajal_${profile.toUpperCase()}_${lang.toUpperCase()}.pdf`;
+    const profileNames: Record<string, string> = {
+      hybrid: 'Hybrid',
+      de: 'DataEngineer',
+      ds: 'DataScientist',
+    };
+    return `CV_Daniel_Carvajal_${profileNames[profile] || profile}_${lang.toUpperCase()}.pdf`;
   };
 
   return (
