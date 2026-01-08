@@ -113,7 +113,7 @@ export function Experience({ data, labels, lang }: ExperienceProps) {
 
             {/* Cards Column (RIGHT SIDE) */}
             <div className="flex-1 space-y-6">
-              {data.map((job, index) => (
+              {data.map((job) => (
                 <div
                   key={`${job.company}-${job.startDate}`}
                   className="relative"
