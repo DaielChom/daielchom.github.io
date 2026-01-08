@@ -10,7 +10,7 @@ interface EducationProps {
 
 function t(obj: { es: string; en: string } | undefined, lang: Language): string {
   if (!obj) return '';
-  return obj[lang];
+  return obj[lang] || obj.es || '';
 }
 
 function formatDate(dateStr: string | null, lang: Language): string {

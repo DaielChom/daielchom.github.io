@@ -8,8 +8,9 @@ interface SkillsProps {
   lang: Language;
 }
 
-function t(obj: { es: string; en: string }, lang: Language): string {
-  return obj[lang];
+function t(obj: { es: string; en: string } | undefined, lang: Language): string {
+  if (!obj) return '';
+  return obj[lang] || obj.es || '';
 }
 
 export function Skills({ data, languages, labels, lang }: SkillsProps) {

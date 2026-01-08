@@ -7,8 +7,9 @@ interface HeroProps {
   lang: Language;
 }
 
-function t(obj: { es: string; en: string }, lang: Language): string {
-  return obj[lang];
+function t(obj: { es: string; en: string } | undefined, lang: Language): string {
+  if (!obj) return '';
+  return obj[lang] || obj.es || '';
 }
 
 export function Hero({ data, labels, lang }: HeroProps) {
