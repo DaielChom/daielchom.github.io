@@ -1,6 +1,6 @@
 /**
  * Script to generate PDF CVs from YAML data
- * Generates 6 versions: 3 profiles (hybrid, de, ds) x 2 languages (es, en)
+ * Generates 6 versions: 3 profiles (ml, de, ds) x 2 languages (es, en)
  * Usage: npm run pdf:all
  */
 
@@ -28,7 +28,7 @@ const __dirname = path.dirname(__filename);
 // =============================================================================
 
 type Language = 'es' | 'en';
-type Profile = 'hybrid' | 'de' | 'ds';
+type Profile = 'ml' | 'de' | 'ds';
 
 interface LocalizedString {
   es: string;
@@ -36,13 +36,13 @@ interface LocalizedString {
 }
 
 interface ProfiledLocalizedString {
-  hybrid: LocalizedString;
+  ml: LocalizedString;
   de: LocalizedString;
   ds: LocalizedString;
 }
 
 interface ProfiledHighlights {
-  hybrid: { es: string[]; en: string[] };
+  ml: { es: string[]; en: string[] };
   de: { es: string[]; en: string[] };
   ds: { es: string[]; en: string[] };
 }
@@ -143,7 +143,7 @@ function formatDate(dateStr: string | null, lang: Language): string {
 
 function getProfileLabel(profile: Profile, lang: Language): string {
   const labels: Record<Profile, LocalizedString> = {
-    hybrid: { es: 'Híbrido', en: 'Hybrid' },
+    ml: { es: 'ML Engineer', en: 'ML Engineer' },
     de: { es: 'Data Engineer', en: 'Data Engineer' },
     ds: { es: 'Data Scientist', en: 'Data Scientist' },
   };
@@ -570,7 +570,7 @@ async function generatePdf(
   outputDir: string
 ) {
   const profileNames: Record<Profile, string> = {
-    hybrid: 'Hybrid',
+    ml: 'MLEngineer',
     de: 'DataEngineer',
     ds: 'DataScientist',
   };
@@ -609,7 +609,7 @@ async function main() {
 
   console.log('\n📄 Generating PDF CVs...\n');
 
-  const profiles: Profile[] = ['hybrid', 'de', 'ds'];
+  const profiles: Profile[] = ['ml', 'de', 'ds'];
   const languages: Language[] = ['es', 'en'];
 
   try {

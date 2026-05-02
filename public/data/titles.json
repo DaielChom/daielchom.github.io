@@ -1,21 +1,21 @@
 {
   "titles": {
-    "hybrid": {
-      "es": "Senior Data Engineer & Scientist",
-      "en": "Senior Data Engineer & Scientist"
+    "ml": {
+      "es": "Senior Machine Learning Engineer",
+      "en": "Senior Machine Learning Engineer"
     },
     "de": {
-      "es": "Senior Data Engineer",
-      "en": "Senior Data Engineer"
+      "es": "Senior Data Engineer (Databricks)",
+      "en": "Senior Data Engineer (Databricks)"
     },
     "ds": {
-      "es": "Semi-Senior Data Scientist",
-      "en": "Semi-Senior Data Scientist"
+      "es": "Senior Data Scientist",
+      "en": "Senior Data Scientist"
     }
   },
   "descriptions": {
-    "hybrid": "Perfil combinado para web y CV general. Muestra experiencia en ambas áreas.",
-    "de": "Perfil enfocado en Data Engineering: ETLs, arquitectura de datos, cloud, Databricks.",
-    "ds": "Perfil enfocado en Data Science: ML, modelos predictivos, GANs, análisis."
+    "ml": "Perfil ML Engineer (web y PDF por defecto): MLOps en Databricks, modelos en producción, lakehouse.",
+    "de": "Perfil Data Engineering: Databricks (Delta, jobs, IaC), ETL, GCP y BigQuery.",
+    "ds": "Perfil Data Science: ML profundo, GANs, investigación publicada y análisis avanzado."
   }
 }
