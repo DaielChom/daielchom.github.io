@@ -15,9 +15,9 @@ function t(obj: { es: string; en: string } | undefined, lang: Language): string 
 // CV download options
 const cvOptions = [
   { 
-    id: 'hybrid', 
-    label: { es: 'General (Híbrido)', en: 'General (Hybrid)' },
-    description: { es: 'Data Scientist & Engineer', en: 'Data Scientist & Engineer' }
+    id: 'ml', 
+    label: { es: 'ML Engineer (principal)', en: 'ML Engineer (default)' },
+    description: { es: 'MLOps, Databricks y modelos en producción', en: 'MLOps, Databricks, and production ML' }
   },
   { 
     id: 'de', 
@@ -27,7 +27,7 @@ const cvOptions = [
   { 
     id: 'ds', 
     label: { es: 'Data Scientist', en: 'Data Scientist' },
-    description: { es: 'Enfocado en ML y análisis', en: 'Focused on ML and analysis' }
+    description: { es: 'Investigación, GANs y modelado profundo', en: 'Research, GANs, and deep modeling' }
   },
 ];
 
@@ -70,7 +70,7 @@ export function Header({ labels }: HeaderProps) {
 
   const getCvFileName = (profile: string, lang: Language) => {
     const profileNames: Record<string, string> = {
-      hybrid: 'Hybrid',
+      ml: 'MLEngineer',
       de: 'DataEngineer',
       ds: 'DataScientist',
     };

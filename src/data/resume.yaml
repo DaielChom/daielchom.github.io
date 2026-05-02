@@ -100,6 +100,7 @@ experience:
       - "SQL"
       - "Data Engineering"
       - "ETL"
+      - "Docker"
 
   - company: "Frontierx"
     location: "Colombia"
@@ -139,6 +140,7 @@ experience:
       - "Data Science"
       - "PyTorch"
       - "TensorFlow"
+      - "Docker"
 
   - company: "Universidad Industrial de Santander"
     location: "Bucaramanga, Colombia"
