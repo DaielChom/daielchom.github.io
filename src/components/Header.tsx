@@ -29,6 +29,14 @@ const cvOptions = [
     label: { es: 'Data Scientist', en: 'Data Scientist' },
     description: { es: 'Investigación, GANs y modelado profundo', en: 'Research, GANs, and deep modeling' }
   },
+  {
+    id: 'edu',
+    label: { es: 'Formación / talleres', en: 'Training & workshops' },
+    description: {
+      es: 'PDF breve para CCF o institutos; versión orientada a talleres técnicos prácticos',
+      en: 'Short PDF for training providers; workshop-oriented technical layout',
+    },
+  },
 ];
 
 export function Header({ labels }: HeaderProps) {
@@ -73,6 +81,7 @@ export function Header({ labels }: HeaderProps) {
       ml: 'MLEngineer',
       de: 'DataEngineer',
       ds: 'DataScientist',
+      edu: 'TechnicalInstructor',
     };
     return `CV_Daniel_Carvajal_${profileNames[profile] || profile}_${lang.toUpperCase()}.pdf`;
   };

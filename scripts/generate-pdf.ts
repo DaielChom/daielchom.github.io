@@ -1,6 +1,6 @@
 /**
  * Script to generate PDF CVs from YAML data
- * Generates 6 versions: 3 profiles (ml, de, ds) x 2 languages (es, en)
+ * Generates 8 versions: 4 profiles (ml, de, ds, edu) x 2 languages (es, en)
  * Usage: npm run pdf:all
  */
 
@@ -28,7 +28,7 @@ const __dirname = path.dirname(__filename);
 // =============================================================================
 
 type Language = 'es' | 'en';
-type Profile = 'ml' | 'de' | 'ds';
+type Profile = 'ml' | 'de' | 'ds' | 'edu';
 
 interface LocalizedString {
   es: string;
@@ -39,12 +39,14 @@ interface ProfiledLocalizedString {
   ml: LocalizedString;
   de: LocalizedString;
   ds: LocalizedString;
+  edu?: LocalizedString;
 }
 
 interface ProfiledHighlights {
   ml: { es: string[]; en: string[] };
   de: { es: string[]; en: string[] };
   ds: { es: string[]; en: string[] };
+  edu?: { es: string[]; en: string[] };
 }
 
 interface ResumeDataRaw {
@@ -119,7 +121,7 @@ interface ResumeDataRaw {
 }
 
 interface TitlesData {
-  titles: ProfiledLocalizedString;
+  titles: ProfiledLocalizedString & { edu: LocalizedString };
 }
 
 // =============================================================================
@@ -141,13 +143,23 @@ function formatDate(dateStr: string | null, lang: Language): string {
   return date.toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-US', options);
 }
 
-function getProfileLabel(profile: Profile, lang: Language): string {
-  const labels: Record<Profile, LocalizedString> = {
-    ml: { es: 'ML Engineer', en: 'ML Engineer' },
-    de: { es: 'Data Engineer', en: 'Data Engineer' },
-    ds: { es: 'Data Scientist', en: 'Data Scientist' },
-  };
-  return labels[profile][lang];
+function summaryShortForProfile(
+  short: ResumeDataRaw['summary']['short'],
+  profile: Profile
+): LocalizedString {
+  if (profile === 'edu' && short.edu) return short.edu;
+  if (profile === 'edu') return short.ml;
+  return short[profile];
+}
+
+function jobHighlightsForProfile(
+  highlights: ProfiledHighlights,
+  profile: Profile,
+  lang: Language
+): string[] {
+  if (profile === 'edu' && highlights.edu) return highlights.edu[lang];
+  if (profile === 'edu') return highlights.ml[lang];
+  return highlights[profile][lang];
 }
 
 // =============================================================================
@@ -325,7 +337,7 @@ function createPdfDocument(
   const { personal, summary, experience, education, skills, languages, certifications, publications } = data;
 
   // Get title for this profile
-  const title = titles.titles[profile];
+  const headerTitle = titles.titles[profile];
 
   // Filter data by profile and showInPdf
   const pdfExperience = experience.filter(e => e.showInPdf !== false);
@@ -372,7 +384,7 @@ function createPdfDocument(
         View,
         { style: styles.header },
         React.createElement(Text, { style: styles.name }, personal.name),
-        React.createElement(Text, { style: styles.title }, t(title, lang)),
+        React.createElement(Text, { style: styles.title }, t(headerTitle, lang)),
         React.createElement(
           View,
           { style: styles.contactRow },
@@ -400,7 +412,11 @@ function createPdfDocument(
         View,
         { style: styles.section },
         React.createElement(Text, { style: styles.sectionTitle }, labels.summary),
-        React.createElement(Text, { style: styles.summary }, t(summary.short[profile], lang))
+        React.createElement(
+          Text,
+          { style: styles.summary },
+          t(summaryShortForProfile(summary.short, profile), lang)
+        )
       ),
       // Experience
       React.createElement(
@@ -417,7 +433,18 @@ function createPdfDocument(
               React.createElement(
                 View,
                 null,
-                React.createElement(Text, { style: styles.itemTitle }, t(job.title[profile], lang)),
+                React.createElement(
+                  Text,
+                  { style: styles.itemTitle },
+                  t(
+                    profile === 'edu' && job.title.edu
+                      ? job.title.edu
+                      : profile === 'edu'
+                        ? job.title.ml
+                        : job.title[profile],
+                    lang
+                  )
+                ),
                 React.createElement(Text, { style: styles.itemSubtitle }, job.company)
               ),
               React.createElement(
@@ -434,7 +461,7 @@ function createPdfDocument(
             React.createElement(
               View,
               { style: styles.bulletList },
-              ...job.highlights[profile][lang].map((highlight, i) =>
+              ...jobHighlightsForProfile(job.highlights, profile, lang).map((highlight, i) =>
                 React.createElement(
                   View,
                   { key: i, style: styles.bulletItem },
@@ -573,6 +600,7 @@ async function generatePdf(
     ml: 'MLEngineer',
     de: 'DataEngineer',
     ds: 'DataScientist',
+    edu: 'TechnicalInstructor',
   };
 
   const outputPath = path.join(
@@ -609,7 +637,7 @@ async function main() {
 
   console.log('\n📄 Generating PDF CVs...\n');
 
-  const profiles: Profile[] = ['ml', 'de', 'ds'];
+  const profiles: Profile[] = ['ml', 'de', 'ds', 'edu'];
   const languages: Language[] = ['es', 'en'];
 
   try {
@@ -619,7 +647,7 @@ async function main() {
       }
     }
 
-    console.log('\n✅ All 6 PDFs generated successfully!\n');
+    console.log('\n✅ All 8 PDFs generated successfully!\n');
     console.log('Files created:');
     const files = fs.readdirSync(outputDir).filter(f => f.endsWith('.pdf'));
     files.forEach(f => console.log(`  - ${f}`));

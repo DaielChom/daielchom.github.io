@@ -11,11 +11,16 @@
     "ds": {
       "es": "Senior Data Scientist",
       "en": "Senior Data Scientist"
+    },
+    "edu": {
+      "es": "Formación técnica — datos e inteligencia artificial",
+      "en": "Technical training — data & machine learning"
     }
   },
   "descriptions": {
     "ml": "Perfil ML Engineer (web y PDF por defecto): MLOps en Databricks, modelos en producción, lakehouse.",
     "de": "Perfil Data Engineering: Databricks (Delta, jobs, IaC), ETL, GCP y BigQuery.",
-    "ds": "Perfil Data Science: ML profundo, GANs, investigación publicada y análisis avanzado."
+    "ds": "Perfil Data Science: ML profundo, GANs, investigación publicada y análisis avanzado.",
+    "edu": "PDF para propuestas de formación breve: trayectoria en datos e IA, redacción orientada a talleres modulares prácticos."
   }
 }

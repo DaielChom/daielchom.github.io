@@ -3,13 +3,14 @@
 # =============================================================================
 # Este archivo es la fuente única de datos para:
 # - El sitio web (versión completa - perfil ML Engineer)
-# - PDFs del CV (3 versiones: ml, de, ds)
+# - PDFs del CV (4 versiones: ml, de, ds, edu)
 # - Ambos idiomas (español e inglés)
 # 
 # PERFILES DISPONIBLES:
 # - ml: ML Engineer (web + PDF por defecto)
 # - de: Data Engineer (PDF especializado)
 # - ds: Data Scientist (PDF especializado)
+# - edu: PDF corto para propuestas instructivas (talleres, CCF, institutos)
 # =============================================================================
 
 meta:
@@ -19,6 +20,7 @@ meta:
     - ml  # Para web y PDF por defecto
     - de      # Data Engineer
     - ds      # Data Scientist
+    - edu     # Instructor / formación (solo PDF)
 
 # -----------------------------------------------------------------------------
 # INFORMACIÓN PERSONAL
@@ -80,7 +82,16 @@ summary:
         Data Scientist with 6+ years in advanced modeling, deep learning, and peer-reviewed research 
         (GANs, trading, computer vision). TensorFlow, PyTorch, and rigorous experimentation; applied 
         experience in retail and financial markets.
-  
+    edu:
+      es: >-
+        Profesional en datos e inteligencia artificial con más de 6 años en retail, banca y trading. Dominio de 
+        Python, SQL, análisis exploratorio de datos y machine learning aplicado. Maestría en deep learning; 
+        certificaciones Coursera en TensorFlow y redes generativas.
+      en: >-
+        Data and AI professional with six years across retail, banking, and trading. Strong command of Python, SQL, 
+        exploratory analytics, and applied ML. Master's in deep learning; Coursera certifications in TensorFlow and 
+        generative models.
+
   # Versión completa para la sección About de la web
   full:
     es: >-
@@ -106,6 +117,7 @@ summary:
 # - ml: Web y PDF ML Engineer (producción, Databricks, MLOps)
 # - de: PDF Data Engineer
 # - ds: PDF Data Scientist (investigación y modelado)
+# - edu: PDF formación / talleres (trayectoria técnica sin rol docente formal)
 # -----------------------------------------------------------------------------
 experience:
   - company: "Farmatodo"
@@ -118,6 +130,9 @@ experience:
         es: "Senior Data Engineer"
         en: "Senior Data Engineer"
       ds:
+        es: "Machine Learning Engineer"
+        en: "Machine Learning Engineer"
+      edu:
         es: "Machine Learning Engineer"
         en: "Machine Learning Engineer"
     startDate: "2023-04"
@@ -164,6 +179,17 @@ experience:
           - "Designed exploratory analyses and reproducible reporting (Jupyter/SQL) to support marketing and product decisions"
           - "Documented findings for non-technical stakeholders; data storytelling from hypothesis to impact"
           - "Engineered features and training datasets from behavioral and campaign signals"
+      edu:
+        es:
+          - "Pasé preguntas de negocio a métricas, experimentos y lecturas que marketing y producto entendían sin ser técnicos"
+          - "Escribí guías de ML del día a día (experimentación, despliegue, trazabilidad) para que el equipo las reutilizara"
+          - "Armé análisis exploratorios y notebooks en Jupyter y SQL que contaban la historia desde la hipótesis hasta el impacto"
+          - "Ayudé a acordar reglas prácticas para llevar modelos a producción sin fricción entre perfiles distintos"
+        en:
+          - "Turned business questions into metrics, experiments, and readouts marketing and product could use without a CS background"
+          - "Wrote day-to-day ML guides (experimentation, deployment, traceability) the team could reuse"
+          - "Built exploratory analyses and Jupyter/SQL notebooks that walked from hypothesis to impact"
+          - "Helped the team agree on sensible rules for shipping models to production across mixed skill levels"
     keywords:
       - "Python"
       - "SQL"
@@ -193,6 +219,9 @@ experience:
         es: "Ingeniero de Datos"
         en: "Data Engineer"
       ds:
+        es: "Ingeniero de Datos"
+        en: "Data Engineer"
+      edu:
         es: "Ingeniero de Datos"
         en: "Data Engineer"
     startDate: "2022-05"
@@ -231,6 +260,17 @@ experience:
           - "Migrated Python pipelines to Cloudera CDP Public Cloud, aligning dependencies and deployment for more elastic scaling under load"
           - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation) exposing lake data and operations to internal consumers"
           - "Applied code reviews and production deployment quality gates (testing standards) for Python services on AWS"
+      edu:
+        es:
+          - "Revisé código con el equipo y dejé criterios claros de calidad antes de subir cambios a producción"
+          - "Usé los mismos patrones de ETL en SQL y Python una y otra vez para que el código fuera fácil de seguir"
+          - "Documenté migraciones de pipelines para que otros desarrolladores supieran qué tocaba y por qué"
+          - "Publiqué APIs sobre el data lake que otros equipos consumían sin tener que adivinar el modelo de datos"
+        en:
+          - "Reviewed code with the team and kept a simple bar for quality before changes hit production"
+          - "Reused the same ETL patterns in SQL and Python so shared code stayed easy to follow"
+          - "Wrote migration notes for pipelines so teammates knew what changed and why"
+          - "Shipped APIs on top of the lakehouse that other teams could call without guessing the data model"
     keywords:
       - "Python"
       - "AWS"
@@ -255,6 +295,9 @@ experience:
         es: "Data Engineer"
         en: "Data Engineer"
       ds:
+        es: "Data Scientist & ML Engineer"
+        en: "Data Scientist & ML Engineer"
+      edu:
         es: "Data Scientist & ML Engineer"
         en: "Data Scientist & ML Engineer"
     startDate: "2018-08"
@@ -295,6 +338,17 @@ experience:
           - "Designed and deployed algorithmic trading strategies based on behavioral patterns"
           - "Built Computer Vision models with CNNs for satellite image classification"
           - "Researched impact of synthetic data on trading predictions (published master's thesis)"
+      edu:
+        es:
+          - "Investigué GANs aplicados a trading de commodities y publiqué los resultados en revista indexada (RIBAF, 2022)"
+          - "Puse en producción modelos predictivos y series de tiempo sobre metales, energía y agro, al lado del desk de trading"
+          - "Combiné datos de mercado con imágenes satelitales de alta resolución para dar contexto geográfico a los modelos"
+          - "Trabajé día a día con negocio para que lo que salía del modelo se tradujera en decisiones concretas"
+        en:
+          - "Ran applied GAN research for commodities trading and published the work in a peer-reviewed journal (RIBAF, 2022)"
+          - "Shipped predictive and time-series models on metals, energy, and agri, side by side with the trading desk"
+          - "Blended market data with high-resolution satellite imagery so models carried real geographic context"
+          - "Worked daily with business folks so model outputs turned into decisions they could act on"
     keywords:
       - "Python"
       - "Deep Learning"
@@ -503,7 +557,7 @@ certifications:
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQAbhQ4tIfpxRJbnJ3fISSOgAUtG5Ee_JA8HH6z2Jwlw_S8?e=wgs84i"
     category: "ml"
     isCertification: true
-    profiles: ["ml", "ds"]
+    profiles: ["ml", "ds", "edu"]
 
   - name: "Deep Learning Specialization"
     issuer: "Coursera (DeepLearning.AI)"
@@ -511,7 +565,7 @@ certifications:
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQCdI6UMmHbaTLD4x05eiPqqART166xwbBQQb3rzdI0P0mQ?e=KbaCbT"
     category: "ml"
     isCertification: true
-    profiles: ["ml", "ds"]
+    profiles: ["ml", "ds", "edu"]
 
   - name: "Build Basic Generative Adversarial Networks (GANs)"
     issuer: "Coursera"
@@ -519,7 +573,7 @@ certifications:
     certificate: null
     category: "ml"
     isCertification: true
-    profiles: ["ml", "ds"]
+    profiles: ["ml", "ds", "edu"]
 
   - name: "CCNA Routing and Switching (I & II)"
     issuer: "Cisco Networking Academy"
@@ -535,7 +589,7 @@ certifications:
     certificate: null  # TODO: Reemplazar con URL de OneDrive
     category: "english"
     isCertification: true
-    profiles: ["ml", "de", "ds"]
+    profiles: ["ml", "de", "ds", "edu"]
 
   # =============================================================================
   # CURSOS (diplomas sin evaluación estricta)
@@ -877,7 +931,7 @@ skills:
         - "SQL"
         - "JavaScript/TypeScript"
       priority: 1
-      profiles: ["ml", "de", "ds"]
+      profiles: ["ml", "de", "ds", "edu"]
 
     # === DATABRICKS & SPARK (category: databricks) — primero en la grilla ===
     - name:
@@ -893,7 +947,7 @@ skills:
         - "MLflow"
         - "Terraform (Databricks)"
       priority: 2
-      profiles: ["ml", "de", "ds"]
+      profiles: ["ml", "de", "ds", "edu"]
 
     # === MACHINE LEARNING & AI (category: ml) ===
     - name:
@@ -909,7 +963,7 @@ skills:
         - "Time Series"
         - "MLOps / Model governance"
       priority: 3
-      profiles: ["ml", "ds"]
+      profiles: ["ml", "ds", "edu"]
 
     # === DATA ENGINEERING (category: data-engineering) ===
     - name:
@@ -922,7 +976,7 @@ skills:
         - "Data Modeling"
         - "Data Quality"
       priority: 4
-      profiles: ["ml", "de"]
+      profiles: ["ml", "de", "edu"]
 
     # === CLOUD (category: cloud) ===
     - name:
@@ -938,7 +992,7 @@ skills:
         - "DynamoDB"
         - "CloudFormation"
       priority: 4
-      profiles: ["ml", "de"]
+      profiles: ["ml", "de", "edu"]
 
     # === SQL & BASES DE DATOS (category: sql) ===
     - name:
@@ -951,7 +1005,7 @@ skills:
         - "Oracle"
         - "SQL Server"
       priority: 5
-      profiles: ["ml", "de", "ds"]
+      profiles: ["ml", "de", "ds", "edu"]
 
     # === ANÁLISIS DE DATOS (category: data-analysis) ===
     - name:
@@ -965,7 +1019,7 @@ skills:
         - "Jupyter"
         - "Feature Engineering"
       priority: 3
-      profiles: ["ml", "ds"]
+      profiles: ["ml", "ds", "edu"]
 
     # === DESARROLLO (category: dev) ===
     - name:
@@ -980,7 +1034,7 @@ skills:
         - "Clean Code"
         - "Design Patterns"
       priority: 6
-      profiles: ["ml", "de", "ds"]
+      profiles: ["ml", "de", "ds", "edu"]
 
     # === DESARROLLO WEB (category: web) ===
     - name:
@@ -1021,7 +1075,7 @@ publications:
     description:
       es: "Investigación sobre el uso de modelos generativos profundos (GANs) para generar datos sintéticos y mejorar tareas predictivas en estrategias de trading de commodities."
       en: "Research on leveraging deep generative models (GANs) to generate synthetic data and enhance predictive tasks in commodities trading strategies."
-    profiles: ["ml", "ds"]  # Mostrar en perfiles ml y ds
+    profiles: ["ml", "ds", "edu"]
 
 # -----------------------------------------------------------------------------
 # VOLUNTARIADO

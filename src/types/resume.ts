@@ -3,24 +3,27 @@
 // =============================================================================
 
 export type Language = 'es' | 'en';
-export type Profile = 'ml' | 'de' | 'ds';
+/** ml/de/ds = CV técnico; edu = CV corto para talleres / formación (PDF) */
+export type Profile = 'ml' | 'de' | 'ds' | 'edu';
 
 export interface LocalizedString {
   es: string;
   en: string;
 }
 
-// Estructura para datos que varían por perfil
+// Estructura para datos que varían por perfil (edu opcional en experiencia)
 export interface ProfiledLocalizedString {
   ml: LocalizedString;
   de: LocalizedString;
   ds: LocalizedString;
+  edu?: LocalizedString;
 }
 
 export interface ProfiledHighlights {
   ml: { es: string[]; en: string[] };
   de: { es: string[]; en: string[] };
   ds: { es: string[]; en: string[] };
+  edu?: { es: string[]; en: string[] };
 }
 
 export interface Meta {
@@ -144,13 +147,14 @@ export interface Publication {
   profiles?: Profile[];
 }
 
-// Titles data from titles.json
+// Titles data from titles.json (incluye edu para PDF instructivo)
 export interface TitlesData {
-  titles: ProfiledLocalizedString;
+  titles: ProfiledLocalizedString & { edu: LocalizedString };
   descriptions: {
     ml: string;
     de: string;
     ds: string;
+    edu: string;
   };
 }
 
@@ -202,28 +206,52 @@ export interface NormalizedExperience {
 // =============================================================================
 // Helper function to normalize data for a specific profile
 // =============================================================================
+function pickTitleForProfile(
+  exp: Experience,
+  profile: Profile
+): LocalizedString {
+  if (profile === 'edu' && exp.title?.edu) return exp.title.edu;
+  if (profile === 'edu') return exp.title.ml;
+  return exp.title?.[profile] ?? exp.title.ml;
+}
+
+function pickHighlightsForProfile(
+  exp: Experience,
+  profile: Profile
+): { es: string[]; en: string[] } {
+  if (profile === 'edu' && exp.highlights?.edu) return exp.highlights.edu;
+  if (profile === 'edu') return exp.highlights.ml;
+  return exp.highlights?.[profile] ?? exp.highlights.ml;
+}
+
 export function normalizeResumeData(
   raw: ResumeDataRaw, 
   titles: TitlesData, 
   profile: Profile = 'ml'
 ): ResumeData {
+  const shortByProfile = raw.summary?.short;
+  const shortSummary =
+    profile === 'edu'
+      ? shortByProfile?.edu ?? shortByProfile?.ml ?? { es: '', en: '' }
+      : shortByProfile?.[profile] ?? shortByProfile?.ml ?? { es: '', en: '' };
+
   return {
     meta: raw.meta,
     personal: raw.personal,
     title: titles.titles[profile],
     summary: {
       // Short summary comes from resume.yaml (per profile)
-      short: raw.summary?.short?.[profile] || { es: '', en: '' },
+      short: shortSummary,
       // Full summary comes from resume.yaml (same for all profiles)
       full: raw.summary?.full || { es: '', en: '' },
     },
     experience: (raw.experience || []).map((exp) => ({
       company: exp.company,
       location: exp.location,
-      title: exp.title?.[profile] || { es: '', en: '' },
+      title: pickTitleForProfile(exp, profile),
       startDate: exp.startDate,
       endDate: exp.endDate,
-      highlights: exp.highlights?.[profile] || { es: [], en: [] },
+      highlights: pickHighlightsForProfile(exp, profile),
       keywords: exp.keywords || [],
       showInPdf: exp.showInPdf,
     })),
