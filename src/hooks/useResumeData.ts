@@ -14,7 +14,7 @@ interface UseResumeDataReturn {
   error: string | null;
 }
 
-export function useResumeData(profile: Profile = 'hybrid'): UseResumeDataReturn {
+export function useResumeData(profile: Profile = 'ml'): UseResumeDataReturn {
   const [resumeData, setResumeData] = useState<ResumeData | null>(null);
   const [labels, setLabels] = useState<Labels | null>(null);
   const [language, setLanguage] = useState<Language>('es');

@@ -42,9 +42,9 @@ function AppContent() {
           titlesRes.json() as Promise<TitlesData>,
         ]);
 
-        // Load raw data and normalize for 'hybrid' profile (web default)
+        // Load raw data and normalize for 'ml' profile (web default: ML Engineer)
         const rawData = yaml.load(resumeText) as ResumeDataRaw;
-        const normalizedData = normalizeResumeData(rawData, titlesJson, 'hybrid');
+        const normalizedData = normalizeResumeData(rawData, titlesJson, 'ml');
 
         setResumeData(normalizedData);
         setLabels(yaml.load(labelsText) as Labels);

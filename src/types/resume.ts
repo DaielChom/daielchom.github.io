@@ -3,7 +3,7 @@
 // =============================================================================
 
 export type Language = 'es' | 'en';
-export type Profile = 'hybrid' | 'de' | 'ds';
+export type Profile = 'ml' | 'de' | 'ds';
 
 export interface LocalizedString {
   es: string;
@@ -12,13 +12,13 @@ export interface LocalizedString {
 
 // Estructura para datos que varían por perfil
 export interface ProfiledLocalizedString {
-  hybrid: LocalizedString;
+  ml: LocalizedString;
   de: LocalizedString;
   ds: LocalizedString;
 }
 
 export interface ProfiledHighlights {
-  hybrid: { es: string[]; en: string[] };
+  ml: { es: string[]; en: string[] };
   de: { es: string[]; en: string[] };
   ds: { es: string[]; en: string[] };
 }
@@ -148,7 +148,7 @@ export interface Publication {
 export interface TitlesData {
   titles: ProfiledLocalizedString;
   descriptions: {
-    hybrid: string;
+    ml: string;
     de: string;
     ds: string;
   };
@@ -205,7 +205,7 @@ export interface NormalizedExperience {
 export function normalizeResumeData(
   raw: ResumeDataRaw, 
   titles: TitlesData, 
-  profile: Profile = 'hybrid'
+  profile: Profile = 'ml'
 ): ResumeData {
   return {
     meta: raw.meta,

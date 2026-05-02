@@ -2,21 +2,21 @@
 # RESUME DATA - Daniel Carvajal Patiño
 # =============================================================================
 # Este archivo es la fuente única de datos para:
-# - El sitio web (versión completa - perfil híbrido)
-# - PDFs del CV (3 versiones: hybrid, de, ds)
+# - El sitio web (versión completa - perfil ML Engineer)
+# - PDFs del CV (3 versiones: ml, de, ds)
 # - Ambos idiomas (español e inglés)
 # 
 # PERFILES DISPONIBLES:
-# - hybrid: Data Scientist & Engineer (web + PDF default)
+# - ml: ML Engineer (web + PDF por defecto)
 # - de: Data Engineer (PDF especializado)
-# - ds: Data Scientist / ML Engineer (PDF especializado)
+# - ds: Data Scientist (PDF especializado)
 # =============================================================================
 
 meta:
-  version: "3.0"
-  lastUpdated: "2026-01-07"
+  version: "3.4"
+  lastUpdated: "2026-05-02"
   profiles:
-    - hybrid  # Para web y PDF por defecto
+    - ml  # Para web y PDF por defecto
     - de      # Data Engineer
     - ds      # Data Scientist
 
@@ -53,137 +53,140 @@ personal:
 summary:
   # Versión corta para PDF y Hero (3 líneas)
   short:
-    hybrid:
+    ml:
       es: >-
-        Data Engineer & Scientist con +6 años de experiencia diseñando arquitecturas de datos 
-        escalables, pipelines ETL robustos y modelos de Machine Learning en producción. Experto en 
-        Python, SQL, Linux, GCP, Databricks, TensorFlow y PyTorch. Investigador publicado en GANs.
+        Machine Learning Engineer con +6 años llevando modelos a producción en retail y fintech. 
+        Plataforma principal Databricks: gobernanza ML, MLflow, Delta Lake, workflows y despliegue. 
+        Python, SQL, Spark, TensorFlow y PyTorch; sólida base en datos (BigQuery, ETL) e investigación en GANs.
       en: >-
-        Data Engineer & Scientist with 6+ years designing scalable data architectures, 
-        robust ETL pipelines, and production ML models. Expert in Python, SQL, Linux, GCP, 
-        Databricks, TensorFlow, and PyTorch. Published researcher on GANs.
+        Machine Learning Engineer with 6+ years shipping production models in retail and fintech. 
+        Primary platform Databricks: ML governance, MLflow, Delta Lake, workflows, and deployment. 
+        Python, SQL, Spark, TensorFlow, and PyTorch; strong data foundations (BigQuery, ETL) and GANs research.
     de:
       es: >-
-        Senior Data Engineer con +6 años diseñando arquitecturas de datos escalables en 
-        retail, fintech y trading. Experto en Python, SQL, Linux, GCP, AWS, Databricks y 
-        Terraform. Experiencia sólida en pipelines ETL y Data Warehouses empresariales.
+        Senior Data Engineer con +6 años en retail, fintech y trading. Plataforma central 
+        Databricks: Delta Lake, jobs, orquestación, Unity Catalog y Terraform. Python, SQL, 
+        GCP, BigQuery y pipelines ETL a escala empresarial.
       en: >-
-        Senior Data Engineer with 6+ years designing scalable data architectures across retail, 
-        fintech, and trading. Expert in Python, SQL, Linux, GCP, AWS, Databricks, and Terraform. 
-        Strong experience in ETL pipelines and enterprise Data Warehouses.
+        Senior Data Engineer with 6+ years across retail, fintech, and trading. Core platform 
+        Databricks: Delta Lake, jobs, orchestration, Unity Catalog, and Terraform. Python, SQL, 
+        GCP, BigQuery, and enterprise-scale ETL pipelines.
     ds:
       es: >-
-        Data Scientist & ML Engineer con +6 años desarrollando modelos de ML en producción en áreas como retail, fintech y trading. 
-        Experto en Python, SQL, Linux, TensorFlow, PyTorch y GANs. Autor de publicación 
-        científica sobre datos sintéticos en trading. POO y experimentación rigurosa.
+        Data Scientist con +6 años en modelado avanzado, deep learning y publicaciones científicas 
+        (GANs, trading, visión por computadora). TensorFlow, PyTorch y experimentación rigurosa; 
+        experiencia aplicada en retail y mercados financieros.
       en: >-
-        Data Scientist & ML Engineer with 6+ years deploying production ML models across retail, fintech, and trading. 
-        Expert in Python, SQL, Linux, TensorFlow, PyTorch, and GANs. Published researcher 
-        on synthetic data in trading. OOP and rigorous experimentation.
+        Data Scientist with 6+ years in advanced modeling, deep learning, and peer-reviewed research 
+        (GANs, trading, computer vision). TensorFlow, PyTorch, and rigorous experimentation; applied 
+        experience in retail and financial markets.
   
   # Versión completa para la sección About de la web
   full:
     es: >-
-      Data Engineer & Scientist con más de 6 años de experiencia diseñando arquitecturas 
-      de datos escalables, construyendo pipelines ETL robustos y desarrollando modelos de 
-      Machine Learning en producción. He co-liderado y participado activamente en el diseño y 
-      construcción de Data Warehouses empresariales en diferentes industrias (retail, fintech, 
-      trading), implementación de modelos predictivos y toma de decisiones técnicas en equipos 
-      multidisciplinarios. Investigador publicado sobre modelos generativos (GANs) aplicados 
-      a trading en Research in International Business and Finance. Experto en Python, SQL, 
-      Linux, GCP, AWS y Databricks. Enfocado en POO, código limpio y buenas prácticas de desarrollo.
+      Machine Learning Engineer con más de 6 años de experiencia llevando modelos a producción. 
+      En retail lidero ML sobre Databricks: gobernanza y buenas prácticas para el equipo, experimentación, 
+      despliegue, monitoreo y trazabilidad (MLflow, Delta Lake, workflows), integrado con un ecosistema 
+      de datos en BigQuery y pipelines ETL/ELT. 
+      Trayectoria previa en fintech y trading con deep learning y modelos predictivos. 
+      Publicación científica sobre GANs aplicados a trading (Research in International Business and Finance / RIBAF, 2022). 
+      Base técnica en Python, SQL, Linux, GCP, AWS y Terraform; código limpio, POO y MLOps reproducible.
     en: >-
-      Data Engineer & Scientist with 6+ years of experience designing scalable data architectures, 
-      building robust ETL pipelines, and developing production Machine Learning models. Co-led and 
-      actively participated in enterprise Data Warehouse design and construction across industries 
-      (retail, fintech, trading), predictive model implementation, and technical decision-making 
-      in multidisciplinary teams. Published researcher on generative models (GANs) applied to 
-      trading in Research in International Business and Finance. Expert in Python, SQL, Linux, 
-      GCP, AWS, and Databricks. Focused on OOP, clean code, and development best practices.
+      Machine Learning Engineer with 6+ years delivering production ML systems. 
+      In retail I lead ML on Databricks: team-wide governance and best practices, experimentation, deployment, 
+      monitoring, and traceability (MLflow, Delta Lake, workflows), integrated with a BigQuery data ecosystem and ETL/ELT pipelines. 
+      Earlier experience in fintech and trading includes deep learning and predictive modeling. 
+      Published research on GANs applied to trading (Research in International Business and Finance / RIBAF, 2022). 
+      I work primarily in Python, SQL, Linux, GCP, AWS, and Terraform, with clean code, OOP, and reproducible MLOps.
 
 # -----------------------------------------------------------------------------
 # EXPERIENCIA LABORAL
 # -----------------------------------------------------------------------------
 # Estructura de highlights por perfil:
-# - hybrid: Para web y PDF híbrido (Data Scientist & Engineer)
-# - de: Para PDF de Data Engineer
-# - ds: Para PDF de Data Scientist / ML Engineer
+# - ml: Web y PDF ML Engineer (producción, Databricks, MLOps)
+# - de: PDF Data Engineer
+# - ds: PDF Data Scientist (investigación y modelado)
 # -----------------------------------------------------------------------------
 experience:
   - company: "Farmatodo"
     location: "Bogotá, Colombia"
     title:
-      hybrid:
-        es: "Data Scientist & Engineer"
-        en: "Data Scientist & Engineer"
+      ml:
+        es: "Machine Learning Engineer"
+        en: "Machine Learning Engineer"
       de:
         es: "Senior Data Engineer"
         en: "Senior Data Engineer"
       ds:
-        es: "Data Scientist"
-        en: "Data Scientist"
+        es: "Machine Learning Engineer"
+        en: "Machine Learning Engineer"
     startDate: "2023-04"
     endDate: null  # null = presente/current
     highlights:
-      hybrid:
+      ml:
         es:
-          - "Co-lideré el diseño y construcción del Data Warehouse en BigQuery, integrando +5 fuentes de datos (Oracle, Braze, Amplitude, Algolia)"
-          - "Diseñé e implementé pipelines ETL en Python con monitoreo proactivo, alertas automáticas y recuperación de errores"
-          - "Participé en la migración de infraestructura de datos a Databricks, implementando IaC con Terraform y principios de código limpio"
-          - "Desarrollé sistema de afinidad de usuarios con dashboards de monitoreo, mejorando la personalización de ofertas"
-          - "Implementé sistema de atribución de marketing multicanal, habilitando análisis de ROI por estrategia y canal"
+          - "Definí lineamientos de gobernanza y buenas prácticas de ML para el equipo en Databricks (experimentación, despliegue y trazabilidad)"
+          - "Opero e integro modelos en producción sobre el lakehouse Databricks (Delta Lake, workflows, monitoreo), alineados con el data warehouse y dominios analíticos"
+          - "Co-lideré el Data Warehouse en BigQuery (+5 fuentes: Oracle, Braze, Amplitude, Algolia) y la evolución hacia Databricks con IaC en Terraform"
+          - "Diseñé pipelines ETL/ELT en Python y Spark con monitoreo proactivo, alertas y recuperación de errores"
+          - "Desarrollé sistemas de afinidad de usuarios y atribución de marketing multicanal a escala retail, con dashboards de impacto y análisis de ROI"
         en:
-          - "Co-led Data Warehouse design and construction in BigQuery, integrating 5+ data sources (Oracle, Braze, Amplitude, Algolia)"
-          - "Architected ETL pipelines in Python with proactive monitoring, automated alerts, and error recovery"
-          - "Participated in data infrastructure migration to Databricks, implementing IaC with Terraform and clean code principles"
-          - "Built user affinity scoring system with monitoring dashboards, improving offer personalization"
-          - "Implemented multi-channel marketing attribution system, enabling ROI analysis per strategy and channel"
+          - "Defined team-wide ML governance guidelines and best practices on Databricks (experimentation, deployment, and traceability)"
+          - "Lead production ML on the Databricks lakehouse (Delta Lake, workflows, monitoring), integrated with the enterprise data warehouse and analytical domains"
+          - "Co-led the BigQuery Data Warehouse (5+ sources: Oracle, Braze, Amplitude, Algolia) and evolution toward Databricks with Terraform IaC"
+          - "Architected ETL/ELT pipelines in Python and Spark with proactive monitoring, alerts, and error recovery"
+          - "Built user affinity and multi-channel marketing attribution at retail scale with impact and ROI dashboards and analysis"
       de:
         es:
-          - "Co-lideré el diseño y construcción del Data Warehouse en BigQuery, integrando +5 fuentes de datos empresariales"
-          - "Diseñé e implementé pipelines ETL en Python con monitoreo proactivo, alertas automáticas y manejo robusto de errores"
-          - "Participé en migración a Databricks: orquestación de jobs, dashboards de monitoreo y sistema de alertas"
-          - "Implementé Infraestructura como Código con Terraform, siguiendo principios SOLID y código limpio"
-          - "Construí dominios de datos empresariales (clientes, ventas, productos, promociones) con validación de calidad"
-          - "Configuré y administré servicios GCP: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
+          - "Plataforma central Databricks: migración y operación del lakehouse (Delta Lake, jobs, orquestación, Unity Catalog, monitoreo y alertas)"
+          - "Infraestructura como código con Terraform sobre Databricks y GCP; principios SOLID y código limpio en pipelines productivos"
+          - "Co-lideré el Data Warehouse en BigQuery con +5 fuentes empresariales y dominios de datos (clientes, ventas, productos, promociones)"
+          - "Pipelines ETL/ELT en Python y Spark con calidad de datos, idempotencia y manejo robusto de fallos en integraciones API y batch"
+          - "Administré servicios GCP: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager; integración con workloads en Databricks"
+          - "Participé en la definición de estándares de gobernanza de datos y ML aplicables en el workspace de Databricks"
         en:
-          - "Co-led Data Warehouse design and construction in BigQuery, integrating 5+ enterprise data sources"
-          - "Architected ETL pipelines in Python with proactive monitoring, automated alerts, and robust error handling"
-          - "Participated in Databricks migration: job orchestration, monitoring dashboards, and alerting system"
-          - "Implemented Infrastructure as Code with Terraform, following SOLID principles and clean code"
-          - "Built enterprise data domains (customers, sales, products, promotions) with data quality validation"
-          - "Configured and managed GCP services: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager"
+          - "Core Databricks platform: migration and operation of the lakehouse (Delta Lake, jobs, orchestration, Unity Catalog, monitoring, and alerts)"
+          - "Infrastructure as Code with Terraform on Databricks and GCP; SOLID principles and clean code in production pipelines"
+          - "Co-led BigQuery Data Warehouse with 5+ enterprise sources and data domains (customers, sales, products, promotions)"
+          - "ETL/ELT pipelines in Python and Spark with data quality, idempotency, and robust failure handling for API and batch integrations"
+          - "Managed GCP services: BigQuery, Cloud Run, Cloud Functions, IAM, Secrets Manager; integration with Databricks workloads"
+          - "Contributed to data and ML governance standards applied across the Databricks workspace"
       ds:
         es:
-          - "Desarrollé sistema de afinidad de usuarios basado en patrones de comportamiento de compra, mejorando segmentación"
-          - "Construí dashboards de monitoreo y análisis de métricas para medir impacto de personalización"
-          - "Diseñé modelo de atribución de marketing multicanal para cuantificar efectividad de estrategias"
-          - "Lideré análisis exploratorio de datos y presenté insights accionables a stakeholders de negocio"
-          - "Construí dashboards analíticos interactivos para toma de decisiones en tiempo real"
+          - "Conduje experimentación y evaluación de modelos de personalización y campañas multicanal; diseño de métricas y lectura orientada a negocio"
+          - "Traduje preguntas de negocio a problemas de ML y análisis: segmentación, afinidad y atribución en contexto retail"
+          - "Diseñé análisis exploratorios y reporting reproducible (Jupyter/SQL) para apoyar decisiones de marketing y producto"
+          - "Documenté y comuniqué hallazgos a stakeholders no técnicos; storytelling con datos desde la hipótesis al impacto"
+          - "Ingeniería de features y construcción de datasets de entrenamiento a partir de señales de comportamiento y campaña"
         en:
-          - "Built user affinity system based on purchase behavior patterns, improving customer segmentation"
-          - "Developed monitoring dashboards and metrics analysis to measure personalization impact"
-          - "Designed multi-channel marketing attribution model to quantify strategy effectiveness"
-          - "Led exploratory data analysis and presented actionable insights to business stakeholders"
-          - "Built interactive analytical dashboards for real-time decision making"
+          - "Led experimentation and evaluation for personalization and multi-channel campaign models; metric design and business-facing readouts"
+          - "Framed business questions as ML and analytics problems: segmentation, affinity, and attribution in a retail context"
+          - "Designed exploratory analyses and reproducible reporting (Jupyter/SQL) to support marketing and product decisions"
+          - "Documented findings for non-technical stakeholders; data storytelling from hypothesis to impact"
+          - "Engineered features and training datasets from behavioral and campaign signals"
     keywords:
       - "Python"
       - "SQL"
       - "Linux"
-      - "BigQuery"
+      - "Apache Spark"
       - "Databricks"
+      - "Delta Lake"
+      - "MLflow"
+      - "Unity Catalog"
+      - "BigQuery"
       - "GCP"
       - "Terraform"
       - "ETL"
-      - "Data Warehouse"
+      - "MLOps"
       - "Machine Learning"
       - "Braze"
       - "Amplitude"
+      - "Docker"
 
   - company: "Ultracom (Cliente: Bancolombia)"
     location: "Medellín, Colombia"
     title:
-      hybrid:
+      ml:
         es: "Ingeniero de Datos"
         en: "Data Engineer"
       de:
@@ -195,39 +198,39 @@ experience:
     startDate: "2022-05"
     endDate: "2023-04"
     highlights:
-      hybrid:
+      ml:
         es:
-          - "Formé parte del equipo de mantenimiento del Data Warehouse de Bancolombia"
-          - "Migré scripts Python a CDP Public Cloud, mejorando escalabilidad"
-          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation)"
-          - "Certifiqué y optimicé código Python para despliegue en ambientes productivos"
+          - "Mantuve y evolucioné componentes del Data Warehouse corporativo de Bancolombia (SQL/Python, jobs batch, ajustes dimensionales e ingesta según requerimientos de negocio)"
+          - "Migré pipelines Python a CDP Public Cloud (Cloudera), homologando dependencias y despliegue para mayor elasticidad bajo carga"
+          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation), exponiendo datos y operaciones del data lake a consumidores internos"
+          - "Apliqué revisiones de código y estándares de calidad para despliegue productivo (pruebas y quality gates) sobre servicios Python en AWS"
         en:
-          - "Part of the maintenance team for Bancolombia's Data Warehouse"
-          - "Migrated Python scripts to CDP Public Cloud, improving scalability"
-          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation)"
-          - "Certified and optimized Python code for production deployment"
+          - "Maintained and evolved components of Bancolombia's enterprise Data Warehouse (SQL/Python, batch jobs, dimensional adjustments and ingestion for business needs)"
+          - "Migrated Python pipelines to Cloudera CDP Public Cloud, aligning dependencies and deployment for more elastic scaling under load"
+          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation) exposing lake data and operations to internal consumers"
+          - "Applied code reviews and production deployment quality gates (testing standards) for Python services on AWS"
       de:
         es:
-          - "Formé parte del equipo de mantenimiento del Data Warehouse de Bancolombia"
-          - "Migré scripts Python a CDP Public Cloud, mejorando escalabilidad"
-          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation)"
-          - "Certifiqué y optimicé código Python para despliegue en ambientes productivos"
+          - "Mantuve y evolucioné componentes del Data Warehouse corporativo de Bancolombia (SQL/Python, jobs batch, ajustes dimensionales e ingesta según requerimientos de negocio)"
+          - "Migré pipelines Python a CDP Public Cloud (Cloudera), homologando dependencias y despliegue para mayor elasticidad bajo carga"
+          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation), exponiendo datos y operaciones del data lake a consumidores internos"
+          - "Apliqué revisiones de código y estándares de calidad para despliegue productivo (pruebas y quality gates) sobre servicios Python en AWS"
         en:
-          - "Part of the maintenance team for Bancolombia's Data Warehouse"
-          - "Migrated Python scripts to CDP Public Cloud, improving scalability"
-          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation)"
-          - "Certified and optimized Python code for production deployment"
+          - "Maintained and evolved components of Bancolombia's enterprise Data Warehouse (SQL/Python, batch jobs, dimensional adjustments and ingestion for business needs)"
+          - "Migrated Python pipelines to Cloudera CDP Public Cloud, aligning dependencies and deployment for more elastic scaling under load"
+          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation) exposing lake data and operations to internal consumers"
+          - "Applied code reviews and production deployment quality gates (testing standards) for Python services on AWS"
       ds:
         es:
-          - "Formé parte del equipo de mantenimiento del Data Warehouse de Bancolombia"
-          - "Migré scripts Python a CDP Public Cloud, mejorando escalabilidad"
-          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation)"
-          - "Certifiqué y optimicé código Python para despliegue en ambientes productivos"
+          - "Mantuve y evolucioné componentes del Data Warehouse corporativo de Bancolombia (SQL/Python, jobs batch, ajustes dimensionales e ingesta según requerimientos de negocio)"
+          - "Migré pipelines Python a CDP Public Cloud (Cloudera), homologando dependencias y despliegue para mayor elasticidad bajo carga"
+          - "Desplegué APIs en Django sobre AWS (DynamoDB, Glue, S3, CloudFormation), exponiendo datos y operaciones del data lake a consumidores internos"
+          - "Apliqué revisiones de código y estándares de calidad para despliegue productivo (pruebas y quality gates) sobre servicios Python en AWS"
         en:
-          - "Part of the maintenance team for Bancolombia's Data Warehouse"
-          - "Migrated Python scripts to CDP Public Cloud, improving scalability"
-          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation)"
-          - "Certified and optimized Python code for production deployment"
+          - "Maintained and evolved components of Bancolombia's enterprise Data Warehouse (SQL/Python, batch jobs, dimensional adjustments and ingestion for business needs)"
+          - "Migrated Python pipelines to Cloudera CDP Public Cloud, aligning dependencies and deployment for more elastic scaling under load"
+          - "Deployed Django APIs on AWS (DynamoDB, Glue, S3, CloudFormation) exposing lake data and operations to internal consumers"
+          - "Applied code reviews and production deployment quality gates (testing standards) for Python services on AWS"
     keywords:
       - "Python"
       - "AWS"
@@ -240,13 +243,14 @@ experience:
       - "DynamoDB"
       - "S3"
       - "CloudFormation"
+      - "Docker"
 
   - company: "Frontierx"
     location: "Medellín, Colombia"
     title:
-      hybrid:
-        es: "Data Scientist & Developer"
-        en: "Data Scientist & Developer"
+      ml:
+        es: "Data Scientist & ML Engineer"
+        en: "Data Scientist & ML Engineer"
       de:
         es: "Data Engineer"
         en: "Data Engineer"
@@ -256,17 +260,17 @@ experience:
     startDate: "2018-08"
     endDate: "2022-04"
     highlights:
-      hybrid:
+      ml:
         es:
           - "Investigué y desarrollé modelos generativos (GANs) para datos sintéticos de commodities, resultando en publicación científica indexada"
-          - "Implementé y desplegué estrategias de trading algorítmico basadas en ML para mercados de materias primas"
+          - "Implementé y desplegué estrategias de trading algorítmico con ML sobre multi-commodity (metales, energía, agro), en coordinación con el desk de trading"
           - "Construí modelos predictivos para posicionamiento de cartera en el mercado energético español"
-          - "Procesé y analicé imágenes satelitales con Robosat para proyectos de Computer Vision"
+          - "Procesé imágenes satelitales de alta resolución con Robosat (Computer Vision) para enriquecer señales territoriales en modelos predictivos"
         en:
           - "Researched and developed generative models (GANs) for synthetic commodities data, resulting in indexed scientific publication"
-          - "Implemented and deployed algorithmic ML-based trading strategies for commodities markets"
+          - "Implemented and deployed ML-based algorithmic trading strategies across multi-commodity markets (metals, energy, agri), working with trading desks"
           - "Built predictive models for portfolio positioning in the Spanish energy market"
-          - "Processed and analyzed satellite imagery with Robosat for Computer Vision projects"
+          - "Processed high-resolution satellite imagery with Robosat (computer vision) to enrich territorial signals for predictive models"
       de:
         es:
           - "Diseñé pipelines de datos en tiempo real para alimentar modelos de trading algorítmico"
@@ -300,11 +304,12 @@ experience:
       - "Trading"
       - "Computer Vision"
       - "Time Series"
+      - "Docker"
 
   - company: "Universidad Industrial de Santander"
     location: "Bucaramanga, Colombia"
     title:
-      hybrid:
+      ml:
         es: "Desarrollador"
         en: "Developer"
       de:
@@ -316,13 +321,13 @@ experience:
     startDate: "2017-09"
     endDate: "2018-06"
     highlights:
-      hybrid:
+      ml:
         es:
-          - "Desarrollé sistema de calificación automatizada MOOC-Grader con Python para evaluación de estudiantes"
-          - "Integré Google Sheets API para gestión y seguimiento de evaluaciones académicas"
+          - "Automaticé la calificación masiva de cursos MOOC (MOOC-Grader, Python), reduciendo trabajo manual docente y aportando trazabilidad por estudiante"
+          - "Integré Google Sheets API para orquestar datos de evaluaciones y métricas académicas consumibles por coordinación de programa"
         en:
-          - "Built automated grading system MOOC-Grader with Python for student evaluation"
-          - "Integrated Google Sheets API for academic assessment tracking and management"
+          - "Automated large-scale MOOC grading (MOOC-Grader, Python), reducing manual faculty effort and adding per-student audit trails"
+          - "Integrated Google Sheets API to orchestrate assessment data and academic metrics for program coordinators"
       de:
         es:
           - "Desarrollé sistema de calificación automatizada MOOC-Grader con Python para evaluación de estudiantes"
@@ -346,7 +351,7 @@ experience:
   - company: "Chasegroup"
     location: "Bucaramanga, Colombia"
     title:
-      hybrid:
+      ml:
         es: "Desarrollador Backend"
         en: "Backend Developer"
       de:
@@ -358,13 +363,13 @@ experience:
     startDate: "2017-02"
     endDate: "2017-10"
     highlights:
-      hybrid:
+      ml:
         es:
-          - "Desarrollé plataforma web backend para ChatBot de eventos culturales usando Flask"
-          - "Implementé integración con Facebook Graph API para extracción automática de eventos"
+          - "Construí backend en Flask que alimentaba un chatbot de eventos culturales con ingesta estructurada desde Facebook Graph API hacia la base operativa"
+          - "Normalicé payloads de eventos y reglas de validación para mantener consistencia de los datos expuestos al bot"
         en:
-          - "Built backend web platform for cultural events ChatBot using Flask"
-          - "Implemented Facebook Graph API integration for automated event extraction"
+          - "Built a Flask backend powering an events chatbot, structurally ingesting Facebook Graph API data into the operational database"
+          - "Normalized event payloads and validation rules to keep bot-facing data consistent"
       de:
         es:
           - "Desarrollé plataforma web backend para ChatBot de eventos culturales usando Flask"
@@ -389,7 +394,7 @@ experience:
   - company: "Universidad Industrial de Santander"
     location: "Bucaramanga, Colombia"
     title:
-      hybrid:
+      ml:
         es: "Administrador de Sala de Cómputo"
         en: "Computer Room Administrator"
       de:
@@ -401,11 +406,11 @@ experience:
     startDate: "2016-07"
     endDate: "2017-06"
     highlights:
-      hybrid:
+      ml:
         es:
-          - "Administración de salas de cómputo de la Escuela de Matemáticas"
+          - "Apoyé operación continua de laboratorios de cómputo de la Escuela de Matemáticas: disponibilidad de equipos y asistencia a docentes y estudiantes"
         en:
-          - "Administration of Mathematics School computer rooms"
+          - "Supported day-to-day computer lab operations for the School of Mathematics: machine availability and assistance for faculty and students"
       de:
         es:
           - "Administración de salas de cómputo de la Escuela de Matemáticas"
@@ -498,7 +503,7 @@ certifications:
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQAbhQ4tIfpxRJbnJ3fISSOgAUtG5Ee_JA8HH6z2Jwlw_S8?e=wgs84i"
     category: "ml"
     isCertification: true
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
 
   - name: "Deep Learning Specialization"
     issuer: "Coursera (DeepLearning.AI)"
@@ -506,7 +511,7 @@ certifications:
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/IQCdI6UMmHbaTLD4x05eiPqqART166xwbBQQb3rzdI0P0mQ?e=KbaCbT"
     category: "ml"
     isCertification: true
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
 
   - name: "Build Basic Generative Adversarial Networks (GANs)"
     issuer: "Coursera"
@@ -514,7 +519,7 @@ certifications:
     certificate: null
     category: "ml"
     isCertification: true
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
 
   - name: "CCNA Routing and Switching (I & II)"
     issuer: "Cisco Networking Academy"
@@ -530,7 +535,7 @@ certifications:
     certificate: null  # TODO: Reemplazar con URL de OneDrive
     category: "english"
     isCertification: true
-    profiles: ["hybrid", "de", "ds"]
+    profiles: ["ml", "de", "ds"]
 
   # =============================================================================
   # CURSOS (diplomas sin evaluación estricta)
@@ -542,14 +547,22 @@ certifications:
     date: "2025-01"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/ET_AvNg16EBMv-600qIp34cBQ8Z-57aod5hrRZbyAtKxKA?e=3P2jIg"
     category: "databricks"
-    profiles: ["hybrid", "de"]
+    profiles: ["ml", "de"]
 
   - name: "Business Intelligence with Databricks"
     issuer: "Coursera"
     date: "2024-10"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EaSNGVsiniNLiir_B6VB7m0B-YR0lBSMZc8ykOL-DMbT2A?e=riFWQs"
     category: "databricks"
-    profiles: ["hybrid", "de"]
+    profiles: ["ml", "de"]
+
+  # Plataforma Databricks; contenido introductorio ML / prácticas de despliegue (MLOps en plataforma)
+  - name: "Get Started with Databricks for Machine Learning"
+    issuer: "Databricks"
+    date: "2026-05-02"
+    certificate: null
+    category: "databricks"
+    profiles: ["ml", "de", "ds"]
 
   # === MLOPS & DATA OPS ===
   - name: "DevOps, DataOps, MLOps"
@@ -557,7 +570,7 @@ certifications:
     date: "2024-09"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EZh0oJjmJStJkpLx9umr6zcBwERGQJhzy80xEibq8gOJZA?e=xb8EWS"
     category: "mlops"
-    profiles: ["hybrid", "de", "ds"]
+    profiles: ["ml", "de", "ds"]
 
   # === MACHINE LEARNING & AI ===
   - name: "Machine Learning with Python"
@@ -565,21 +578,21 @@ certifications:
     date: "2024-07"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EfE451mhSilCin8WI9fFPucBXO7lr0_Hznpku8AGQAuz4g?e=nQmhoi"
     category: "ml"
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
 
   - name: "TensorFlow on Google Cloud"
     issuer: "Google Cloud Skills Boost"
     date: "2024-04"
     certificate: null
     category: "ml"
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
 
   - name: "Launching into Machine Learning"
     issuer: "Google Cloud Skills Boost"
     date: "2024-01"
     certificate: null
     category: "ml"
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
     showInPdf: false
 
   - name: "Introduction to AI and Machine Learning on Google Cloud"
@@ -587,7 +600,7 @@ certifications:
     date: "2023-12"
     certificate: null
     category: "ml"
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
     showInPdf: false
 
   - name: "Big Data and Machine Learning Fundamentals"
@@ -595,7 +608,7 @@ certifications:
     date: "2023-11"
     certificate: null
     category: "ml"
-    profiles: ["hybrid", "de", "ds"]
+    profiles: ["ml", "de", "ds"]
 
   # === DATA ENGINEERING & GCP ===
   - name: "Building Batch Data Pipelines on Google Cloud"
@@ -603,14 +616,14 @@ certifications:
     date: "2024-07"
     certificate: null
     category: "data-engineering"
-    profiles: ["hybrid", "de"]
+    profiles: ["ml", "de"]
 
   - name: "Modernizing Data Lakes and Data Warehouses with Google Cloud"
     issuer: "Google Cloud Skills Boost"
     date: "2024-05"
     certificate: null
     category: "data-engineering"
-    profiles: ["hybrid", "de"]
+    profiles: ["ml", "de"]
 
   # === DATA ANALYSIS & SQL ===
   - name: "The Advanced SQL Server Masterclass For Data Analysis"
@@ -618,14 +631,14 @@ certifications:
     date: "2025-08"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/ES9Pbm4fTdVBtkDIPinFdeABXQl1Wj6hR2g0KWkeJocG0Q?e=96o853"
     category: "sql"
-    profiles: ["hybrid", "de", "ds"]
+    profiles: ["ml", "de", "ds"]
 
   - name: "Master Course: Python Data Visualizations and Analysis"
     issuer: "Udemy"
     date: "2025-04"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EdKSydrlSB9PotLbCtFOuIgBAT3aEJjP_5J8pZhiYpsNrw?e=tQbx3L"
     category: "data-analysis"
-    profiles: ["hybrid", "ds"]
+    profiles: ["ml", "ds"]
 
   # === AWS ===
   - name: "AWS Cloud Technical Essentials"
@@ -633,21 +646,21 @@ certifications:
     date: "2022-12"
     certificate: null
     category: "cloud"
-    profiles: ["hybrid", "de"]
+    profiles: ["ml", "de"]
 
   - name: "AWS Cloud Practitioner Essentials"
     issuer: "Coursera"
     date: "2022-11"
     certificate: null
     category: "cloud"
-    profiles: ["hybrid", "de"]
+    profiles: ["ml", "de"]
 
   - name: "Data Analytics Fundamentals"
     issuer: "AWS Skill Builder"
     date: "2022-11"
     certificate: null
     category: "cloud"
-    profiles: ["hybrid", "de", "ds"]
+    profiles: ["ml", "de", "ds"]
 
   - name: "Getting Started with AWS Storage"
     issuer: "AWS Skill Builder"
@@ -711,14 +724,14 @@ certifications:
     date: "2025-08"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EUuwenClmSBKkcUS9Zprhy4B69yfhgPKFvQTknS5WiTYww?e=QjeImg"
     category: "dev"
-    profiles: ["hybrid", "de", "ds"]
+    profiles: ["ml", "de", "ds"]
 
   - name: "Agile Practices for Software Engineering"
     issuer: "Udemy"
     date: "2024-07"
     certificate: "https://1drv.ms/b/c/9240cee7dbe6363d/EW1ZxGTT_2pLsPOfSrPOUPABry0py7etvfzfVooIvGGmqQ?e=vHehfz"
     category: "dev"
-    profiles: ["hybrid", "de", "ds"]
+    profiles: ["ml", "de", "ds"]
 
   - name: "Curso Profesional de Git y GitHub"
     issuer: "Platzi"
@@ -864,7 +877,23 @@ skills:
         - "SQL"
         - "JavaScript/TypeScript"
       priority: 1
-      profiles: ["hybrid", "de", "ds"]
+      profiles: ["ml", "de", "ds"]
+
+    # === DATABRICKS & SPARK (category: databricks) — primero en la grilla ===
+    - name:
+        es: "Databricks & Lakehouse"
+        en: "Databricks & Lakehouse"
+      category: "databricks"
+      items:
+        - "Databricks (Lakehouse)"
+        - "Apache Spark / PySpark"
+        - "Delta Lake"
+        - "Workflows & Jobs"
+        - "Unity Catalog"
+        - "MLflow"
+        - "Terraform (Databricks)"
+      priority: 2
+      profiles: ["ml", "de", "ds"]
 
     # === MACHINE LEARNING & AI (category: ml) ===
     - name:
@@ -878,8 +907,9 @@ skills:
         - "GANs"
         - "CNNs"
         - "Time Series"
-      priority: 2
-      profiles: ["hybrid", "ds"]
+        - "MLOps / Model governance"
+      priority: 3
+      profiles: ["ml", "ds"]
 
     # === DATA ENGINEERING (category: data-engineering) ===
     - name:
@@ -891,21 +921,8 @@ skills:
         - "Data Warehousing"
         - "Data Modeling"
         - "Data Quality"
-      priority: 2
-      profiles: ["hybrid", "de"]
-
-    # === DATABRICKS & SPARK (category: databricks) ===
-    - name:
-        es: "Databricks & Spark"
-        en: "Databricks & Spark"
-      category: "databricks"
-      items:
-        - "Databricks"
-        - "Apache Spark"
-        - "Delta Lake"
-        - "Terraform"
-      priority: 3
-      profiles: ["hybrid", "de"]
+      priority: 4
+      profiles: ["ml", "de"]
 
     # === CLOUD (category: cloud) ===
     - name:
@@ -921,7 +938,7 @@ skills:
         - "DynamoDB"
         - "CloudFormation"
       priority: 4
-      profiles: ["hybrid", "de"]
+      profiles: ["ml", "de"]
 
     # === SQL & BASES DE DATOS (category: sql) ===
     - name:
@@ -934,7 +951,7 @@ skills:
         - "Oracle"
         - "SQL Server"
       priority: 5
-      profiles: ["hybrid", "de", "ds"]
+      profiles: ["ml", "de", "ds"]
 
     # === ANÁLISIS DE DATOS (category: data-analysis) ===
     - name:
@@ -948,7 +965,7 @@ skills:
         - "Jupyter"
         - "Feature Engineering"
       priority: 3
-      profiles: ["hybrid", "ds"]
+      profiles: ["ml", "ds"]
 
     # === DESARROLLO (category: dev) ===
     - name:
@@ -963,7 +980,7 @@ skills:
         - "Clean Code"
         - "Design Patterns"
       priority: 6
-      profiles: ["hybrid", "de", "ds"]
+      profiles: ["ml", "de", "ds"]
 
     # === DESARROLLO WEB (category: web) ===
     - name:
@@ -976,7 +993,7 @@ skills:
         - "REST APIs"
         - "React"
       priority: 7
-      profiles: ["hybrid"]
+      profiles: ["ml"]
       showInPdf: false
 
     # === INTEGRACIONES ===
@@ -990,7 +1007,7 @@ skills:
         - "Algolia"
         - "Google APIs"
       priority: 8
-      profiles: ["hybrid", "de"]
+      profiles: ["ml", "de"]
       showInPdf: false
 
 # -----------------------------------------------------------------------------
@@ -1004,7 +1021,7 @@ publications:
     description:
       es: "Investigación sobre el uso de modelos generativos profundos (GANs) para generar datos sintéticos y mejorar tareas predictivas en estrategias de trading de commodities."
       en: "Research on leveraging deep generative models (GANs) to generate synthetic data and enhance predictive tasks in commodities trading strategies."
-    profiles: ["hybrid", "ds"]  # Mostrar en perfiles hybrid y ds
+    profiles: ["ml", "ds"]  # Mostrar en perfiles ml y ds
 
 # -----------------------------------------------------------------------------
 # VOLUNTARIADO
